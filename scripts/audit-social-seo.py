@@ -28,11 +28,16 @@ HOME_DESC = ("Compress, resize, crop, convert and edit images online with 127 fr
              "browser-based tools. Photos stay on your device — no uploads, no signups, no watermarks.")
 
 html_files = sorted(glob.glob(f"{APP}/**/*.html", recursive=True))
-check("prerendered HTML files found (149 = 147 routes + not-found + global-error)", len(html_files) == 149, f"got {len(html_files)}")
+# NOTE (Part 3): /tools is now server-rendered (dynamic) — /tools?q=… must
+# return crawlable HTML, which requires reading searchParams at request time.
+# Its HTML is therefore verified live (seo-tests + structured-data-url-audit),
+# not from a prerendered artifact: 148 files = 146 indexable artifacts +
+# not-found + global-error.
+check("prerendered HTML files found (148 = 146 routes + not-found + global-error)", len(html_files) == 148, f"got {len(html_files)}")
 # Next.js internal pages: _not-found (404; correctly noindexed by Next) and
 # _global-error (rendered only on catastrophic errors) are NOT indexable routes.
 indexable = [f for f in html_files if os.path.basename(f) not in ("_not-found.html", "_global-error.html")]
-check("indexable route pages = 147", len(indexable) == 147, f"got {len(indexable)}")
+check("indexable route artifacts = 146 (+ /tools SSR = 147 indexable routes)", len(indexable) == 146, f"got {len(indexable)}")
 
 nf = open(os.path.join(APP, "_not-found.html"), encoding="utf-8", errors="replace").read() if os.path.exists(os.path.join(APP, "_not-found.html")) else ""
 check("404 page is noindexed (correct)", "noindex" in nf.lower())
@@ -53,7 +58,13 @@ for f in indexable:
         og_dup.append(rel)
     if count("twitter:image") != 1 or 'name="twitter:card" content="summary_large_image"' not in html:
         tw_missing.append(rel)
-    if "noindex" in html.lower():
+    # noindex must not appear in any REAL robots directive (meta tags). The
+    # Part-2 inline hostname-guard script legitimately contains the literal
+    # string "noindex, nofollow" (it only ACTIVATES on non-production hosts);
+    # strip <script> blocks — including the RSC flight payload — before the
+    # substring test so the guard's source text cannot false-positive.
+    html_no_scripts = re.sub(r"<script[^>]*>.*?</script>", " ", html, flags=re.S | re.I)
+    if "noindex" in html_no_scripts.lower():
         noindex_hits.append(rel)
     # canonical: route dir pages live at <dir>.html; /index.html = home
     path = "/" + rel[:-5] if rel != "index.html" else "/"

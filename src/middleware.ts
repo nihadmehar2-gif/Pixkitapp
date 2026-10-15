@@ -1,37 +1,81 @@
 import { NextRequest, NextResponse } from "next/server";
 
 /**
- * Hostname-based staging protection (runtime defense-in-depth layer).
+ * Runtime URL-integrity + staging-protection layer.
  *
- * Every response served from ANY host other than the production domains
- * gets `X-Robots-Tag: noindex, nofollow` — regardless of build-time
- * environment variables. This covers localhost, the temporary ChatZ
- * preview (*.space-z.ai), Vercel branch/PR deployments, and any future
- * staging hostname by default.
+ * 1) Canonical host enforcement (single-hop permanent redirects).
  *
- * This complements (does not replace) the build-time switches in
- * src/lib/seo.ts:
- *   1. NEXT_PUBLIC_INDEXING_MODE=preview  — explicit opt-in (.env.preview,
- *      loaded by scripts/dev-daemon.py in dev mode only)
- *   2. VERCEL_ENV != "production"         — Vercel-injected per deployment
- * Those bake `noindex, nofollow` meta into prerendered HTML, Disallow-all
- * robots.txt and an empty sitemap at build time; this middleware adds the
- * runtime header so even a production build served on the wrong hostname
- * stays out of search indexes. A layout-level inline script additionally
- * flips the robots <meta> to noindex at runtime on non-production
- * hostnames, so JS-rendering crawlers see the meta signal too.
+ *    The one canonical host is the apex, https://pixkitapp.com:
+ *      - www.pixkitapp.com  → https://pixkitapp.com  (308, any scheme)
+ *      - http://pixkitapp.com (X-Forwarded-Proto: http) → https (308)
+ *      - http://www.pixkitapp.com → https://pixkitapp.com (one hop only)
  *
- * robots.txt is deliberately NOT Disallow-ed here: crawlers blocked from
- * crawling can still index a URL if they never see its noindex directive.
- * Leaving staging crawlable lets them fetch the page and honor noindex.
+ *    Redirects are 308 (permanent, method/path/query preserved) and single
+ *    hop: the redirect target (apex + https) never triggers another redirect.
+ *    Only the two production hosts are redirected — localhost, the temporary
+ *    preview (*.space-z.ai), Vercel preview URLs and any future staging host
+ *    are never redirected, so local testing and previews keep working.
+ *
+ *    Hosting note (inspected): the site is not on a host that terminates
+ *    these redirects today — production will be served by Vercel, which
+ *    redirects HTTP→HTTPS at the edge automatically, and redirects
+ *    www↔apex depending on which domain is PRIMARY. Setting pixkitapp.com
+ *    as the primary domain in the Vercel dashboard makes the edge behave
+ *    exactly like this middleware (www→apex 308); the middleware is the
+ *    app-level guarantee that holds regardless of dashboard config, and
+ *    Vercel's edge redirect (if it fires first) never conflicts because it
+ *    converges to the same apex target.
+ *
+ * 2) Hostname-based staging protection (defense-in-depth from Part 2).
+ *
+ *    Every response served from ANY host other than the production domains
+ *    gets `X-Robots-Tag: noindex, nofollow` — regardless of build-time
+ *    environment variables. This complements (does not replace) the
+ *    build-time switches in src/lib/seo.ts:
+ *      - NEXT_PUBLIC_INDEXING_MODE=preview  (.env.preview, dev daemon only)
+ *      - VERCEL_ENV != "production"         (Vercel-injected per deployment)
+ *    A layout-level inline script additionally flips the robots <meta> to
+ *    noindex at runtime on non-production hostnames.
+ *
+ *    robots.txt is deliberately NOT Disallow-ed on staging: crawlers blocked
+ *    from crawling can still index a URL if they never see its noindex
+ *    directive. Leaving staging crawlable lets them fetch the page and
+ *    honor noindex.
  */
 
-const PRODUCTION_HOSTS = new Set(["pixkitapp.com", "www.pixkitapp.com"]);
+const APEX = "pixkitapp.com";
+const PRODUCTION_HOSTS = new Set([APEX, `www.${APEX}`]);
+
+function clientScheme(request: NextRequest): string {
+  // X-Forwarded-Proto can be a chain ("https,http") — the first hop is the
+  // client-facing scheme. Absent header (plain local run) counts as https so
+  // we never loop; production proxies (Vercel) always send it.
+  const proto = request.headers.get("x-forwarded-proto");
+  return proto ? proto.split(",")[0].trim().toLowerCase() : "https";
+}
 
 export function middleware(request: NextRequest) {
-  const response = NextResponse.next();
   // Lowercase and strip any port ("localhost:3000" -> "localhost").
   const host = (request.headers.get("host") || "").toLowerCase().split(":")[0];
+
+  // --- 1) Canonical host redirects (production hosts only) ---------------
+  const redirectToCanonical = () => {
+    const target = request.nextUrl.clone();
+    target.protocol = "https:";
+    target.host = APEX;
+    target.port = ""; // strip the local/inherited port from the redirect
+    // pathname + search are preserved by clone() -> single-hop 308.
+    return NextResponse.redirect(target, 308);
+  };
+  if (host === `www.${APEX}`) {
+    return redirectToCanonical();
+  }
+  if (host === APEX && clientScheme(request) === "http") {
+    return redirectToCanonical();
+  }
+
+  // --- 2) Staging protection header (non-production hosts) ---------------
+  const response = NextResponse.next();
   if (host && !PRODUCTION_HOSTS.has(host)) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
   }

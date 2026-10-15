@@ -100,7 +100,13 @@ export default async function ToolPage({ params }: Props) {
         operatingSystem: "Any (web browser)",
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         description: tool.seo?.metaDescription ?? tool.description,
-        featureList: tool.keywords.slice(0, 6),
+        // Verifiable product features (true of every tool on the site) —
+        // deliberately NOT the meta keywords, which are search phrases.
+        featureList: [
+          "Runs entirely in your browser — images are never uploaded",
+          "Free to use with no signup and no watermarks",
+          "Process up to 10 images per run with ZIP download",
+        ],
       },
       {
         "@type": "BreadcrumbList",

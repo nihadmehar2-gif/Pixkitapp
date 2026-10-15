@@ -13,14 +13,22 @@ import { cn } from "@/lib/utils";
 
 interface Props {
   categories: ToolCategory[];
+  /** Initially displayed list. When the server pre-filters for /tools?q=…,
+   * this is the matching subset (server-rendered into the HTML). */
   tools: ToolLite[];
+  /** Optional FULL catalog. When present, all client-side filtering and the
+   * category counts operate on it, so editing or clearing the query after a
+   * server-rendered pre-filter still searches every tool. */
+  allTools?: ToolLite[];
 }
 
-export function ToolsBrowser({ categories, tools }: Props) {
+export function ToolsBrowser({ categories, tools, allTools }: Props) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [q, setQ] = useState(searchParams.get("q") ?? "");
   const [cat, setCat] = useState(searchParams.get("cat") ?? "all");
+  // Filtering source: the full catalog when provided, otherwise the given list.
+  const source = allTools ?? tools;
 
   // sync URL
   useEffect(() => {
@@ -35,19 +43,19 @@ export function ToolsBrowser({ categories, tools }: Props) {
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase();
     const terms = query.split(/\s+/).filter(Boolean);
-    return tools.filter((tool) => {
+    return source.filter((tool) => {
       if (cat !== "all" && tool.category !== cat) return false;
       if (terms.length === 0) return true;
       const hay = `${tool.name} ${tool.slug} ${tool.description} ${tool.keywords.join(" ")}`.toLowerCase();
       return terms.every((t) => hay.includes(t));
     });
-  }, [tools, q, cat]);
+  }, [source, q, cat]);
 
   const counts = useMemo(() => {
     const m = new Map<string, number>();
-    for (const t of tools) m.set(t.category, (m.get(t.category) ?? 0) + 1);
+    for (const t of source) m.set(t.category, (m.get(t.category) ?? 0) + 1);
     return m;
-  }, [tools]);
+  }, [source]);
 
   return (
     <div className="space-y-5">
@@ -58,7 +66,7 @@ export function ToolsBrowser({ categories, tools }: Props) {
             type="search"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder={`Search ${tools.length} tools — “compress png”, “passport”, “webp”…`}
+            placeholder={`Search ${source.length} tools — “compress png”, “passport”, “webp”…`}
             aria-label="Search tools"
             className="h-13 w-full rounded-xl border bg-card py-3.5 pl-11 pr-10 text-base outline-none transition-shadow focus:ring-2 focus:ring-ring"
           />
@@ -82,7 +90,7 @@ export function ToolsBrowser({ categories, tools }: Props) {
               cat === "all" ? "border-primary bg-primary text-primary-foreground" : "bg-card text-muted-foreground hover:bg-accent"
             )}
           >
-            All ({tools.length})
+            All ({source.length})
           </button>
           {categories.map((c) => (
             <button

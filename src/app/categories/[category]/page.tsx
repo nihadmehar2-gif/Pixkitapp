@@ -48,20 +48,37 @@ export default async function CategoryPage({ params }: Props) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: `${cat.name} Tools — PixKitApp`,
-    url: `${SITE_URL}/categories/${cat.slug}`,
-    description: cat.description,
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: tools.length,
-      itemListElement: tools.map((t, i) => ({
-        "@type": "ListItem",
-        position: i + 1,
-        name: t.name,
-        url: `${SITE_URL}/${t.slug}`,
-      })),
-    },
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: `${cat.name} Tools — PixKitApp`,
+        url: `${SITE_URL}/categories/${cat.slug}`,
+        description: cat.description,
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: tools.length,
+          itemListElement: tools.map((t, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: t.name,
+            url: `${SITE_URL}/${t.slug}`,
+          })),
+        },
+      },
+      {
+        // Mirrors the visible breadcrumb above the header (Home → Category).
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: `${cat.name} Tools`,
+            item: `${SITE_URL}/categories/${cat.slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (

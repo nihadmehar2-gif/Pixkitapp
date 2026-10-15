@@ -23,6 +23,33 @@ export const metadata: Metadata = {
   }),
 };
 
+/**
+ * Site-wide structured data (homepage only — tool and category pages emit
+ * their own page-specific nodes).
+ *
+ * Accuracy rules enforced here:
+ * - Only verifiable facts (no ratings, reviews, contact details or social
+ *   profiles that don't publicly exist).
+ * - SearchAction is included because /tools?q=… is a real, server-rendered,
+ *   crawlable search results page (see src/app/tools/page.tsx).
+ * - Every FAQPage question below is rendered VISIBLY in the FAQ section of
+ *   this page (HOME_FAQS is the single source for both).
+ */
+const HOME_FAQS = [
+  {
+    q: "Are PixKitApp tools really free?",
+    a: "Yes — all 127 image tools are completely free with no signup, no watermarks and no usage limits.",
+  },
+  {
+    q: "Are my images uploaded to a server?",
+    a: "No. Every tool processes images locally in your browser using Canvas and web APIs. Your files never leave your device.",
+  },
+  {
+    q: "Do the tools work on phones and Chromebooks?",
+    a: "Yes. PixKitApp is mobile-first and works in any modern browser — Android, iPhone, iPad, Chromebook, Windows and Mac.",
+  },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -38,24 +65,21 @@ const jsonLd = {
       },
     },
     {
+      "@type": "Organization",
+      name: "PixKitApp",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.svg`,
+      },
+    },
+    {
       "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Are PixKitApp tools really free?",
-          answer: "Yes — all 127 image tools are completely free with no signup, no watermarks and no usage limits.",
-        },
-        {
-          "@type": "Question",
-          name: "Are my images uploaded to a server?",
-          answer: "No. Every tool processes images locally in your browser using Canvas and web APIs. Your files never leave your device.",
-        },
-        {
-          "@type": "Question",
-          name: "Do the tools work on phones and Chromebooks?",
-          answer: "Yes. PixKitApp is mobile-first and works in any modern browser — Android, iPhone, iPad, Chromebook, Windows and Mac.",
-        },
-      ],
+      mainEntity: HOME_FAQS.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ],
 };
@@ -233,6 +257,22 @@ export default function HomePage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ — the visible source of truth for the FAQPage structured data
+          above. Questions and answers are kept 1:1 with HOME_FAQS. */}
+      <section className="border-t bg-card/50">
+        <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+          <h2 className="text-2xl font-bold tracking-tight">Frequently asked questions</h2>
+          <div className="mt-5 space-y-3">
+            {HOME_FAQS.map((f) => (
+              <div key={f.q} className="rounded-lg border bg-card p-4">
+                <h3 className="font-medium">{f.q}</h3>
+                <p className="mt-1 leading-relaxed text-muted-foreground">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
