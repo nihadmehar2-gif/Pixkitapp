@@ -10,6 +10,10 @@ export interface ToolCategory {
   description: string;
   icon: string; // lucide icon name
   color: string; // tailwind-friendly gradient token
+  /** Hand-authored SEO title for the category page (template appends " | PixKitApp"). */
+  metaTitle?: string;
+  /** Hand-authored 150–160c meta description; falls back to a formula when absent. */
+  metaDescription?: string;
 }
 
 /** One configurable control on a tool page. */

@@ -83,7 +83,12 @@ def check(mode: str) -> None:
     # --- 1+7: home HTML -----------------------------------------------------
     home_path = os.path.join(APP_DIR, "index.html")
     home = read(home_path)
-    has_noindex = "noindex" in home
+
+    def meta_robots(html: str) -> str:
+        m = re.search(r'<meta name="robots" content="([^"]*)"', html)
+        return m.group(1) if m else ""
+
+    has_noindex = "noindex" in meta_robots(home)
     req(expect_prod != has_noindex, "home robots meta", "index,follow" if expect_prod else "noindex,nofollow")
     req('rel="canonical" href="https://pixkitapp.com"' in home,
         "home canonical = production root", "https://pixkitapp.com")
@@ -126,7 +131,7 @@ def check(mode: str) -> None:
 
     # --- 5: sample tool + category pages -------------------------------------
     sample = read(os.path.join(APP_DIR, "image-compressor.html"))
-    req(("noindex" in sample) != expect_prod, "tool page robots meta",
+    req(("noindex" in meta_robots(sample)) != expect_prod, "tool page robots meta",
         "index,follow" if expect_prod else "noindex,nofollow")
     # pick first category html found
     cat = None
@@ -137,7 +142,7 @@ def check(mode: str) -> None:
                 cat = read(os.path.join(catdir, f))
                 break
     if cat:
-        req(("noindex" in cat) != expect_prod, "category page robots meta",
+        req(("noindex" in meta_robots(cat)) != expect_prod, "category page robots meta",
             "index,follow" if expect_prod else "noindex,nofollow")
     else:
         print("  [WARN] no category page artifact found (skipped)")

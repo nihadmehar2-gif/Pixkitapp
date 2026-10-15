@@ -4,8 +4,8 @@ import { seo, ToolSeo } from "../types";
 
 export const CONVERSION_SEO: Record<string, ToolSeo> = {
   "webp-to-jpg": seo(
-    "WebP to JPG Converter Online – Free",
-    "Convert WebP to JPG online for free — batch up to 10 images with quality control and transparency flattening. Private, instant, no upload.",
+    "WebP to JPG Converter Online – Free & Fast",
+    "Convert WebP to JPG online for free — batch up to 10 images with quality control and transparency flattening. Private, instant, no upload — all on-device.",
     "WebP to JPG converter online",
     "The converter decodes your WebP files with the browser's native image engine, flattens any transparency onto the background color you pick, and re-encodes each image as a JPG at the quality you set. Everything runs on your device — no server round-trip, no queue, no watermark.",
     "Drop one or more .webp files onto the upload area, set the JPG quality (92% is a good default) and choose a background for transparent regions. Press Convert, preview the results, then download individual files or the whole batch as a ZIP.",
@@ -14,7 +14,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "webp-to-png": seo(
     "WebP to PNG Converter – Lossless & Transparent",
-    "Convert WebP to PNG online free with full transparency preserved. Lossless output for graphics, logos and screenshots — private, in-browser, instant.",
+    "Convert WebP to PNG online free with full transparency preserved. Lossless output for graphics, logos and screenshots — private, fully in-browser, instant.",
     "webp to png converter",
     "This converter decodes WebP through the browser's native engine and re-encodes the pixels as PNG without any quality dial — PNG is lossless, so every pixel and every semi-transparent edge arrives exactly as decoded. There are simply no settings to get wrong.",
     "Drop up to 10 .webp files, press Convert, and download the PNGs individually or as a ZIP. The preview grid confirms transparency survived before you save anything.",
@@ -23,7 +23,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "jpg-to-png": seo(
     "JPG to PNG Converter – Lossless Output",
-    "Convert JPG to PNG online free. Lossless output with no further quality loss, ideal for editing masters and text-heavy images — private, instant.",
+    "Convert JPG to PNG online free. Lossless output with no further quality loss, ideal for editing masters and text-heavy images — private, instant, no watermark.",
     "jpg to png converter",
     "The tool unwraps your JPEG's decoded pixels into a lossless PNG container. No new compression artifacts are added — though artifacts already baked into the JPG by its camera or previous save remain, since no converter can undo past JPEG loss.",
     "Drop up to 10 .jpg files and press Convert — there are no settings because none are needed. Preview each result, then download files individually or the batch as a ZIP.",
@@ -32,7 +32,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "png-to-jpg": seo(
     "PNG to JPG Converter – Background Control",
-    "Convert PNG to JPG online with a background color picker for transparency. Slash file sizes on photos — free, instant, batch of 10, no upload.",
+    "Convert PNG to JPG online with a background color picker for transparency. Slash file sizes on photos — free, instant, batch of 10, no upload or signup.",
     "png to jpg converter",
     "Your PNG is decoded, transparent regions are filled with the background color you choose, and the image is re-encoded as JPG at your quality setting. Photographic content routinely drops 70%+ in size because JPEG's compression suits continuous tones far better than PNG's lossless rows.",
     "Drop up to 10 .png files, set JPG quality (92 keeps things crisp) and pick the fill color for transparency — white for documents, black for video overlays. Convert, preview, download individually or zipped.",
@@ -41,7 +41,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "png-to-webp": seo(
     "PNG to WebP Converter – Same Quality, Less Size",
-    "Convert PNG to WebP online free. PNG-class quality and transparency at a fraction of the file size — the modern format for faster websites.",
+    "Convert PNG to WebP online free. PNG-class quality and transparency at a fraction of the file size — the modern format for faster websites and lighter apps.",
     "png to webp converter",
     "The converter runs the browser's native WebP encoder over your decoded PNG pixels, preserving the alpha channel and, at 90%+ quality, staying visually indistinguishable from the lossless original. Graphics with transparency typically shrink 25–35%; opaque photos shrink even more.",
     "Drop up to 10 .png files, adjust the quality slider if you like (90 is a safe default), and convert. Preview each result over the transparency checkerboard, then download files or a ZIP.",
@@ -50,7 +50,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "jpg-to-webp": seo(
     "JPG to WebP Converter – 25–50% Smaller Files",
-    "Convert JPG to WebP online free for 25–50% smaller files at the same visual quality. Boost site speed with the modern codec — private and instant.",
+    "Convert JPG to WebP online free for 25–50% smaller files at the same visual quality. Boost site speed with the modern codec — private and completely instant.",
     "jpg to webp converter",
     "The browser's WebP encoder re-encodes your decoded JPG pixels at the quality you pick. WebP's modern compression usually lands 25–50% below JPEG at matching visual quality, and because the tool works locally, converting a 10-photo batch takes seconds rather than an upload round-trip.",
     "Drop up to 10 .jpg files, set the WebP quality — 85 is a strong default for photos — and convert. Results show the size delta per file; download individually or as one ZIP.",
@@ -59,7 +59,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "gif-to-png": seo(
     "GIF to PNG Converter – Extract First Frame",
-    "Turn a GIF's first frame into a full-quality PNG image online. Perfect for previews, thumbnails and GIF-free platforms — free, private, instant.",
+    "Turn a GIF's first frame into a full-quality PNG image online. Perfect for previews, thumbnails, docs and GIF-free platforms — free, private, instant.",
     "gif to png converter",
     "The tool decodes the first frame of your GIF and re-encodes it as a lossless PNG. GIF's 256-color ceiling means gradients were already banded in the source; PNG keeps exactly what's there without adding artifacts, and any transparency in the frame is preserved.",
     "Drop one .gif file and press Convert — no settings needed. The extracted still appears in the preview; download the PNG and use it anywhere stills are expected.",
@@ -68,7 +68,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "gif-to-webp": seo(
     "GIF to WebP Converter – Modern & Smaller",
-    "Convert GIF files to efficient WebP images in your browser. Better compression and color depth from any GIF — free, private, no upload.",
+    "Convert GIF files to efficient WebP images in your browser. Better compression and color depth from any GIF — free, private, no upload, with quality control.",
     "gif to webp converter",
     "Your GIF's first frame is decoded and re-encoded as WebP at the quality you choose. WebP lifts GIF's two big constraints — 256 colors and heavy compression — typically producing a smaller file with smoother gradients for the same visual moment.",
     "Drop one .gif file, adjust quality if desired, and convert. The result previews immediately; download the .webp for use in modern apps and websites.",
@@ -77,7 +77,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "bmp-to-jpg": seo(
     "BMP to JPG Converter – Shrink Bitmaps 95%",
-    "Convert Windows BMP bitmaps to compact JPG online. Turn huge uncompressed files into shareable photos — free, private, batch-friendly.",
+    "Convert Windows BMP bitmaps to compact JPG online. Turn huge uncompressed files into shareable photos — free, private, batch-friendly, up to 10 files.",
     "bmp to jpg converter",
     "BMP files store raw pixels with essentially no compression — a 1920×1080 screenshot weighs over 6MB. This tool decodes the bitmap and re-encodes it as JPG at your quality level, typically producing a ~300KB file that every device and app can open.",
     "Drop up to 10 .bmp files, set the JPG quality (90 is the sweet spot for screenshots), and convert. Preview each result, then download individually or as a ZIP.",
@@ -86,7 +86,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "bmp-to-png": seo(
     "BMP to PNG Converter – Lossless Modernization",
-    "Convert BMP bitmaps to lossless PNG online free. Same pixels, modern format, far smaller file — private, instant, batch up to 10.",
+    "Convert BMP bitmaps to lossless PNG online free. Same pixels, modern format, far smaller file — private, instant, batch up to 10, zero settings needed.",
     "bmp to png converter",
     "The tool re-wraps your bitmap's exact pixels into PNG's lossless, compressed container. Nothing changes visually — PNG's DEFLATE compression simply stores the same data far more efficiently than BMP's raw rows, commonly cutting file size by 60–90% with zero quality risk.",
     "Drop up to 10 .bmp files and convert — no settings to configure. Results preview instantly; download individually or as one ZIP for the batch.",
@@ -95,7 +95,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "jpg-to-bmp": seo(
     "JPG to BMP Converter – Raw Bitmap Output",
-    "Convert JPG images to uncompressed BMP format online. For legacy software, industrial tools and systems that demand raw bitmaps — free, private.",
+    "Convert JPG images to uncompressed BMP format online. For legacy software, industrial tools and systems that demand raw bitmaps — free, private, always local.",
     "jpg to bmp converter",
     "The decoder turns your JPEG into raw pixels and writes them out as a standard 24-bit BMP — no compression, no quality settings, no surprises. The output is as plain an image file as exists, which is exactly why certain old and industrial software insists on it.",
     "Drop one .jpg file and convert. The preview confirms the image, then download the .bmp — expect it to be much larger than the source, since BMP stores every pixel uncompressed.",
@@ -104,7 +104,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "png-to-bmp": seo(
     "PNG to BMP Converter – Flatten & Rasterize",
-    "Convert PNG images to BMP bitmap format online. Lossless raw output for legacy apps — transparency flattened to your chosen color.",
+    "Convert PNG images to BMP bitmap format online. Lossless raw output for legacy apps — transparency flattened to your chosen color. Runs fully in-browser.",
     "png to bmp converter",
     "Your PNG's pixels are decoded and written as a standard 24-bit BMP. Because BMP has no alpha channel, transparent regions are flattened onto the background color you select before writing — white is the usual choice for documents and print pipelines.",
     "Drop one .png file, pick a background color for transparent areas, and convert. Download the .bmp and hand it to whatever legacy system is waiting for it.",
@@ -113,7 +113,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "avif-to-jpg": seo(
     "AVIF to JPG Converter – Next-Gen to Universal",
-    "Convert AVIF images to universal JPG online free. Works in Chrome, Edge and Opera — private browser conversion for the newest image format.",
+    "Convert AVIF images to universal JPG online free. Works in Chrome, Edge and Opera — private, on-device browser conversion for the newest image format.",
     "avif to jpg converter",
     "AVIF is the newest mainstream codec and not every app speaks it yet. This tool decodes AVIF using the browser's built-in codec (Chrome, Edge and Opera ship one) and re-encodes the pixels as JPG at your chosen quality, flattening any transparency onto a background color.",
     "Drop up to 10 .avif files, set JPG quality, pick a background color for transparent regions, and convert. Preview the results, then download individually or as a ZIP.",
@@ -122,7 +122,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "avif-to-png": seo(
     "AVIF to PNG Converter – Lossless with Alpha",
-    "Convert AVIF images to lossless PNG with transparency support online. Free in-browser tool for the newest image format — private and instant.",
+    "Convert AVIF images to lossless PNG with transparency support online. Free in-browser tool for the newest image format — private, instant, batch-capable.",
     "avif to png converter",
     "The tool decodes your AVIF through the browser's native codec and writes lossless PNG, preserving the alpha channel exactly — soft edges and semi-transparent overlays arrive intact. No quality settings exist because PNG recompression doesn't degrade pixels.",
     "Drop up to 10 .avif files, press Convert, and download the PNGs individually or zipped. The checkerboard preview confirms which areas are genuinely transparent.",
@@ -131,7 +131,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "image-to-pdf": seo(
     "Image to PDF Converter – Multi-Page & A4",
-    "Convert JPG, PNG and WebP images to PDF online — one image per page, up to 10 pages. Choose A4/Letter, orientation and margins. Free and private.",
+    "Convert JPG, PNG and WebP images to PDF online — one image per page, up to 10 pages. Choose A4/Letter, orientation and margins. Free, private, watermark-free.",
     "image to pdf converter",
     "The converter lays each image onto a PDF page in your chosen paper size and orientation, applying your margin setting, and writes a real multi-page PDF document entirely in the browser — a minimal PDF writer runs in JavaScript, so nothing is uploaded anywhere.",
     "Add up to 10 images in the order you want pages to appear, pick A4, Letter, A5 or A3 with portrait, landscape or auto orientation, set margins, and convert. Download the finished PDF and it's ready to print or email.",
@@ -139,8 +139,8 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
     "Turning receipts, scanned documents, ID cards, drawings and photo sets into single, printable files — for expense reports, school submissions, job applications and paperwork portals that accept only PDF."
   ),
   "image-to-ico": seo(
-    "Image to ICO Converter – Multi-Size Windows Icons",
-    "Create a Windows .ico file with embedded sizes from 16 to 256px from any image. The favicon and app-icon maker — free, private, in-browser.",
+    "Image to ICO Converter – Multi-Size Icons",
+    "Create a Windows .ico file with embedded sizes from 16 to 256px from any image. The favicon and app-icon maker for sites and apps — free, private, in-browser.",
     "image to ico converter",
     "The tool renders your image at each size you list and packs all renditions into a single multi-resolution .ico — the container format Windows shortcuts and browsers' favicon lookups expect. Smooth downsampling keeps small sizes legible, and the size list is editable if you need a custom set.",
     "Drop one image (PNG, JPG, WebP or SVG), edit the size list if needed — 16, 32, 48, 64, 128, 256 is the classic set — and convert. Download the .ico and reference it as your favicon or shortcut icon.",
@@ -149,7 +149,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "image-to-base64": seo(
     "Image to Base64 Encoder – Data URI Generator",
-    "Encode images to Base64 strings or data URIs for CSS, HTML and JSON embedding. Copy or download the text instantly — free, private, in-browser.",
+    "Encode images to Base64 strings or ready-to-paste data URIs for CSS, HTML and JSON embedding. Copy or download the text instantly — free, private, in-browser.",
     "image to base64",
     "The tool reads your image file's raw bytes and encodes them to Base64 text — either as a bare string or as a complete data: URI ready to paste into an img src or CSS background. Encoding is a pure byte transformation: decode it later and you get the identical file back.",
     "Drop one image, toggle the data-URI format on if you want the ready-to-use wrapper, and encode. Copy the output to your clipboard or download it as a .txt file.",
@@ -158,7 +158,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "base64-to-image": seo(
     "Base64 to Image Decoder – Paste & Preview",
-    "Decode Base64 strings or data URIs back into viewable, downloadable images. Paste text or drop a .txt file — instant preview, free and private.",
+    "Decode Base64 strings or data URIs back into viewable, downloadable images. Paste text or drop a .txt file — instant preview, free, private and fully local.",
     "base64 to image",
     "The decoder strips any data-URI prefix, validates the Base64, decodes the bytes, and detects the actual image type from magic numbers — so it works whether the payload is PNG, JPEG, WebP, GIF or something exotic. The decoded blob is previewed in-browser, never uploaded.",
     "Paste your Base64 text or data URI into the textarea (or drop a .txt file), and the image appears immediately. Confirm what it is, then download it as a properly named image file.",
@@ -167,7 +167,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "svg-to-png": seo(
     "SVG to PNG Converter – 1x–4x Sharp Export",
-    "Rasterize SVG vectors to sharp PNG at 1x–4x scale. Perfect for icons, logos and print — free in-browser converter with format options.",
+    "Rasterize SVG vectors to sharp PNG at 1x–4x scale. Perfect for icons, logos and print — free in-browser converter with PNG, JPG and WebP output options.",
     "svg to png",
     "The tool renders your SVG at a multiple of its intrinsic size — 1x through 4x — so vector edges stay razor sharp at the output resolution instead of being rasterized small and upscaled. You can also emit JPEG or WebP if the destination prefers a different format.",
     "Drop one .svg file, choose a scale factor and output format, and convert. The preview shows the rendered raster; download it and it's ready for anywhere vectors aren't accepted.",
@@ -176,7 +176,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "image-format-converter": seo(
     "Universal Image Converter – JPG, PNG, WebP",
-    "Convert any image to JPG, PNG or WebP in one place. Smart defaults, transparency handling and batch support — free, private, no upload.",
+    "Convert any image to JPG, PNG or WebP in one place. Smart defaults, transparency handling and batch support — free, private, no upload, mixed batches welcome.",
     "universal image converter",
     "One tool for every direction: it decodes JPG, PNG, WebP, GIF, BMP, AVIF and SVG inputs, then re-encodes to whichever of JPG, PNG or WebP you choose — with a quality slider, a background color for flattening transparency, and batch support for mixed-format drops.",
     "Drop up to 10 images in any mix of formats, pick the target format and quality, set a background color for transparency, and convert. Every result previews before you download individually or as a ZIP.",
@@ -187,7 +187,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   // Rotation
   "rotate-image": seo(
     "Rotate Image to Any Angle Online – Free",
-    "Rotate images to any degree from -180° to 180° with background fill or auto-crop. Fine-tune tilts in single degrees — free, private, in-browser.",
+    "Rotate images to any degree from -180° to 180° with background fill or auto-crop. Fine-tune tilts in single degrees — free, private, in-browser, instant.",
     "rotate image online",
     "Unlike fixed-turn tools, this one takes any angle: your image rotates on a live preview with fine-grained control, and you choose how corners are handled — auto-crop trims to the largest straight rectangle, while background fill (solid color or transparency) preserves the full frame.",
     "Drop up to 10 images, drag the angle slider while watching the preview, pick auto-crop or a fill background, choose an output format, then process and download.",
@@ -196,7 +196,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "rotate-image-90": seo(
     "Rotate Image 90 Degrees Clockwise – Instant",
-    "Quarter-turn images clockwise instantly. Exact 90° rotation, re-encoded at high quality — batch up to 10, free, private, in-browser.",
+    "Quarter-turn images clockwise instantly. Exact 90° rotation, re-encoded at high quality — batch up to 10, free, private, in-browser, pixel-exact geometry.",
     "rotate image 90 degrees",
     "A 90° turn is a pure permutation of pixels — no interpolation and no resampling; the tool swaps rows for columns exactly, so width and height simply trade places. The rotated frame is then re-encoded at high quality (85), which keeps photos looking sharp while shrinking often-large camera files. Choose PNG output via the converter tools afterwards if you need a mathematically lossless copy.",
     "Drop up to 10 images and process — there's nothing to configure because a quarter turn has exactly one correct answer. Download results individually or as a ZIP.",
@@ -205,7 +205,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "rotate-image-180": seo(
     "Rotate Image 180 Degrees – Upside Down Fix",
-    "Flip images fully upside down with an exact 180° rotation. High-quality output, instant results, completely private — batch of 10.",
+    "Flip images fully upside down with an exact 180° rotation. High-quality output, instant results, completely private — batch of 10, nothing to configure.",
     "rotate image 180 degrees",
     "A 180° rotation mirrors the pixel grid both horizontally and vertically — a pure rearrangement with zero interpolation, leaving dimensions unchanged. The remapped frame is then saved at high quality (85); photos stay sharp, though the file is a fresh encode rather than a bit-for-bit copy of the original.",
     "Drop up to 10 images and process immediately — no options, no ambiguity. Download the corrected files one by one or together as a ZIP.",
@@ -213,8 +213,8 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
     "Righting photos scanned upside down, fixing upside-down webcam captures and phone imports, rotating document scans before OCR, and correcting film scans where the strip orientation got lost."
   ),
   "rotate-image-270": seo(
-    "Rotate Image 270° – Counterclockwise Quarter Turn",
-    "Rotate images 270° clockwise (90° counterclockwise). Exact quarter-turn the other way, re-encoded at high quality — batch of 10, free and private.",
+    "Rotate Image 270° – Counterclockwise Turn",
+    "Rotate images 270° clockwise (90° counterclockwise). Exact quarter-turn the other way, re-encoded at high quality — batch of 10, free, private and instant.",
     "rotate image 270 degrees",
     "Rotating 270° clockwise is the same transformation as 90° counterclockwise — and like all quarter turns it's a pure pixel permutation: every pixel moves, none are resampled, and width and height swap. The result is saved at high quality, so photos stay sharp while the encoder keeps file sizes reasonable.",
     "Drop up to 10 images and hit process — the fixed angle means no settings. Results download individually or as a single ZIP for the batch.",
@@ -223,7 +223,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "flip-image-horizontal": seo(
     "Flip Image Horizontally (Mirror) – Instant",
-    "Mirror images left-to-right instantly with an exact horizontal flip. Great for selfies, designs and text-free photos — free and private.",
+    "Mirror images left-to-right instantly with an exact horizontal flip. Great for selfies, artwork, designs and text-free photos — free, private, batch of 10.",
     "flip image horizontally",
     "A horizontal flip reflects every row of pixels around the vertical center line — a rearrangement with no resampling; dimensions stay identical and sharpness is preserved in the geometry. The mirrored frame is then re-encoded at high quality (85) to keep the saved file compact.",
     "Drop up to 10 images and process — one flip, zero settings. Download the mirrored results individually or as a ZIP.",
@@ -232,7 +232,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "flip-image-vertical": seo(
     "Flip Image Vertically – Upside-Down Mirror",
-    "Flip images top-to-bottom with a vertical mirror. Useful for scans, reflections and design work — instant, high quality and completely private.",
+    "Flip images top-to-bottom with a vertical mirror. Useful for scans, reflections and design work — instant, high quality, completely private, batch of 10.",
     "flip image vertically",
     "The vertical flip reflects each column of pixels around the horizontal center line. Like its horizontal sibling, it's a pure permutation — no interpolation, identical dimensions — and it's the correct fix for content that's mirrored rather than rotated. The flipped frame is saved at high quality to keep the output file lean.",
     "Drop up to 10 images and process instantly. Results download one by one or as a combined ZIP.",
@@ -241,7 +241,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "straighten-image": seo(
     "Straighten Crooked Photos – ±15° Correction",
-    "Fix tilted horizons with fine angle correction from -15° to +15° and smart zoom-fill that hides the corners. Gallery-quality leveling, in-browser.",
+    "Fix tilted horizons with fine angle correction from -15° to +15° and smart zoom-fill that hides the corners. Gallery-quality leveling, right in your browser.",
     "straighten image",
     "You nudge the angle while watching a live preview; the tool rotates and, when zoom-fill is on, scales the image just enough that no empty corners show — the classic straighten-without-cropping-look. Small angles cost almost no quality because the resample is gentle.",
     "Drop one image, drag the angle slider in tenths of a degree until the horizon sits level in the preview, keep zoom-fill enabled for a full-bleed result, then process and download.",

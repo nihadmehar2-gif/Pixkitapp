@@ -8,11 +8,11 @@ const ABOUT_DESCRIPTION =
   "Learn about PixKitApp — 127 free, private, browser-based image tools. Our mission: powerful image processing with zero uploads and zero privacy trade-offs.";
 
 export const metadata: Metadata = {
-  title: "About PixKitApp",
+  title: "About PixKitApp — Free, Private Image Tools",
   description: ABOUT_DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/about` },
   ...socialMeta({
-    title: "About PixKitApp — Free, Private, Browser-Based Image Tools",
+    title: "About PixKitApp — Free, Private Image Tools",
     description: ABOUT_DESCRIPTION,
     path: "/about",
   }),

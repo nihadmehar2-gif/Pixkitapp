@@ -10,6 +10,8 @@ Usage: python3 seo-tests.py [base_url]   (default http://localhost:3000)
 """
 import re
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
@@ -35,11 +37,22 @@ def get(path, timeout=20, want_headers=False):
 st, robots_body, robots_headers = get("/robots.txt", want_headers=True)
 PREVIEW = "Disallow: /" in robots_body and "Allow: /" not in robots_body
 MODE = "preview" if PREVIEW else "production"
-print(f"Detected indexing mode: {MODE} ({BASE})")
-check("X-Robots-Tag header matches mode",
-      ("noindex" in robots_headers.get("X-Robots-Tag", "")) if PREVIEW
-      else ("noindex" not in robots_headers.get("X-Robots-Tag", "")),
-      robots_headers.get("X-Robots-Tag", "<absent>"))
+# Hostname-based layer (src/middleware.ts): ANY non-production host —
+# localhost, *.space-z.ai, Vercel preview URLs — must receive an
+# X-Robots-Tag: noindex,nofollow response header even for production
+# builds. On the production host the header must be absent.
+HOST = (urllib.parse.urlparse(BASE).hostname or "").lower()
+PROD_HOST = HOST in ("pixkitapp.com", "www.pixkitapp.com")
+EXPECT_HEADER = PREVIEW or not PROD_HOST
+# Header lookup must be case-insensitive: middleware emits lowercase
+# "x-robots-tag" while next.config headers use "X-Robots-Tag".
+HDRS_LC = {k.lower(): v for k, v in robots_headers.items()}
+_XRT = HDRS_LC.get("x-robots-tag", "")
+print(f"Detected indexing mode: {MODE} ({BASE}, host={HOST or 'unknown'})")
+print(f"Host-based staging protection expected on this host: {EXPECT_HEADER}")
+check("X-Robots-Tag header matches mode + host",
+      ("noindex" in _XRT) if EXPECT_HEADER else ("noindex" not in _XRT),
+      _XRT or "<absent>")
 
 # ---------- 1. sitemap.xml ----------
 st, body = get("/sitemap.xml")
@@ -92,7 +105,11 @@ def page_checks(path, expect_title_frag, expect_h1_frag, expect_guide_frag, expe
         check(f"{path} noindex in preview", re.search(r'<meta name="robots" content="[^"]*noindex[^"]*"', html) is not None,
               re.search(r'<meta name="robots" content="([^"]*)"', html).group(1) if re.search(r'<meta name="robots" content="([^"]*)"', html) else "missing robots meta")
     else:
-        check(f"{path} no noindex (production)", "noindex" not in html.lower())
+        # Parse the actual robots meta tag — the page also carries a hostname-guard
+        # inline script whose source contains the string "noindex" (expected).
+        robots_meta = re.search(r'<meta name="robots" content="([^"]*)"', html)
+        check(f"{path} no noindex (production)", robots_meta is not None and "noindex" not in robots_meta.group(1).lower(),
+              robots_meta.group(1) if robots_meta else "missing robots meta")
     # --- social sharing tags (required on every applicable page) ---
     og_title = re.search(r'<meta property="og:title" content="([^"]*)"', html)
     og_desc = re.search(r'<meta property="og:description" content="([^"]*)"', html)
@@ -124,7 +141,12 @@ def page_checks(path, expect_title_frag, expect_h1_frag, expect_guide_frag, expe
     check(f"{path} h1 contains '{expect_h1_frag}'", h1s and expect_h1_frag.lower() in re.sub(r"<[^>]+>", "", h1s[0]).lower(), re.sub(r'<[^>]+>', '', h1s[0])[:80] if h1s else "none")
     check(f"{path} guide text in SSR HTML", expect_guide_frag.lower() in html.lower())
     kw = re.search(r'<meta name="keywords" content="([^"]*)"', html)
-    check(f"{path} keywords meta present", bool(kw))
+    # Keywords tags are intentionally limited to tool pages (deduped, specific).
+    # Generic inherited tags on home/category/static pages were removed as useless.
+    if path.startswith("/categories/") or path in ("/", "/tools", "/about", "/contact", "/privacy", "/terms"):
+        check(f"{path} no useless keywords tag", kw is None, kw.group(1)[:60] if kw else "")
+    else:
+        check(f"{path} keywords meta present", bool(kw))
     if kw:
         kws = [k.strip() for k in kw.group(1).split(",") if k.strip()]
         dup = [k for k, c in Counter(k.lower() for k in kws).items() if c > 1]
@@ -154,7 +176,7 @@ for p, frag in [("/tools", "All Tools"), ("/about", "About PixKitApp"), ("/priva
 
 page_checks("/tools", "All Tools", "All PixKitApp Tools", "searchable, filterable")
 page_checks("/about", "About PixKitApp", "About PixKitApp", "zero privacy trade-offs")
-page_checks("/contact", "Contact", "Contact PixKitApp", "We reply to every message")
+page_checks("/contact", "Contact", "Contact PixKitApp", "reply to every message")
 page_checks("/privacy", "Privacy Policy", "Privacy Policy", "processed locally in your browser")
 page_checks("/terms", "Terms of Service", "Terms of Service", "provided as-is")
 
@@ -169,7 +191,7 @@ title = re.search(r"<title>(.*?)</title>", html, re.S)
 canon = re.search(r'<link rel="canonical" href="([^"]*)"', html)
 h1s = re.findall(r"<h1[^>]*>(.*?)</h1>", html, re.S)
 check("/categories/compress status+title+canonical+h1", st == 200 and title and "Compress" in title.group(1) and canon and canon.group(1).endswith("/categories/compress") and len(h1s) == 1, f"{st}")
-page_checks("/categories/compress", "Compression Tools", "Compression", "browser with zero uploads")
+page_checks("/categories/compress", "Compression Tools", "Compression", "without visible quality loss")
 
 # ---------- 4. 404 handling ----------
 st, html = get("/this-tool-does-not-exist")

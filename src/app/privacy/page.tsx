@@ -3,14 +3,14 @@ import { SITE_URL } from "@/lib/tools";
 import { socialMeta } from "@/lib/seo";
 
 const PRIVACY_DESCRIPTION =
-  "PixKitApp privacy policy: every image is processed locally in your browser — no uploads, no accounts. Read exactly what we do and do not collect.";
+  "PixKitApp privacy policy: every image is processed locally in your browser — no uploads, no accounts, no tracking. Read exactly what we do and do not collect.";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy — Zero-Upload Image Processing",
   description: PRIVACY_DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/privacy` },
   ...socialMeta({
-    title: "PixKitApp Privacy Policy — Zero-Upload Image Processing",
+    title: "Privacy Policy — Zero-Upload Image Processing",
     description: PRIVACY_DESCRIPTION,
     path: "/privacy",
   }),

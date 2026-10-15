@@ -5,7 +5,7 @@ import { seo, ToolSeo } from "../types";
 export const WATERMARK_SEO: Record<string, ToolSeo> = {
   "watermark-image": seo(
     "Add Text Watermark to Photos – Free Online",
-    "Watermark photos with custom text — position, size, opacity, color, rotation and shadow all under your control. Protect your work free.",
+    "Watermark photos with custom text — position, size, opacity, color, rotation and shadow all under your control. Protect your work free, batch of 10 at a time.",
     "add text watermark to photo",
     "The tool composites your text over each image on a canvas layer — you control the string, size, color, opacity, one of nine anchor positions and a rotation angle, plus an optional drop shadow for legibility on busy backgrounds. Everything renders locally, so unpublished work-in-progress never leaves your machine.",
     "Drop up to 10 images, type your watermark text, set size and opacity (15–30% reads professional), pick a position and rotation, then process. Preview each result and download individually or as a ZIP.",
@@ -14,7 +14,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-logo-watermark": seo(
     "Add Logo Watermark to Images – Brand Photos",
-    "Overlay your logo on photos with position, scale and opacity control. Transparent PNG logos supported — free, private, batch-friendly.",
+    "Overlay your logo on photos with position, scale and opacity control. Transparent PNG logos supported — free, private, batch-friendly, up to 10 photos.",
     "add logo watermark",
     "Your logo (ideally a transparent PNG) is composited over each photo at a scale relative to image width, with independent opacity, margin and one of nine position anchors. Because compositing happens per image, the same settings produce consistent branding across a whole batch.",
     "Drop your photos, add the logo file in the watermark section, set scale and opacity (20–35% keeps photos readable), pick a corner with a sensible margin, then process and download.",
@@ -23,7 +23,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "tiled-watermark": seo(
     "Tiled Repeating Watermark – Diagonal Protection",
-    "Cover images with a diagonal repeating text watermark — the strongest visible protection for previews and proofs. Angle, gap and opacity control.",
+    "Cover images with a diagonal repeating text watermark — the strongest visible protection for previews and proofs. Angle, gap and opacity controls included.",
     "tiled watermark",
     "Instead of one corner mark, your text repeats across the entire image on a rotated grid — diagonal at your chosen angle, spaced by your gap setting, at your opacity. Removal would require rebuilding the whole picture, which is exactly the point for preview and proof images.",
     "Drop up to 10 images, enter the watermark text, set opacity (8–15% stays readable without shouting), adjust spacing and angle, then process. Download results individually or zipped.",
@@ -32,7 +32,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "date-watermark": seo(
     "Add Date Stamp to Photos – Timestamp Online",
-    "Stamp today's date (or any date) on photos — the classic camera timestamp for documentation and records. Color, size and position control.",
+    "Stamp today's date (or any date) on photos — the classic camera timestamp for documentation and records. Color, size and position control, batch of 10.",
     "date stamp photo",
     "The tool composites a date string onto each photo — today's date by default, or any custom date you type — styled with your size, color, opacity and one of nine positions, with an optional drop shadow. It recreates the film-era timestamp for modern documentation needs.",
     "Drop up to 10 images, set or override the date, adjust size and position (bottom corners are conventional), and process. Preview each result, then download individually or as a ZIP.",
@@ -41,7 +41,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "bulk-watermark": seo(
     "Bulk Watermark Photos – Batch of 10 at Once",
-    "Apply one text watermark to a whole batch of photos at once. Identical settings across all images, then download everything as a ZIP.",
+    "Apply one text watermark to a whole batch of photos at once — free and private. Identical settings across all images, then download everything as a ZIP.",
     "bulk watermark photos",
     "The batch pipeline applies identical watermark settings — text, size, opacity, color, position — to every image in one processing run, guaranteeing visual consistency that manual per-photo stamping never achieves. Progress reports as each file finishes; a ZIP collects the whole set.",
     "Drop up to 10 photos, configure the watermark once, and process all of them together. Spot-check a few previews, then download the entire batch as one ZIP archive.",
@@ -52,7 +52,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   // Text
   "add-text-to-image": seo(
     "Add Text to Image Online – Full Typography",
-    "Write on images with full typography control — font size, color, weight, position and an optional background pill. Free, private, no signup.",
+    "Write on images with full typography control — font size, color, weight, position and an optional background pill. Free, private, no signup required, instant.",
     "add text to image",
     "The tool renders your text on a canvas layer over the image with control over size, color, bold weight, one of nine positions and multi-line input — plus an optional rounded background pill with its own color and opacity, which keeps text readable over busy photos.",
     "Drop one image, type your text (multi-line supported), style it — size, weight, color — choose a position, and enable the background pill if the photo is busy. Process, preview, download.",
@@ -61,7 +61,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-caption-to-image": seo(
     "Add Caption Bar to Images – Styled Captions",
-    "Append a styled caption bar under (or over) your image with automatic text wrapping. Great for galleries, documentation and social posts.",
+    "Append a styled caption bar under (or over) your image with automatic text wrapping. Great for galleries, documentation and social posts, batch of 10 at once.",
     "add caption to image",
     "The tool extends your image's canvas with a solid bar — below or above the photo, at your chosen height — and renders your caption inside it with automatic wrapping. The photo itself is untouched; the caption lives in new pixels, so nothing overlays your subject.",
     "Drop up to 10 images, type the caption, set bar height and pick top or bottom placement, choose background and text colors, then process. Results download individually or as a ZIP.",
@@ -70,7 +70,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "meme-generator": seo(
     "Meme Generator Online – Top & Bottom Text",
-    "Create classic memes with bold top and bottom text, uppercase toggle and outline colors. Instant, private, no watermark — your memes stay yours.",
+    "Create classic memes with bold top and bottom text, uppercase toggle and outline colors. Instant, private, no watermark, no signup — your memes stay yours.",
     "meme generator",
     "The generator renders your text in the classic meme style — heavy weight, centered, with a contrasting stroke — at the top and bottom of the image, with an uppercase toggle for traditional ALL CAPS delivery. Everything runs locally: no account, no watermarks, no upload of your template.",
     "Drop one image, type top and bottom text, adjust font size, toggle uppercase, fine-tune text and stroke colors, then generate. Download your meme the moment it looks right.",
@@ -79,7 +79,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "quote-card-maker": seo(
     "Quote Card Maker – Quote to Image Online",
-    "Turn quotes into shareable image cards with elegant serif typography and author attribution. Instagram-ready output — free, private, instant.",
+    "Turn quotes into shareable image cards with elegant serif typography and author attribution. Instagram-ready output — free, private, instant, post-ready.",
     "quote card maker",
     "The tool composites your quote in an elegant serif face over your background image, adds the author attribution beneath, and optionally applies a color overlay between photo and text so long quotes stay readable. Overlay color and opacity are yours to tune.",
     "Drop one background image, type the quote and author, enable the overlay if the photo is detailed, adjust its color and opacity, then render. Download the card and it's ready to post.",
@@ -88,7 +88,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-title-to-image": seo(
     "Add Title Banner to Images – Thumbnail Maker",
-    "Create blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle. Batch-friendly and free.",
+    "Create blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle. Batch-friendly, free and completely private.",
     "title banner maker",
     "The tool composites a semi-opaque color bar across the bottom (or top) of your image, renders your title in bold white with an accent stripe alongside, and adds an optional subtitle line. Bar color, opacity, text colors and the accent hue are all adjustable to match brand kits.",
     "Drop up to 10 images, type title and subtitle, pick bar placement, set bar color and opacity plus accent color, then process. Preview each cover and download the batch.",
@@ -99,7 +99,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   // Transparency
   "remove-white-background": seo(
     "Remove White Background from Image – Smart",
-    "Make white backgrounds transparent with smart flood-fill that keeps white details inside your subject. Free PNG output, entirely in-browser.",
+    "Make white backgrounds transparent with smart flood-fill that keeps white details inside your subject. Free transparent PNG output, entirely in-browser.",
     "remove white background",
     "A flood-fill grows inward from the image borders, erasing white and near-white pixels only while they remain connected to the edge — so a white shirt inside your subject survives even though the white backdrop vanishes. Tolerance handles slightly off-white studio backgrounds.",
     "Drop one image, adjust tolerance until the background clears in the checkerboard preview, keep connected-only mode on to protect interior whites, then download the transparent PNG.",
@@ -108,7 +108,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "make-image-transparent": seo(
     "Make Image Background Transparent – Any Color",
-    "Remove any solid background color — white, black or custom — with tolerance and feathering. Clean PNG cutouts, free and private in-browser.",
+    "Remove any solid background color — white, black or custom — with tolerance and feathering. Clean PNG cutouts in seconds, free, private and in-browser.",
     "make image transparent",
     "The tool keys out your chosen background color by pixel distance: you pick the exact shade, tolerance decides how similar a pixel must be to disappear, and feathering softens the cut edge so subjects don't look stencil-cut. Any color keys — white, black, green, whatever your backdrop was.",
     "Drop one image, sample or pick the background color, raise tolerance until the backdrop clears in the preview, add feather for smooth edges, then download the transparent PNG.",
@@ -117,7 +117,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-white-background": seo(
     "Add White Background to Transparent PNG",
-    "Flatten transparent PNGs onto a white background — the requirement of marketplaces like Amazon and many print shops. Batch of 10, free.",
+    "Flatten transparent PNGs onto a white background — the requirement of marketplaces like Amazon and many print shops. Batch of 10, free, private and instant.",
     "add white background to png",
     "The tool composites each transparent image over an opaque white canvas: every alpha pixel blends against white, and the output loses its alpha channel entirely. JPEG output makes files smaller; PNG output stays lossless if the destination is picky about formats.",
     "Drop up to 10 transparent PNGs (or WebPs), choose JPEG or PNG output, and process. Each result previews on solid white so you can confirm nothing unexpected was hiding in the transparency.",
@@ -126,7 +126,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-background-color": seo(
     "Add Background Color to Transparent PNG",
-    "Place transparent images on any solid color — brand tints, pastels, darks. Pick your hex and export instantly. Free, private, batch of 10.",
+    "Place transparent images on any solid color — brand tints, pastels, darks. Pick your hex and export instantly. Free, private, batch of 10, preview included.",
     "add background color to png",
     "Your transparent image composites over a solid canvas of any color you choose — brand palette, pastel, deep dark — with output as PNG (keeps nothing transparent) or JPEG (smaller). It's the color-anything sibling of the white-background tool.",
     "Drop up to 10 transparent files, pick your background color with the picker, choose output format, and process. Preview each result against its new backdrop, then download individually or zipped.",
@@ -135,7 +135,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "round-corners-image": seo(
     "Round Image Corners Online – Radius Control",
-    "Round the corners of any image with an adjustable radius and transparent outside. Modern UI-ready PNG output — free, private, in-browser.",
+    "Round the corners of any image with an adjustable radius and transparent outside. Modern UI-ready PNG output — free, private, in-browser, any radius you need.",
     "round image corners",
     "A rounded-rectangle mask composites over your image: pixels outside the radius become genuinely transparent, not white. The slider goes from subtle 8px softening to full pill/circle shapes, and the result is the asset style every modern interface expects.",
     "Drop one image, drag the radius slider while previewing, then download the rounded PNG. Smaller images look best with proportionally smaller radii.",
@@ -143,8 +143,8 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
     "Making app icons and UI thumbnails, rounding screenshots for documentation so they match your docs' border radius, prepping avatar frames, and softening product images inside card layouts."
   ),
   "transparent-png-maker": seo(
-    "Transparent PNG Maker – Alpha Cleaner",
-    "Convert any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Preview on checkerboard — free, in-browser.",
+    "Transparent PNG Maker – Alpha Cleaner Tool",
+    "Convert any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Preview on checkerboard — free, private and fully in-browser.",
     "transparent png maker",
     "The tool converts your image to PNG and gives you control over its alpha channel: the threshold slider sets where semi-transparent pixels snap to fully opaque or fully transparent, and binarize mode hardens every in-between value — ideal for cleaning up keys that left mushy edges.",
     "Drop one image, adjust the alpha threshold while watching the checkerboard preview, enable binarize for hard edges or leave it off to preserve soft anti-aliasing, then download.",
@@ -153,7 +153,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "png-drop-shadow": seo(
     "Add Drop Shadow to PNG – Professional Depth",
-    "Give transparent PNGs a professional drop shadow — blur, offset, color and opacity control. Design-ready output, free and private.",
+    "Give transparent PNGs a professional drop shadow — blur, offset, color and opacity control. Design-ready output, free, private and entirely in-browser.",
     "png drop shadow",
     "The tool derives a shadow from your PNG's alpha silhouette, offsets it by your X/Y values, blurs it by your radius, tints it your color at your opacity, and composites it behind the original on a larger transparent canvas. It's the CSS box-shadow you can actually ship inside an image file.",
     "Drop one transparent PNG, tune blur, offsets, color and opacity while previewing, then download the result — a bigger canvas with your cutout casting a clean shadow.",

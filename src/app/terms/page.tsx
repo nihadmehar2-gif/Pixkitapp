@@ -3,14 +3,14 @@ import { SITE_URL } from "@/lib/tools";
 import { socialMeta } from "@/lib/seo";
 
 const TERMS_DESCRIPTION =
-  "PixKitApp terms of service: free tools provided as-is, you retain all rights to your images, fair use rules and liability limits.";
+  "PixKitApp terms of service: free tools provided as-is, you retain all rights to your images, fair use rules and liability limits — written in plain language.";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
+  title: "PixKitApp Terms of Service — Usage Rules",
   description: TERMS_DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/terms` },
   ...socialMeta({
-    title: "PixKitApp Terms of Service",
+    title: "PixKitApp Terms of Service — Usage Rules",
     description: TERMS_DESCRIPTION,
     path: "/terms",
   }),

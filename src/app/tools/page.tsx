@@ -9,11 +9,11 @@ const TOOLS_DESCRIPTION =
   "Browse all PixKitApp image tools: compression, resizing, cropping, conversion, filters, watermarks, passport photos and more. Search and filter by category.";
 
 export const metadata: Metadata = {
-  title: "All Tools — 127 Free Image Tools A-Z",
+  title: "All Tools — 127 Free Online Image Tools A-Z",
   description: TOOLS_DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/tools` },
   ...socialMeta({
-    title: "All Tools — 127 Free Image Tools A-Z | PixKitApp",
+    title: "All Tools — 127 Free Online Image Tools A-Z | PixKitApp",
     description: TOOLS_DESCRIPTION,
     path: "/tools",
   }),

@@ -4,14 +4,14 @@ import { SITE_URL } from "@/lib/tools";
 import { socialMeta } from "@/lib/seo";
 
 const CONTACT_DESCRIPTION =
-  "Get in touch with the PixKitApp team — feedback, bug reports, tool requests and partnership inquiries. We reply to every message.";
+  "Get in touch with the PixKitApp team — feedback, bug reports, tool requests and partnership inquiries are all welcome. We read and reply to every message.";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact PixKitApp — Feedback & Tool Requests",
   description: CONTACT_DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/contact` },
   ...socialMeta({
-    title: "Contact PixKitApp — Feedback, Bug Reports & Tool Requests",
+    title: "Contact PixKitApp — Feedback & Tool Requests",
     description: CONTACT_DESCRIPTION,
     path: "/contact",
   }),

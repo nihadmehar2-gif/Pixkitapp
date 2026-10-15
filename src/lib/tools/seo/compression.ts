@@ -5,7 +5,7 @@ import { seo, ToolSeo } from "../types";
 export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   "image-compressor": seo(
     "Free Image Compressor – Shrink JPG, PNG, WebP",
-    "Compress JPG, PNG and WebP images up to 90% smaller right in your browser. No upload, no signup, no watermark — free image compression in seconds.",
+    "Compress JPG, PNG and WebP images up to 90% smaller right in your browser. No upload, no signup, no watermark — free image compression with batch ZIP downloads.",
     "image compressor",
     "The compressor re-encodes your images through the browser's Canvas engine at the quality level you choose, using modern codecs that discard only detail your eye barely notices. A quality of 70–80% typically cuts file size by 60–90% while keeping photos fully shareable.",
     "Drop in up to 10 JPG, PNG or WebP files, slide the quality control (or leave the sensible default), optionally pick a different output format, then hit Process. You'll see the new size next to each result before you download them individually or as one ZIP.",
@@ -23,7 +23,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "compress-jpeg-image": seo(
     "Compress JPEG/JPG Online – Quality Slider",
-    "Compress JPEG photos online with a precise quality slider and metadata control. Get email- and web-ready JPGs without uploads — free and private.",
+    "Compress JPEG photos online with a precise quality slider and metadata control. Get email- and web-ready JPGs without uploads — free, private, instant.",
     "compress jpeg online",
     "This tool decodes your JPEG and re-encodes it at a quality level you control, letting the encoder throw away imperceptible high-frequency detail. There's also a toggle for keeping or dropping EXIF metadata — camera settings, dates and sometimes GPS — which itself can free up tens of kilobytes.",
     "Load up to 10 .jpg files, move the quality slider (75–85 keeps photos looking original), decide whether metadata stays or goes, then process. Each result shows before/after size so you can re-run at a different level if a particular photo lost too much.",
@@ -32,7 +32,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "compress-webp-image": seo(
     "Compress WebP Images Online – Free & Instant",
-    "Reduce WebP file size online with a live quality slider. Smaller modern-format images for faster sites — free, private, no upload required.",
+    "Reduce WebP file size online with a live quality slider. Smaller modern-format images for faster sites — free, private, no upload required. Batch of 10.",
     "compress webp",
     "WebP is already efficient, but files exported at quality 90+ still carry headroom. The tool decodes your WebP through the browser's native codec and re-encodes it at your chosen quality, trimming bytes that barely change the picture. Because it all happens locally, a 10-file batch finishes in a blink.",
     "Drop your .webp files in, adjust the quality slider — 80 is a solid web default — and process. The results panel lists each file's new size and savings percentage, then you download individually or grab everything as a ZIP archive.",
@@ -41,7 +41,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "compress-image-to-50kb": seo(
     "Compress Image to 50KB or Less Online – Free",
-    "Compress any photo to 50KB or less online free. Smart quality search finds the best-looking result that fits strict upload limits — no upload needed.",
+    "Compress any photo to 50KB or less online free. Smart quality search finds the best-looking result that fits strict upload limits — nothing is ever uploaded.",
     "compress image to 50kb",
     "Rather than guessing a quality level, this tool searches for one: it encodes your image, measures the true output size, and walks the quality down until the file lands at or under 50KB. You get the highest fidelity the target allows instead of a one-size-fits-all setting.",
     "Add your image, pick JPG (usually the best fit for tiny targets) or WebP, then process. The result card shows the final size — if it says 50KB or less, download it. For very detailed photos, WebP often looks better at this size than JPG.",
@@ -49,7 +49,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
     "Built for hard limits: government forms, exam applications, visa portals and forum avatars that reject anything bigger. Since the whole job runs offline in your tab, sensitive ID scans and certificates never leave your device."
   ),
   "compress-image-to-100kb": seo(
-    "Compress Image to 100KB Online – Free",
+    "Compress Image to 100KB Online – Free & Private",
     "Reduce any image to 100KB or smaller in your browser. Ideal for online applications, profiles and portal uploads with strict size caps — private and instant.",
     "compress image to 100kb",
     "The tool runs a quality-search loop: encode, measure, adjust, repeat — until your image is 100KB or under with the best quality that fits. WebP typically reaches the target with more visible detail than JPG, so both formats are offered and either can win depending on the picture.",
@@ -58,8 +58,8 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
     "Classic targets: scholarship and job portals, ticket uploads, blog comment avatars, and messaging apps that balloon large photos. Because nothing is uploaded, documents like mark sheets and scanned IDs stay completely on your machine."
   ),
   "compress-image-to-200kb": seo(
-    "Compress Image to 200KB Online – Best Quality Fit",
-    "Compress photos to 200KB online free with smart quality search. Hit upload limits for forms, forums and email while your photo stays sharp.",
+    "Compress Image to 200KB Online – Best Quality",
+    "Compress photos to 200KB online free with smart quality search. Hit upload limits for forms, forums and email attachments while your photo stays sharp.",
     "compress image to 200kb",
     "Instead of a fixed quality guess, the tool iterates: it encodes at high quality, checks the real byte size, and steps down only as far as needed to fit 200KB. That means photos usually keep more detail than a manual slider setting would leave you.",
     "Load your images (up to 10 at a time), select JPG or WebP output, and run the compressor. Review the size readout on each result — most photos land just under the cap at high quality — then download separately or all together as a ZIP.",
@@ -77,7 +77,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "compress-image-to-specific-size": seo(
     "Compress Image to Exact KB – Custom Target",
-    "Compress images to any KB target you choose — 30KB, 75KB, 1MB, whatever the form demands. Smart search keeps quality as high as the size allows.",
+    "Compress images to any KB target you choose — 30KB, 75KB, 1MB, whatever the form demands. Smart search keeps quality as high as the size allows, error-free.",
     "compress image to specific size",
     "You set the target; the tool finds the encoding. It re-encodes your image repeatedly, measuring true output size each round, and narrows in on the largest quality value that still fits your custom KB limit. The result is the best-looking file that passes the size check.",
     "Add an image, type your exact target in kilobytes into the number field, choose JPG or WebP, and hit process. The output card confirms the achieved size — try the other codec if you want to compare which format looks better at that size.",
@@ -86,7 +86,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "lossless-image-compressor": seo(
     "Near-Lossless Image Compressor – High Quality",
-    "Shrink photos at very high quality settings. Most people can't tell the difference from the original — and the tool is honest that it's a re-encode, not mathematically lossless.",
+    "Shrink photos at very high quality settings most people can't tell from the original — an honest near-lossless re-encode, not mathematically lossless.",
     "lossless image compressor",
     "This tool tries quality 95, 90, 85 and 80 in order and keeps the first setting that produces a smaller file than your original. At these levels, artifacts are very hard to spot in most photos — though pixel-peepers comparing crops side by side may notice the difference in fine textures.",
     "Add up to 10 images, pick WebP (best compression) or JPG, and process. Compare each result's preview against the original in the results panel — savings are reported per file. If a particular image must be mathematically lossless, keep the original instead.",
@@ -95,7 +95,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "bulk-image-compressor": seo(
     "Bulk Image Compressor – Batch of 10 at Once",
-    "Compress up to 10 images in one click and see total savings across the batch. JPG, PNG and WebP supported — download everything as a ZIP.",
+    "Compress up to 10 images in one click and see total savings across the batch. JPG, PNG and WebP supported — download one ZIP; mixed-format batches are fine.",
     "bulk image compressor",
     "The batch pipeline feeds each file through the same Canvas re-encode used by the single-image compressor — your chosen quality and format applied consistently across all of them. Progress is reported as each image finishes, and a grand total shows exactly how many megabytes the batch saved.",
     "Drop a whole folder's worth (up to 10 files), set quality once, optionally switch output format, and process. Every result lists its before/after size; review the previews, then hit the ZIP button to collect the entire batch in one download.",
@@ -115,7 +115,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "optimize-image-for-web": seo(
     "Optimize Images for the Web – WebP Preset",
-    "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly images in seconds — no upload, free forever.",
+    "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly images in seconds — no upload, no account, free forever.",
     "optimize image for web",
     "The tool applies proven web defaults automatically: longest edge capped at 1920 pixels, re-encoded as WebP at quality 80. That combination clears most image audits in Lighthouse and PageSpeed Insights because it attacks both dimensions and codec efficiency, the two things image audits actually measure.",
     "Drop your images and press process — the preset does the deciding. If you want to tune it, adjust the max-dimension and quality sliders before running. Results show final dimensions, byte size and savings; grab a ZIP when you're happy.",
@@ -124,7 +124,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "optimize-png-for-web": seo(
     "Optimize PNG for Web – Palette + Re-encode",
-    "Make PNGs web-ready with palette reduction and smart re-encoding. Keep transparency, cut the bloat — free browser-based PNG optimizer.",
+    "Make PNGs web-ready with palette reduction and smart re-encoding. Keep transparency, cut the bloat — free browser-based PNG optimizer. Batch of 10 supported.",
     "optimize png for web",
     "The optimizer rebuilds your PNG around a median-cut palette of 32–256 colors, which collapses the file's color table to exactly what the image needs. Transparent areas survive every step, so soft edges and cut-outs stay intact while the byte count drops, often by half or more on graphics.",
     "Add up to 10 .png files, choose a color budget — 256 for detailed UI shots, 64 for flat icons and logos — and optionally go grayscale. Process, inspect each preview over the transparency checkerboard, then download the batch.",
@@ -133,7 +133,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "optimize-jpg-for-web": seo(
     "Optimize JPG for Web – Web-Tuned Quality",
-    "Re-encode JPGs at web-tuned quality and strip camera bloat. Fast-loading, beautiful photos for pages and stores — free, private, batch-friendly.",
+    "Re-encode JPGs at web-tuned quality and strip heavy camera metadata. Fast-loading, beautiful photos for pages and stores — free, private, batch-friendly.",
     "optimize jpg for web",
     "Camera JPEGs carry heavy EXIF blocks and conservative encoder settings tuned for quality, not bytes. This tool decodes your JPG, drops the metadata baggage, and re-encodes at a quality level balanced for screen viewing — where 75–85 is indistinguishable from 100 at normal zoom.",
     "Drop up to 10 .jpg files, adjust the quality slider if you like, and process. The before/after sizes tell the story per file; results can be downloaded one by one or as a single ZIP for bulk hand-offs.",
@@ -142,7 +142,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "favicon-generator": seo(
     "Favicon Generator – All Sizes + favicon.ico",
-    "Generate every favicon you need from one image: 16, 32, 48, 96 and 180px PNGs plus a classic favicon.ico. Preview all sizes before download.",
+    "Generate every favicon you need from one image: 16, 32, 48, 96 and 180px PNGs plus a classic favicon.ico. Preview every size before downloading the pack.",
     "favicon generator",
     "The generator center-fits your source image onto a square canvas — with optional padding and background color — then renders it at every standard favicon size using smooth downsampling. All sizes are bundled into a multi-resolution .ico (which Windows expects) plus individual PNGs for modern platforms, including the 180px touch icon.",
     "Drop one square-ish image (SVG, PNG, JPG or WebP), set padding and background if desired, and generate. Each size appears as a preview tile — check the tiny ones are still legible — then download the pack and drop the files in your site root.",
@@ -151,7 +151,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "email-image-resizer": seo(
     "Resize Images for Email – 800px Preset",
-    "Prepare photos for email automatically: 800px wide, JPEG quality 70 — small enough to send, sharp enough to enjoy. Batch up to 10, free and private.",
+    "Prepare photos for email automatically: 800px wide, JPEG quality 70 — small enough to send, sharp enough to enjoy. Batch up to 10 photos, free and private.",
     "resize image for email",
     "The preset resizes each image so its longest edge is 800 pixels and re-encodes as JPEG at quality 70 — the proven sweet spot where photos stay pleasant on laptop screens while shrinking from megabytes to tens of kilobytes. Recipients on slow connections and strict corporate mail servers both thank you.",
     "Drop up to 10 photos and press process — the preset is deliberately opinionated. Adjust the dimension or quality sliders if your audience differs, check the before/after sizes, and download the batch as a ZIP ready to attach.",
@@ -160,7 +160,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "image-size-reducer": seo(
     "Image Size Reducer – Before/After Compare",
-    "Reduce image size by percentage or dimension with a live before/after comparison. See exactly what you save before you download — free browser tool.",
+    "Reduce image size by percentage or dimension with a live before/after comparison. See exactly what each file saves before you download — free browser tool.",
     "image size reducer",
     "The reducer scales your image by a percentage of its original dimensions using multi-step resampling — which preserves far more detail than a single naive downscale — then re-encodes at your chosen quality and format. The results panel pairs every output with its original size so the trade is never a guess.",
     "Drop up to 10 images, set the scale percentage (50% quarters the pixel count), pick a quality level and output format, then process. Review each before/after pair, tweak, re-run if needed, and download individually or zipped.",

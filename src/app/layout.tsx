@@ -23,10 +23,9 @@ export const metadata: Metadata = {
   },
   description:
     "127 free browser-based image tools: compress, resize, crop, convert, watermark, filters, passport photos and more. Images are processed on your device and never uploaded.",
-  keywords: [
-    "image tools", "image compressor", "image resizer", "convert webp to jpg",
-    "crop image online", "passport photo maker", "free photo editor", "pixkitapp",
-  ],
+  // No site-wide `keywords` tag: Google ignores meta keywords, and a generic
+  // inherited list on every page is metadata noise. Tool pages still emit
+  // their own deduplicated, tool-specific keyword lists.
   authors: [{ name: "PixKitApp" }],
   creator: "PixKitApp",
   icons: { icon: "/logo.svg" },
@@ -83,6 +82,19 @@ export default function RootLayout({
             <SiteFooter />
           </div>
           <Toaster />
+          {/*
+            Runtime hostname guard: on any non-production hostname the
+            robots directive is flipped to noindex,nofollow at parse time
+            (reuses the existing meta tag, so no duplicates are created).
+            Belt-and-braces alongside the build-time env switches and the
+            middleware X-Robots-Tag header — see src/middleware.ts.
+          */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                'try{if(!/^(www\\.)?pixkitapp\\.com$/.test(location.hostname)){var m=document.querySelector(\'meta[name="robots"]\');if(!m){m=document.createElement("meta");m.setAttribute("name","robots");document.head.appendChild(m)}m.setAttribute("content","noindex, nofollow")}}catch(e){}',
+            }}
+          />
         </ThemeProvider>
       </body>
     </html>

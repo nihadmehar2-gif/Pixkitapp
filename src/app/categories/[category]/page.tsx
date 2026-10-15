@@ -23,13 +23,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = CATEGORIES.find((c) => c.slug === category);
   if (!cat) return {};
   const count = toolsByCategory(cat.id).length;
-  const description = `${cat.description} ${count} free ${cat.name.toLowerCase()} tools that run in your browser with zero uploads.`;
+  // Hand-authored per-category metadata (categories.ts) with formula fallbacks.
+  const title = cat.metaTitle ?? `${cat.name} Tools — ${count} Free Online`;
+  const description =
+    cat.metaDescription ??
+    `${cat.description} ${count} free ${cat.name.toLowerCase()} tools that run in your browser with zero uploads.`;
   return {
-    title: `${cat.name} Tools — ${count} Free Online`,
+    title,
     description,
     alternates: { canonical: `${SITE_URL}/categories/${cat.slug}` },
     ...socialMeta({
-      title: `${cat.name} Tools — PixKitApp`,
+      title,
       description,
       path: `/categories/${cat.slug}`,
     }),
