@@ -2,17 +2,35 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/tools";
 
 /**
- * Indexing mode switch.
+ * Indexing mode switch — preview/staging detection is automatic.
  *
- * "preview" (staging / ChatZ preview environment): every page emits
- * `noindex, nofollow`, robots.txt disallows all crawlers and the sitemap
- * route returns an empty document — the temporary preview domain must never
- * become indexable and must not publish production SEO signals.
+ * Two independent triggers, so a staging host can never become indexable:
  *
- * Any other value or unset → normal indexable production configuration.
- * Production deployments must NOT set NEXT_PUBLIC_INDEXING_MODE=preview.
+ * 1. NEXT_PUBLIC_INDEXING_MODE=preview — explicit opt-in used by the local
+ *    dev daemon (.env.preview) on the temporary ChatZ preview environment.
+ *
+ * 2. VERCEL_ENV — Vercel injects this on every deployment: "production" for
+ *    production, "preview" for branch/PR deployments, "development" for
+ *    `vercel dev`. Any Vercel deployment that is not production is staging.
+ *    This requires zero Vercel dashboard configuration and production
+ *    deployments keep full index,follow directives (they cannot inherit
+ *    noindex because their VERCEL_ENV is exactly "production").
+ *
+ * When IS_PREVIEW is true: every page emits `noindex, nofollow`, robots.txt
+ * disallows all crawlers, the sitemap route returns an empty document, and
+ * next.config adds an X-Robots-Tag header on every response — the temporary
+ * preview domain must never become indexable and must not publish production
+ * SEO signals.
+ *
+ * Production (vars unset, or VERCEL_ENV=production) → indexable config.
  */
-export const IS_PREVIEW = process.env.NEXT_PUBLIC_INDEXING_MODE === "preview";
+const VERCEL_STAGING =
+  typeof process.env.VERCEL_ENV === "string" &&
+  process.env.VERCEL_ENV.length > 0 &&
+  process.env.VERCEL_ENV !== "production";
+
+export const IS_PREVIEW =
+  process.env.NEXT_PUBLIC_INDEXING_MODE === "preview" || VERCEL_STAGING;
 
 /** Robots directive applied site-wide (inherited by every page). */
 export const ROBOTS_DIRECTIVES: Metadata["robots"] = IS_PREVIEW

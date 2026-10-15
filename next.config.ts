@@ -1,10 +1,18 @@
 import type { NextConfig } from "next";
 
-// Preview/staging environments set NEXT_PUBLIC_INDEXING_MODE=preview (loaded
-// by scripts/dev-daemon.py from .env.preview). Production deploys must leave
-// it unset. Belt-and-braces: sends X-Robots-Tag on every response in preview
-// so even non-HTML assets and mis-crawled URLs are excluded from indexes.
-const IS_PREVIEW = process.env.NEXT_PUBLIC_INDEXING_MODE === "preview";
+// Preview/staging protection with two automatic triggers:
+// - NEXT_PUBLIC_INDEXING_MODE=preview (local dev daemon loads .env.preview)
+// - VERCEL_ENV, injected by Vercel on every deployment: "preview" (branch/PR
+//   deploys) and "development" (vercel dev) are staging; only "production"
+//   is indexable. Vercel production deploys therefore need no dashboard
+//   configuration and can never inherit noindex.
+// Belt-and-braces: sends X-Robots-Tag on every response in preview so even
+// non-HTML assets and mis-crawled URLs are excluded from indexes.
+const IS_PREVIEW =
+  process.env.NEXT_PUBLIC_INDEXING_MODE === "preview" ||
+  (typeof process.env.VERCEL_ENV === "string" &&
+    process.env.VERCEL_ENV.length > 0 &&
+    process.env.VERCEL_ENV !== "production");
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
