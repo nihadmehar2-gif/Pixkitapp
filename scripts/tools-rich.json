@@ -1,0 +1,3873 @@
+[
+ {
+  "slug": "image-compressor",
+  "name": "Image Compressor",
+  "h1": "Free Image Compressor",
+  "desc": "Compress JPG, PNG and WebP images online for free. Reduce file size up to 90% — private, no upload, instant results in your browser.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 75
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {},
+  "processor": "compress"
+ },
+ {
+  "slug": "compress-png-image",
+  "name": "Compress PNG",
+  "h1": "Compress PNG Images",
+  "desc": "Compress PNG files online with optional color reduction. Shrink PNG screenshots, logos and graphics while keeping transparency.",
+  "cat": "compression",
+  "accept": [
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "colors",
+    "type": "select",
+    "def": "256"
+   },
+   {
+    "key": "grayscale",
+    "type": "toggle",
+    "def": false
+   }
+  ],
+  "params": {},
+  "processor": "compressPng"
+ },
+ {
+  "slug": "compress-jpeg-image",
+  "name": "Compress JPEG",
+  "h1": "Compress JPEG Images",
+  "desc": "Compress JPG/JPEG photos online free. Fine-tune quality, keep photos sharp, and shrink files for email or web — no upload needed.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 78
+   },
+   {
+    "key": "keepMetadata",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {
+   "format": "image/jpeg"
+  },
+  "processor": "compress"
+ },
+ {
+  "slug": "compress-webp-image",
+  "name": "Compress WebP",
+  "h1": "Compress WebP Images",
+  "desc": "Compress WebP images online free. Reduce WebP file size with a quality slider while keeping modern browser compatibility.",
+  "cat": "compression",
+  "accept": [
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 75
+   }
+  ],
+  "params": {
+   "format": "image/webp"
+  },
+  "processor": "compress"
+ },
+ {
+  "slug": "compress-image-to-50kb",
+  "name": "Compress to 50KB",
+  "h1": "Compress Image to 50KB",
+  "desc": "Compress any image to exactly 50KB or less. Perfect for form uploads, avatars and small attachments. Free, private, in-browser.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "__targetKB": 50
+  },
+  "processor": "compressToSize"
+ },
+ {
+  "slug": "compress-image-to-100kb",
+  "name": "Compress to 100KB",
+  "h1": "Compress Image to 100KB",
+  "desc": "Reduce any photo to 100KB or smaller online. Ideal for online applications, profiles and uploads with strict size limits.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "__targetKB": 100
+  },
+  "processor": "compressToSize"
+ },
+ {
+  "slug": "compress-image-to-200kb",
+  "name": "Compress to 200KB",
+  "h1": "Compress Image to 200KB",
+  "desc": "Compress images to 200KB online free. Hit upload limits for forms, forums and email while keeping your photo sharp.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "__targetKB": 200
+  },
+  "processor": "compressToSize"
+ },
+ {
+  "slug": "compress-image-to-500kb",
+  "name": "Compress to 500KB",
+  "h1": "Compress Image to 500KB",
+  "desc": "Compress photos to 500KB online. Perfect balance of size and quality for email attachments and web uploads. Free and private.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "__targetKB": 500
+  },
+  "processor": "compressToSize"
+ },
+ {
+  "slug": "compress-image-to-specific-size",
+  "name": "Compress to Custom KB",
+  "h1": "Compress Image to a Custom Size",
+  "desc": "Compress any image to an exact KB target you choose — 30KB, 75KB, 1MB, anything. Smart quality search keeps it sharp.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "targetKB",
+    "type": "number",
+    "def": 150
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "__targetKB": 0,
+   "useCustom": true
+  },
+  "processor": "compressToSize"
+ },
+ {
+  "slug": "lossless-image-compressor",
+  "name": "Lossless Compressor",
+  "h1": "Visually Lossless Image Compressor",
+  "desc": "Shrink photos with zero visible quality loss. Tries the highest quality settings first and keeps your image pixel-identical to the eye.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {},
+  "processor": "compressNearLossless"
+ },
+ {
+  "slug": "bulk-image-compressor",
+  "name": "Bulk Image Compressor",
+  "h1": "Bulk Image Compressor — Up to 10 Images",
+  "desc": "Compress up to 10 images at once and see total savings. Batch compress JPG, PNG and WebP files with one click, download as ZIP.",
+  "cat": "compression",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 75
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {},
+  "processor": "compress"
+ },
+ {
+  "slug": "image-resizer",
+  "name": "Image Resizer",
+  "h1": "Free Image Resizer",
+  "desc": "Resize images to exact width & height online free. Lock aspect ratio, choose output format, batch up to 10 photos.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "width",
+    "type": "number",
+    "def": 800
+   },
+   {
+    "key": "height",
+    "type": "number",
+    "def": 600
+   },
+   {
+    "key": "keepAspect",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "mode": "both"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "resize-image-by-percentage",
+  "name": "Resize by Percentage",
+  "h1": "Resize Image by Percentage",
+  "desc": "Scale images to 10%–400% of original size. Quick percentage-based resizing with quality control — free and instant.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "percent",
+    "type": "slider",
+    "def": 50
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "mode": "percent"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "resize-image-to-width",
+  "name": "Resize to Width",
+  "h1": "Resize Image to a Fixed Width",
+  "desc": "Set an exact width and get the height automatically. Ideal for blog content widths, hero images and gallery columns.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "width",
+    "type": "number",
+    "def": 1200
+   },
+   {
+    "key": "preset",
+    "type": "select",
+    "def": "custom"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "mode": "width"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "resize-image-to-height",
+  "name": "Resize to Height",
+  "h1": "Resize Image to a Fixed Height",
+  "desc": "Set an exact height and the width adjusts automatically. Great for story frames, banners and profile covers.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "height",
+    "type": "number",
+    "def": 1080
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "mode": "height"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "resize-image-to-dimensions",
+  "name": "Resize to Dimensions",
+  "h1": "Resize to Exact Dimensions (W×H)",
+  "desc": "Force images to exact dimensions with fit modes: stretch, cover-crop or contain-pad. Control every output pixel.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "width",
+    "type": "number",
+    "def": 1080
+   },
+   {
+    "key": "height",
+    "type": "number",
+    "def": 1080
+   },
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {},
+  "processor": "socialResize"
+ },
+ {
+  "slug": "resize-image-to-kb",
+  "name": "Resize to KB",
+  "h1": "Resize Image to a Target File Size",
+  "desc": "Resize and compress until your image hits an exact KB target — smart search over dimensions and quality finds the best fit.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "targetKB",
+    "type": "number",
+    "def": 200
+   },
+   {
+    "key": "maxDimension",
+    "type": "slider",
+    "def": 0
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "__targetKB": 0
+  },
+  "processor": "resizeToKB"
+ },
+ {
+  "slug": "resize-png-image",
+  "name": "Resize PNG",
+  "h1": "Resize PNG Images",
+  "desc": "Resize PNG files while keeping transparency and crispness. Perfect for logos, screenshots and UI graphics.",
+  "cat": "resizing",
+  "accept": [
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "width",
+    "type": "number",
+    "def": 800
+   },
+   {
+    "key": "keepAspect",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "mode",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {
+   "mode": "width",
+   "format": "image/png"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "resize-jpg-image",
+  "name": "Resize JPG",
+  "h1": "Resize JPG Images",
+  "desc": "Resize JPG photos with quality control and smart scaling. Fast, free, and batch-friendly — up to 10 photos per run.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "width",
+    "type": "number",
+    "def": 1600
+   },
+   {
+    "key": "mode",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 85
+   }
+  ],
+  "params": {
+   "mode": "width",
+   "format": "image/jpeg"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "resize-webp-image",
+  "name": "Resize WebP",
+  "h1": "Resize WebP Images",
+  "desc": "Resize WebP images with a quality slider. Keep modern-format efficiency while hitting your target dimensions.",
+  "cat": "resizing",
+  "accept": [
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "width",
+    "type": "number",
+    "def": 1200
+   },
+   {
+    "key": "mode",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 85
+   }
+  ],
+  "params": {
+   "mode": "width",
+   "format": "image/webp"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "enlarge-image",
+  "name": "Enlarge Image",
+  "h1": "Enlarge Images (2x–4x Upscale)",
+  "desc": "Enlarge images up to 4x with multi-step upscaling and optional sharpening. Better than naive stretching — free in-browser.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "factor",
+    "type": "select",
+    "def": "2"
+   },
+   {
+    "key": "sharpen",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   }
+  ],
+  "params": {},
+  "processor": "enlarge"
+ },
+ {
+  "slug": "thumbnail-maker",
+  "name": "Thumbnail Maker",
+  "h1": "Thumbnail Maker — Square or Fit",
+  "desc": "Generate square center-crop thumbnails or fit-scale thumbnails in sizes from 64 to 640px. Batch process 10 images.",
+  "cat": "resizing",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "size",
+    "type": "select",
+    "def": "256"
+   },
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/webp"
+   }
+  ],
+  "params": {},
+  "processor": "thumbnail"
+ },
+ {
+  "slug": "crop-image",
+  "name": "Crop Image",
+  "h1": "Free Online Image Cropper",
+  "desc": "Crop images online with a live interactive editor — drag the frame, lock aspect ratios, and export JPG, PNG or WebP.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "crop",
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   }
+  ],
+  "params": {},
+  "processor": "cropManual"
+ },
+ {
+  "slug": "crop-image-to-square",
+  "name": "Crop to Square",
+  "h1": "Crop Image to Square (1:1)",
+  "desc": "Center-crop any photo to a perfect square in one click. Great for Instagram, avatars and product shots.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "anchor",
+    "type": "select",
+    "def": "center"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   }
+  ],
+  "params": {
+   "__ratio": "1:1"
+  },
+  "processor": "cropRatio"
+ },
+ {
+  "slug": "crop-image-to-circle",
+  "name": "Crop to Circle",
+  "h1": "Crop Image to a Circle",
+  "desc": "Cut a circular crop from any photo and download as a transparent PNG. Perfect for profile pictures and badges.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "anchor",
+    "type": "select",
+    "def": "center"
+   }
+  ],
+  "params": {},
+  "processor": "cropCircle"
+ },
+ {
+  "slug": "crop-image-16-9",
+  "name": "Crop 16:9",
+  "h1": "Crop Image to 16:9 Widescreen",
+  "desc": "Center-crop photos to 16:9 for YouTube thumbnails, monitors and video frames. One click, batch supported.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "anchor",
+    "type": "select",
+    "def": "center"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {
+   "__ratio": "16:9"
+  },
+  "processor": "cropRatio"
+ },
+ {
+  "slug": "crop-image-9-16",
+  "name": "Crop 9:16",
+  "h1": "Crop Image to 9:16 Vertical",
+  "desc": "Crop to 9:16 vertical for Instagram Stories, TikTok, Reels and Shorts. Turn landscape photos into vertical hits.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "anchor",
+    "type": "select",
+    "def": "center"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {
+   "__ratio": "9:16"
+  },
+  "processor": "cropRatio"
+ },
+ {
+  "slug": "crop-image-4-3",
+  "name": "Crop 4:3",
+  "h1": "Crop Image to 4:3 Classic",
+  "desc": "Crop photos to the classic 4:3 ratio for prints, presentations and photo albums. One-click, in-browser.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "anchor",
+    "type": "select",
+    "def": "center"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {
+   "__ratio": "4:3"
+  },
+  "processor": "cropRatio"
+ },
+ {
+  "slug": "crop-image-3-2",
+  "name": "Crop 3:2",
+  "h1": "Crop Image to 3:2 Photo Ratio",
+  "desc": "Crop to 3:2 — the 35mm film and DSLR standard — for prints and photography portfolios. Free, instant, private.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "anchor",
+    "type": "select",
+    "def": "center"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {
+   "__ratio": "3:2"
+  },
+  "processor": "cropRatio"
+ },
+ {
+  "slug": "crop-borders-auto",
+  "name": "Auto Trim Borders",
+  "h1": "Auto-Trim Image Borders",
+  "desc": "Automatically detect and remove plain borders around screenshots and scanned photos. Adjustable tolerance + padding.",
+  "cat": "cropping",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "tolerance",
+    "type": "slider",
+    "def": 12
+   },
+   {
+    "key": "padding",
+    "type": "number",
+    "def": 0
+   }
+  ],
+  "params": {},
+  "processor": "cropBorders"
+ },
+ {
+  "slug": "webp-to-jpg",
+  "name": "WebP to JPG",
+  "h1": "Convert WebP to JPG",
+  "desc": "Convert WebP images to JPG online free. Universal compatibility for any app or website — private, instant, batch-friendly.",
+  "cat": "conversion",
+  "accept": [
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 92
+   },
+   {
+    "key": "background",
+    "type": "color",
+    "def": "#ffffff"
+   }
+  ],
+  "params": {
+   "format": "image/jpeg"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "webp-to-png",
+  "name": "WebP to PNG",
+  "h1": "Convert WebP to PNG",
+  "desc": "Convert WebP to PNG while keeping transparency and lossless quality. Free, private, works in any modern browser.",
+  "cat": "conversion",
+  "accept": [
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "format": "image/png"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "jpg-to-png",
+  "name": "JPG to PNG",
+  "h1": "Convert JPG to PNG",
+  "desc": "Convert JPG photos to PNG format online free. Lossless output with no quality loss — private in-browser conversion.",
+  "cat": "conversion",
+  "accept": [
+   "image/jpeg"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "format": "image/png"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "png-to-jpg",
+  "name": "PNG to JPG",
+  "h1": "Convert PNG to JPG",
+  "desc": "Convert PNG to JPG with background color control for transparency. Slash file sizes for photos — free, instant, private.",
+  "cat": "conversion",
+  "accept": [
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 92
+   },
+   {
+    "key": "background",
+    "type": "color",
+    "def": "#ffffff"
+   }
+  ],
+  "params": {
+   "format": "image/jpeg"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "png-to-webp",
+  "name": "PNG to WebP",
+  "h1": "Convert PNG to WebP",
+  "desc": "Convert PNG images to WebP online. Same crispness, dramatically smaller files — the modern format for the modern web.",
+  "cat": "conversion",
+  "accept": [
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   }
+  ],
+  "params": {
+   "format": "image/webp"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "jpg-to-webp",
+  "name": "JPG to WebP",
+  "h1": "Convert JPG to WebP",
+  "desc": "Convert JPG to WebP for 25–50% smaller files at the same visual quality. Boost site speed — free browser converter.",
+  "cat": "conversion",
+  "accept": [
+   "image/jpeg"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 85
+   }
+  ],
+  "params": {
+   "format": "image/webp"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "gif-to-png",
+  "name": "GIF to PNG",
+  "h1": "Extract GIF Frame as PNG",
+  "desc": "Turn a GIF's first frame into a high-quality PNG image. Perfect for previews and thumbnails from animated GIFs.",
+  "cat": "conversion",
+  "accept": [
+   "image/gif"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "format": "image/png"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "gif-to-webp",
+  "name": "GIF to WebP",
+  "h1": "Convert GIF to WebP Image",
+  "desc": "Convert GIF files to efficient WebP images in your browser. Smaller, modern output from any animated or static GIF.",
+  "cat": "conversion",
+  "accept": [
+   "image/gif"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   }
+  ],
+  "params": {
+   "format": "image/webp"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "bmp-to-jpg",
+  "name": "BMP to JPG",
+  "h1": "Convert BMP to JPG",
+  "desc": "Convert Windows BMP bitmaps to compact JPG images online. Turn huge uncompressed files into shareable photos.",
+  "cat": "conversion",
+  "accept": [
+   "image/bmp",
+   ".bmp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   }
+  ],
+  "params": {
+   "format": "image/jpeg"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "bmp-to-png",
+  "name": "BMP to PNG",
+  "h1": "Convert BMP to PNG",
+  "desc": "Convert BMP bitmaps to lossless PNG online free. Same pixels, modern format, far smaller file — no upload.",
+  "cat": "conversion",
+  "accept": [
+   "image/bmp",
+   ".bmp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "format": "image/png"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "jpg-to-bmp",
+  "name": "JPG to BMP",
+  "h1": "Convert JPG to BMP",
+  "desc": "Convert JPG images to uncompressed BMP format. For legacy software, industrial tools and systems that demand raw bitmaps.",
+  "cat": "conversion",
+  "accept": [
+   "image/jpeg"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [],
+  "params": {},
+  "processor": "convertBmp"
+ },
+ {
+  "slug": "png-to-bmp",
+  "name": "PNG to BMP",
+  "h1": "Convert PNG to BMP",
+  "desc": "Convert PNG images to BMP bitmap format. Lossless raw output for legacy apps — transparency flattened to your color.",
+  "cat": "conversion",
+  "accept": [
+   "image/png"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "background",
+    "type": "color",
+    "def": "#ffffff"
+   }
+  ],
+  "params": {},
+  "processor": "convertBmp"
+ },
+ {
+  "slug": "avif-to-jpg",
+  "name": "AVIF to JPG",
+  "h1": "Convert AVIF to JPG",
+  "desc": "Convert next-gen AVIF images to universal JPG. Works in Chrome, Edge and Opera — private browser conversion.",
+  "cat": "conversion",
+  "accept": [
+   "image/avif",
+   ".avif"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 92
+   }
+  ],
+  "params": {
+   "format": "image/jpeg"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "avif-to-png",
+  "name": "AVIF to PNG",
+  "h1": "Convert AVIF to PNG",
+  "desc": "Convert AVIF images to lossless PNG with transparency support. Free in-browser tool for the newest image format.",
+  "cat": "conversion",
+  "accept": [
+   "image/avif",
+   ".avif"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "format": "image/png"
+  },
+  "processor": "convert"
+ },
+ {
+  "slug": "image-to-pdf",
+  "name": "Image to PDF",
+  "h1": "Image to PDF Converter",
+  "desc": "Convert JPG, PNG and WebP images to PDF — one image per page, up to 10 pages. Choose A4/Letter, orientation and margins.",
+  "cat": "conversion",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "pageSize",
+    "type": "select",
+    "def": "a4"
+   },
+   {
+    "key": "orientation",
+    "type": "select",
+    "def": "auto"
+   },
+   {
+    "key": "margin",
+    "type": "slider",
+    "def": 20
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {},
+  "processor": "imagesToPdf"
+ },
+ {
+  "slug": "image-to-ico",
+  "name": "Image to ICO",
+  "h1": "Convert Image to ICO",
+  "desc": "Create a Windows .ico file with multiple embedded sizes (16–256px) from any image. Perfect favicon and app-icon maker.",
+  "cat": "conversion",
+  "accept": [
+   "image/png",
+   "image/jpeg",
+   "image/webp",
+   "image/svg+xml"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "sizes",
+    "type": "text",
+    "def": "16,32,48,64,128,256"
+   }
+  ],
+  "params": {},
+  "processor": "imageToIco"
+ },
+ {
+  "slug": "image-to-base64",
+  "name": "Image to Base64",
+  "h1": "Image to Base64 Encoder",
+  "desc": "Encode images to Base64 strings or data URIs for CSS, HTML and JSON embedding. Copy or download the text instantly.",
+  "cat": "conversion",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp",
+   "image/gif",
+   "image/svg+xml"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "dataUri",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "base64Encode"
+ },
+ {
+  "slug": "base64-to-image",
+  "name": "Base64 to Image",
+  "h1": "Decode Base64 to Image",
+  "desc": "Decode Base64 strings or data URIs back into viewable, downloadable images. Paste text or drop a .txt file.",
+  "cat": "conversion",
+  "accept": [
+   ".txt",
+   "text/plain"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "input",
+    "type": "textarea",
+    "def": ""
+   }
+  ],
+  "params": {},
+  "processor": "base64Decode"
+ },
+ {
+  "slug": "svg-to-png",
+  "name": "SVG to PNG",
+  "h1": "Convert SVG to PNG",
+  "desc": "Rasterize SVG vectors to sharp PNG at 1x–4x scale. Perfect for icons, logos and print — free in-browser converter.",
+  "cat": "conversion",
+  "accept": [
+   "image/svg+xml",
+   ".svg"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "scale",
+    "type": "select",
+    "def": "2"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/png"
+   }
+  ],
+  "params": {},
+  "processor": "svgToPng"
+ },
+ {
+  "slug": "image-format-converter",
+  "name": "Universal Converter",
+  "h1": "Universal Image Format Converter",
+  "desc": "Convert any image to JPG, PNG or WebP in one place. Smart defaults, transparency handling and batch support.",
+  "cat": "conversion",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp",
+   "image/gif",
+   "image/bmp",
+   "image/avif",
+   ".bmp",
+   ".avif",
+   ".svg"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/png"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 90
+   },
+   {
+    "key": "background",
+    "type": "color",
+    "def": "#ffffff"
+   }
+  ],
+  "params": {},
+  "processor": "convert"
+ },
+ {
+  "slug": "rotate-image",
+  "name": "Rotate Image",
+  "h1": "Rotate Image to Any Angle",
+  "desc": "Rotate images to any degree — fine-tune from -180° to 180° with background fill or auto-crop. Free browser tool.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "angle",
+    "type": "slider",
+    "def": 0
+   },
+   {
+    "key": "autoCrop",
+    "type": "toggle",
+    "def": false
+   },
+   {
+    "key": "transparentBg",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "background",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "auto"
+   }
+  ],
+  "params": {},
+  "processor": "rotate"
+ },
+ {
+  "slug": "rotate-image-90",
+  "name": "Rotate 90° Clockwise",
+  "h1": "Rotate Image 90 Degrees Clockwise",
+  "desc": "Quarter-turn images clockwise instantly. Pixel-perfect 90° rotation with no quality loss — batch up to 10.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__fixedAngle": 90,
+   "autoCrop": true,
+   "transparentBg": true
+  },
+  "processor": "rotate"
+ },
+ {
+  "slug": "rotate-image-180",
+  "name": "Rotate 180°",
+  "h1": "Rotate Image 180 Degrees",
+  "desc": "Flip images fully upside down with pixel-perfect 180° rotation. Zero quality loss, instant results, completely private.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__fixedAngle": 180,
+   "autoCrop": true,
+   "transparentBg": true
+  },
+  "processor": "rotate"
+ },
+ {
+  "slug": "rotate-image-270",
+  "name": "Rotate 270° (90° CCW)",
+  "h1": "Rotate Image 270° — Counterclockwise Quarter Turn",
+  "desc": "Rotate images 270° clockwise (90° counterclockwise). Pixel-perfect, lossless quarter-turn the other way.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__fixedAngle": 270,
+   "autoCrop": true,
+   "transparentBg": true
+  },
+  "processor": "rotate"
+ },
+ {
+  "slug": "flip-image-horizontal",
+  "name": "Flip Horizontal",
+  "h1": "Flip Image Horizontally (Mirror)",
+  "desc": "Mirror images left-to-right instantly. Pixel-perfect horizontal flip for selfies, designs and text-free photos.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__axis": "horizontal"
+  },
+  "processor": "flip"
+ },
+ {
+  "slug": "flip-image-vertical",
+  "name": "Flip Vertical",
+  "h1": "Flip Image Vertically (Upside-Down Mirror)",
+  "desc": "Flip images top-to-bottom with a vertical mirror. Useful for scans, reflections and design work — instant and lossless.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__axis": "vertical"
+  },
+  "processor": "flip"
+ },
+ {
+  "slug": "straighten-image",
+  "name": "Straighten Image",
+  "h1": "Straighten Crooked Photos",
+  "desc": "Fix tilted horizons with fine ±15° correction and smart zoom-fill that hides the corners. Gallery-quality leveling.",
+  "cat": "rotation",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "angle",
+    "type": "slider",
+    "def": 0
+   },
+   {
+    "key": "zoomFill",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "straighten"
+ },
+ {
+  "slug": "grayscale-image",
+  "name": "Grayscale Image",
+  "h1": "Convert Image to Grayscale",
+  "desc": "Turn photos black & white online with luminance-accurate grayscale. Timeless monochrome in one click — free, private.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "grayscale",
+    "type": "slider",
+    "def": 100
+   }
+  ],
+  "params": {},
+  "processor": "grayscaleProcessor"
+ },
+ {
+  "slug": "sepia-image",
+  "name": "Sepia Image",
+  "h1": "Apply Sepia Tone to Photos",
+  "desc": "Give photos a warm vintage sepia tone in one click. Adjustable intensity from subtle warmth to full antique brown.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "sepia",
+    "type": "slider",
+    "def": 80
+   }
+  ],
+  "params": {},
+  "processor": "sepiaProcessor"
+ },
+ {
+  "slug": "invert-image-colors",
+  "name": "Invert Colors",
+  "h1": "Invert Image Colors (Negative)",
+  "desc": "Create photo negatives by inverting colors online. Instant color inversion for art, OCR prep and design effects.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "invert",
+    "type": "slider",
+    "def": 100
+   }
+  ],
+  "params": {},
+  "processor": "invertProcessor"
+ },
+ {
+  "slug": "blur-image",
+  "name": "Blur Image",
+  "h1": "Blur Images Online",
+  "desc": "Blur photos with adjustable Gaussian blur from 1px soft focus to heavy censoring. Free, instant, no signup.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "blur",
+    "type": "slider",
+    "def": 8
+   }
+  ],
+  "params": {},
+  "processor": "blurProcessor"
+ },
+ {
+  "slug": "sharpen-image",
+  "name": "Sharpen Image",
+  "h1": "Sharpen Images Online",
+  "desc": "Make photos crisper with an unsharp-mask convolution kernel. Adjustable strength brings back micro-detail.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "amount",
+    "type": "slider",
+    "def": 60
+   }
+  ],
+  "params": {},
+  "processor": "sharpen"
+ },
+ {
+  "slug": "brightness-adjuster",
+  "name": "Brightness Adjuster",
+  "h1": "Adjust Image Brightness",
+  "desc": "Brighten dark photos or dim overexposed ones with a precise slider. Instant preview, no quality robbing rounds.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "brightness",
+    "type": "slider",
+    "def": 110
+   }
+  ],
+  "params": {},
+  "processor": "brightnessProcessor"
+ },
+ {
+  "slug": "contrast-adjuster",
+  "name": "Contrast Adjuster",
+  "h1": "Adjust Image Contrast",
+  "desc": "Boost washed-out photos or soften harsh contrast with one slider. Make images pop — free browser editor.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "contrast",
+    "type": "slider",
+    "def": 115
+   }
+  ],
+  "params": {},
+  "processor": "contrastProcessor"
+ },
+ {
+  "slug": "saturation-adjuster",
+  "name": "Saturation Adjuster",
+  "h1": "Adjust Color Saturation",
+  "desc": "Boost vivid colors or mute them with a precise saturation slider. From pastel softness to hyper-vivid pop.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "saturate",
+    "type": "slider",
+    "def": 130
+   }
+  ],
+  "params": {},
+  "processor": "saturateProcessor"
+ },
+ {
+  "slug": "hue-rotate-image",
+  "name": "Hue Rotate",
+  "h1": "Rotate Image Hue",
+  "desc": "Shift all colors around the wheel — turn blue skies purple, greens teal, or find creative color grades in seconds.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "hue",
+    "type": "slider",
+    "def": 0
+   }
+  ],
+  "params": {},
+  "processor": "hueProcessor"
+ },
+ {
+  "slug": "vintage-filter",
+  "name": "Vintage Filter",
+  "h1": "Vintage Photo Filter",
+  "desc": "One-click retro look: faded sepia warmth, softened contrast, film grain and a gentle vignette — fully tunable.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "strength",
+    "type": "slider",
+    "def": 70
+   },
+   {
+    "key": "vignette",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "grain",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "vintage"
+ },
+ {
+  "slug": "posterize-image",
+  "name": "Posterize Image",
+  "h1": "Posterize Images Online",
+  "desc": "Reduce images to bold flat tones for poster art and screen prints. 2–16 levels per channel, instant results.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "levels",
+    "type": "slider",
+    "def": 6
+   }
+  ],
+  "params": {},
+  "processor": "posterize"
+ },
+ {
+  "slug": "pixelate-image",
+  "name": "Pixelate Image",
+  "h1": "Pixelate Images Online",
+  "desc": "Censor photos with retro pixel blocks. Choose block size from subtle 4px mosaic to chunky 64px squares.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "block",
+    "type": "slider",
+    "def": 12
+   }
+  ],
+  "params": {},
+  "processor": "pixelate"
+ },
+ {
+  "slug": "duotone-image",
+  "name": "Duotone Effect",
+  "h1": "Duotone Image Effect",
+  "desc": "Map photos to two brand colors for striking graphics. Pick shadow and highlight tones — instant gradient-map look.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "shadowColor",
+    "type": "color",
+    "def": "#1a1a2e"
+   },
+   {
+    "key": "highlightColor",
+    "type": "color",
+    "def": "#f0c27b"
+   }
+  ],
+  "params": {},
+  "processor": "duotone"
+ },
+ {
+  "slug": "film-grain-effect",
+  "name": "Film Grain",
+  "h1": "Add Film Grain to Photos",
+  "desc": "Overlay analog film grain for texture and mood. Adjustable intensity adds authentic photographic character.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "amount",
+    "type": "slider",
+    "def": 30
+   }
+  ],
+  "params": {},
+  "processor": "filmGrain"
+ },
+ {
+  "slug": "vignette-effect",
+  "name": "Vignette Effect",
+  "h1": "Add Vignette to Photos",
+  "desc": "Darken photo edges with a natural lens-style vignette. Control strength and reach to focus attention on your subject.",
+  "cat": "filters",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "strength",
+    "type": "slider",
+    "def": 50
+   },
+   {
+    "key": "size",
+    "type": "slider",
+    "def": 70
+   }
+  ],
+  "params": {},
+  "processor": "vignette"
+ },
+ {
+  "slug": "image-optimizer",
+  "name": "Image Optimizer",
+  "h1": "All-in-One Image Optimizer",
+  "desc": "Optimize images with smart resize + compression in one step. Set max dimensions and quality — perfect for websites and blogs.",
+  "cat": "optimization",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "maxDimension",
+    "type": "slider",
+    "def": 1920
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 82
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/webp"
+   }
+  ],
+  "params": {
+   "__targetKB": 100000,
+   "maxDimension": 1920
+  },
+  "processor": "resizeToKB"
+ },
+ {
+  "slug": "optimize-image-for-web",
+  "name": "Optimize for Web",
+  "h1": "Optimize Images for the Web",
+  "desc": "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly output in seconds.",
+  "cat": "optimization",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "maxDimension",
+    "type": "slider",
+    "def": 1920
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 80
+   }
+  ],
+  "params": {
+   "__targetKB": 100000,
+   "maxDimension": 1920,
+   "format": "image/webp"
+  },
+  "processor": "resizeToKB"
+ },
+ {
+  "slug": "optimize-png-for-web",
+  "name": "Optimize PNG for Web",
+  "h1": "Optimize PNG Images for the Web",
+  "desc": "Make PNGs web-ready: optional palette reduction, smart dimensions and re-encoding. Keep transparency, cut the bloat.",
+  "cat": "optimization",
+  "accept": [
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "colors",
+    "type": "select",
+    "def": "128"
+   },
+   {
+    "key": "grayscale",
+    "type": "toggle",
+    "def": false
+   }
+  ],
+  "params": {},
+  "processor": "compressPng"
+ },
+ {
+  "slug": "optimize-jpg-for-web",
+  "name": "Optimize JPG for Web",
+  "h1": "Optimize JPG Images for the Web",
+  "desc": "Re-encode JPGs at web-tuned quality. Strip camera bloat, hit fast-loading file sizes, keep photos beautiful.",
+  "cat": "optimization",
+  "accept": [
+   "image/jpeg"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 80
+   }
+  ],
+  "params": {
+   "format": "image/jpeg"
+  },
+  "processor": "compress"
+ },
+ {
+  "slug": "favicon-generator",
+  "name": "Favicon Generator",
+  "h1": "Favicon Generator — All Sizes + ICO",
+  "desc": "Generate favicons for all platforms: 16, 32, 48, 96, 180px PNGs plus a classic favicon.ico. Preview every size before download.",
+  "cat": "optimization",
+  "accept": [
+   "image/png",
+   "image/jpeg",
+   "image/webp",
+   "image/svg+xml"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "padding",
+    "type": "slider",
+    "def": 8
+   },
+   {
+    "key": "background",
+    "type": "select",
+    "def": "transparent"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#7c3aed"
+   }
+  ],
+  "params": {},
+  "processor": "faviconPack"
+ },
+ {
+  "slug": "email-image-resizer",
+  "name": "Email Image Resizer",
+  "h1": "Resize Images for Email",
+  "desc": "Prepare photos for email: 800px wide, JPEG quality 70 — small enough to send, sharp enough to enjoy. Batch up to 10.",
+  "cat": "optimization",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "maxDimension",
+    "type": "slider",
+    "def": 800
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 70
+   }
+  ],
+  "params": {
+   "__targetKB": 100000,
+   "maxDimension": 800,
+   "format": "image/jpeg"
+  },
+  "processor": "resizeToKB"
+ },
+ {
+  "slug": "image-size-reducer",
+  "name": "Image Size Reducer",
+  "h1": "Image Size Reducer — Before/After Compare",
+  "desc": "Reduce image size by percentage or dimension scale with a live before/after size comparison. See exactly what you save.",
+  "cat": "optimization",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "scalePercent",
+    "type": "slider",
+    "def": 100
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 80
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "mode": "percent"
+  },
+  "processor": "resize"
+ },
+ {
+  "slug": "image-metadata-viewer",
+  "name": "Metadata Viewer",
+  "h1": "Image Metadata & EXIF Viewer",
+  "desc": "Inspect EXIF, GPS and PNG metadata of any image — camera model, date, settings, location. private, in-browser — the file never leaves your device.",
+  "cat": "metadata",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp",
+   "image/gif"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [],
+  "params": {},
+  "processor": "metadataReport"
+ },
+ {
+  "slug": "remove-image-metadata",
+  "name": "Remove Metadata",
+  "h1": "Remove Image Metadata (EXIF Stripper)",
+  "desc": "Strip EXIF, GPS and hidden metadata from images before sharing. Re-encoded clean output — privacy in one click.",
+  "cat": "metadata",
+  "accept": [
+   "image/jpeg",
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "keepFormat",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 92
+   }
+  ],
+  "params": {},
+  "processor": "stripMetadata"
+ },
+ {
+  "slug": "remove-gps-data",
+  "name": "Remove GPS Data",
+  "h1": "Remove GPS Location from Photos",
+  "desc": "Delete GPS coordinates from photos before posting online. See if your image has location data and scrub it clean.",
+  "cat": "metadata",
+  "accept": [
+   "image/jpeg",
+   "image/png"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "keepFormat",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 92
+   }
+  ],
+  "params": {},
+  "processor": "stripMetadata"
+ },
+ {
+  "slug": "image-color-picker",
+  "name": "Color Picker",
+  "h1": "Image Color Picker — Grab Any Pixel",
+  "desc": "Pick exact colors from any image. Click anywhere to get HEX, RGB and HSL values with a live zoom magnifier.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [],
+  "params": {},
+  "processor": "pickColor"
+ },
+ {
+  "slug": "image-color-palette",
+  "name": "Color Palette Extractor",
+  "h1": "Extract Color Palette from Image",
+  "desc": "Pull the dominant color palette from any image with median-cut quantization. Copy HEX codes or download a swatch sheet.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "colors",
+    "type": "slider",
+    "def": 8
+   }
+  ],
+  "params": {},
+  "processor": "extractPalette"
+ },
+ {
+  "slug": "image-dominant-color",
+  "name": "Dominant Color",
+  "h1": "Find the Dominant Color of an Image",
+  "desc": "Get the single dominant color of any photo as a HEX swatch. Great for dynamic theming and auto-accent colors.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__mode": "dominant"
+  },
+  "processor": "dominantColor"
+ },
+ {
+  "slug": "image-average-color",
+  "name": "Average Color",
+  "h1": "Calculate the Average Color of an Image",
+  "desc": "Compute the exact average color of any photo — useful for ambient lighting effects and quick color analysis.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [],
+  "params": {
+   "__mode": "average"
+  },
+  "processor": "dominantColor"
+ },
+ {
+  "slug": "replace-color-in-image",
+  "name": "Replace Color",
+  "h1": "Replace a Color in Any Image",
+  "desc": "Swap one color for another with tolerance control. Perfect for mockups, logo variants and product colorways.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fromColor",
+    "type": "color",
+    "def": "#ff0000"
+   },
+   {
+    "key": "toColor",
+    "type": "color",
+    "def": "#0000ff"
+   },
+   {
+    "key": "tolerance",
+    "type": "slider",
+    "def": 30
+   }
+  ],
+  "params": {},
+  "processor": "replaceColor"
+ },
+ {
+  "slug": "remove-color-from-image",
+  "name": "Remove Color (Chroma Key)",
+  "h1": "Remove a Color — Chroma Key Tool",
+  "desc": "Key out any color to transparency with feathered edges. Green-screen style background removal for any color.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "keyColor",
+    "type": "color",
+    "def": "#00ff00"
+   },
+   {
+    "key": "tolerance",
+    "type": "slider",
+    "def": 20
+   },
+   {
+    "key": "feather",
+    "type": "slider",
+    "def": 0
+   }
+  ],
+  "params": {},
+  "processor": "removeColor"
+ },
+ {
+  "slug": "image-color-temperature",
+  "name": "Color Temperature",
+  "h1": "Adjust Image Color Temperature",
+  "desc": "Make photos warmer (golden) or cooler (blue) with a Kelvin-style slider. Fix white balance creatively — free tool.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "temp",
+    "type": "slider",
+    "def": 0
+   }
+  ],
+  "params": {},
+  "processor": "temperature"
+ },
+ {
+  "slug": "threshold-image",
+  "name": "B&W Threshold",
+  "h1": "Black & White Threshold Converter",
+  "desc": "Convert images to pure black & white with an adjustable threshold. Crisp 1-bit style output for stamps and stencils.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "threshold",
+    "type": "slider",
+    "def": 50
+   },
+   {
+    "key": "invert",
+    "type": "toggle",
+    "def": false
+   }
+  ],
+  "params": {},
+  "processor": "threshold"
+ },
+ {
+  "slug": "swap-color-channels",
+  "name": "Channel Mixer",
+  "h1": "Swap RGB Color Channels",
+  "desc": "Remix red, green and blue channels for psychedelic color shifts and infrared-style looks. Nerdy, fun, free.",
+  "cat": "color",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "mode",
+    "type": "select",
+    "def": "rgb-gbr"
+   }
+  ],
+  "params": {},
+  "processor": "channelSwap"
+ },
+ {
+  "slug": "watermark-image",
+  "name": "Text Watermark",
+  "h1": "Add a Text Watermark to Photos",
+  "desc": "Watermark photos with custom text — choose position, size, opacity, color and rotation. Protect your work free.",
+  "cat": "watermarking",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "text",
+    "type": "text",
+    "def": "© Your Name"
+   },
+   {
+    "key": "size",
+    "type": "slider",
+    "def": 5
+   },
+   {
+    "key": "opacity",
+    "type": "slider",
+    "def": 40
+   },
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom-right"
+   },
+   {
+    "key": "rotation",
+    "type": "slider",
+    "def": 0
+   },
+   {
+    "key": "shadow",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "textWatermark"
+ },
+ {
+  "slug": "add-logo-watermark",
+  "name": "Logo Watermark",
+  "h1": "Add a Logo Watermark to Images",
+  "desc": "Overlay your logo on photos with position, scale and opacity control. Perfect transparent PNG logo support.",
+  "cat": "watermarking",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "__logoFiles",
+    "type": "text",
+    "def": ""
+   },
+   {
+    "key": "scale",
+    "type": "slider",
+    "def": 20
+   },
+   {
+    "key": "opacity",
+    "type": "slider",
+    "def": 70
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom-right"
+   },
+   {
+    "key": "margin",
+    "type": "slider",
+    "def": 3
+   }
+  ],
+  "params": {},
+  "processor": "logoWatermark"
+ },
+ {
+  "slug": "tiled-watermark",
+  "name": "Tiled Watermark",
+  "h1": "Tiled Repeating Watermark",
+  "desc": "Cover images with a diagonal repeating text watermark — the strongest visible protection for previews and proofs.",
+  "cat": "watermarking",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "text",
+    "type": "text",
+    "def": "SAMPLE"
+   },
+   {
+    "key": "opacity",
+    "type": "slider",
+    "def": 15
+   },
+   {
+    "key": "gap",
+    "type": "slider",
+    "def": 8
+   },
+   {
+    "key": "angle",
+    "type": "slider",
+    "def": -30
+   },
+   {
+    "key": "size",
+    "type": "slider",
+    "def": 4
+   },
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#000000"
+   }
+  ],
+  "params": {},
+  "processor": "tiledWatermark"
+ },
+ {
+  "slug": "date-watermark",
+  "name": "Date Watermark",
+  "h1": "Add a Date Stamp to Photos",
+  "desc": "Stamp today's date (or any date) on photos — the classic camera timestamp for documentation and records.",
+  "cat": "watermarking",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "customDate",
+    "type": "text",
+    "def": ""
+   },
+   {
+    "key": "size",
+    "type": "slider",
+    "def": 4
+   },
+   {
+    "key": "opacity",
+    "type": "slider",
+    "def": 60
+   },
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom-right"
+   },
+   {
+    "key": "shadow",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "dateWatermark"
+ },
+ {
+  "slug": "bulk-watermark",
+  "name": "Bulk Watermark",
+  "h1": "Bulk Watermark Up to 10 Photos",
+  "desc": "Apply one text watermark to a whole batch of photos at once. Same settings across all — then download all as ZIP.",
+  "cat": "watermarking",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "text",
+    "type": "text",
+    "def": "© Your Studio"
+   },
+   {
+    "key": "size",
+    "type": "slider",
+    "def": 4
+   },
+   {
+    "key": "opacity",
+    "type": "slider",
+    "def": 45
+   },
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom-right"
+   }
+  ],
+  "params": {},
+  "processor": "textWatermark"
+ },
+ {
+  "slug": "add-text-to-image",
+  "name": "Add Text to Image",
+  "h1": "Add Text to Any Image",
+  "desc": "Write on images with full typography control — font size, color, weight, position and optional background pill.",
+  "cat": "text",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "text",
+    "type": "textarea",
+    "def": "Your text here"
+   },
+   {
+    "key": "fontSize",
+    "type": "slider",
+    "def": 8
+   },
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#111111"
+   },
+   {
+    "key": "weight",
+    "type": "select",
+    "def": "bold"
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom-right"
+   },
+   {
+    "key": "background",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "bgOpacity",
+    "type": "slider",
+    "def": 85
+   }
+  ],
+  "params": {},
+  "processor": "textOverlay"
+ },
+ {
+  "slug": "add-caption-to-image",
+  "name": "Caption Bar",
+  "h1": "Add a Caption Bar to Images",
+  "desc": "Append a styled caption bar under (or over) your image with automatic text wrapping. Great for galleries and posts.",
+  "cat": "text",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "caption",
+    "type": "text",
+    "def": "A beautiful view from the mountain trail"
+   },
+   {
+    "key": "barHeight",
+    "type": "slider",
+    "def": 18
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#111111"
+   },
+   {
+    "key": "textColor",
+    "type": "color",
+    "def": "#ffffff"
+   }
+  ],
+  "params": {},
+  "processor": "captionBar"
+ },
+ {
+  "slug": "meme-generator",
+  "name": "Meme Generator",
+  "h1": "Meme Generator — Top & Bottom Text",
+  "desc": "Create classic memes with bold Impact top/bottom text. Instant, private, no watermark — your memes stay yours.",
+  "cat": "text",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "topText",
+    "type": "text",
+    "def": "WHEN THE CODE"
+   },
+   {
+    "key": "bottomText",
+    "type": "text",
+    "def": "COMPILES FIRST TRY"
+   },
+   {
+    "key": "fontSize",
+    "type": "slider",
+    "def": 10
+   },
+   {
+    "key": "uppercase",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "textColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "strokeColor",
+    "type": "color",
+    "def": "#000000"
+   }
+  ],
+  "params": {},
+  "processor": "memeText"
+ },
+ {
+  "slug": "quote-card-maker",
+  "name": "Quote Card",
+  "h1": "Quote Card Maker",
+  "desc": "Turn quotes into shareable image cards with elegant serif typography and author attribution. Instagram-ready.",
+  "cat": "text",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "quote",
+    "type": "textarea",
+    "def": "The best way to predict the future is to invent it."
+   },
+   {
+    "key": "author",
+    "type": "text",
+    "def": "Alan Kay"
+   },
+   {
+    "key": "overlay",
+    "type": "toggle",
+    "def": true
+   },
+   {
+    "key": "overlayColor",
+    "type": "color",
+    "def": "#000000"
+   },
+   {
+    "key": "overlayOpacity",
+    "type": "slider",
+    "def": 45
+   },
+   {
+    "key": "textColor",
+    "type": "color",
+    "def": "#ffffff"
+   }
+  ],
+  "params": {},
+  "processor": "quoteCard"
+ },
+ {
+  "slug": "add-title-to-image",
+  "name": "Title Banner",
+  "h1": "Add a Title Banner to Images",
+  "desc": "Create blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle.",
+  "cat": "text",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "title",
+    "type": "text",
+    "def": "10 Tips for Better Photos"
+   },
+   {
+    "key": "subtitle",
+    "type": "text",
+    "def": "PixKitApp Guide"
+   },
+   {
+    "key": "position",
+    "type": "select",
+    "def": "bottom"
+   },
+   {
+    "key": "barColor",
+    "type": "color",
+    "def": "#111827"
+   },
+   {
+    "key": "barOpacity",
+    "type": "slider",
+    "def": 80
+   },
+   {
+    "key": "textColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "accentColor",
+    "type": "color",
+    "def": "#f59e0b"
+   }
+  ],
+  "params": {},
+  "processor": "titleBanner"
+ },
+ {
+  "slug": "remove-white-background",
+  "name": "Remove White Background",
+  "h1": "Remove White Background from Image",
+  "desc": "Make white backgrounds transparent with smart flood-fill that keeps white details inside your subject. Free PNG output.",
+  "cat": "transparency",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "tolerance",
+    "type": "slider",
+    "def": 15
+   },
+   {
+    "key": "connectedOnly",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "removeWhiteBackground"
+ },
+ {
+  "slug": "make-image-transparent",
+  "name": "Make Transparent",
+  "h1": "Make Image Background Transparent",
+  "desc": "Remove any solid background color — white, black or custom — with tolerance and feathering. Clean PNG cutouts.",
+  "cat": "transparency",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "keyColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "tolerance",
+    "type": "slider",
+    "def": 20
+   },
+   {
+    "key": "feather",
+    "type": "slider",
+    "def": 0
+   }
+  ],
+  "params": {},
+  "processor": "removeColor"
+ },
+ {
+  "slug": "add-white-background",
+  "name": "Add White Background",
+  "h1": "Add a White Background to Transparent PNGs",
+  "desc": "Flatten transparent PNGs onto a white background — required by marketplaces like Amazon and many print shops.",
+  "cat": "transparency",
+  "accept": [
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   }
+  ],
+  "params": {
+   "color": "#ffffff"
+  },
+  "processor": "addBackground"
+ },
+ {
+  "slug": "add-background-color",
+  "name": "Add Background Color",
+  "h1": "Add a Solid Background Color",
+  "desc": "Place transparent images on any solid color — brand tints, pastels, darks. Choose your hex and export instantly.",
+  "cat": "transparency",
+  "accept": [
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#f5f5f4"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/png"
+   }
+  ],
+  "params": {},
+  "processor": "addBackground"
+ },
+ {
+  "slug": "round-corners-image",
+  "name": "Round Corners",
+  "h1": "Round Image Corners",
+  "desc": "Round the corners of any image with adjustable radius and transparent outside. Modern UI-ready PNG output.",
+  "cat": "transparency",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "radius",
+    "type": "slider",
+    "def": 10
+   }
+  ],
+  "params": {},
+  "processor": "roundCorners"
+ },
+ {
+  "slug": "transparent-png-maker",
+  "name": "Transparent PNG Maker",
+  "h1": "Transparent PNG Maker — Alpha Cleaner",
+  "desc": "Convert any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Preview on checkerboard.",
+  "cat": "transparency",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "alphaThreshold",
+    "type": "slider",
+    "def": 50
+   },
+   {
+    "key": "binarize",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "transparentPng"
+ },
+ {
+  "slug": "png-drop-shadow",
+  "name": "PNG Drop Shadow",
+  "h1": "Add Drop Shadow to PNG",
+  "desc": "Give transparent PNGs a professional drop shadow — blur, offset, color and opacity control. Design-ready output.",
+  "cat": "transparency",
+  "accept": [
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": null,
+  "options": [
+   {
+    "key": "blur",
+    "type": "slider",
+    "def": 12
+   },
+   {
+    "key": "offsetX",
+    "type": "slider",
+    "def": 0
+   },
+   {
+    "key": "offsetY",
+    "type": "slider",
+    "def": 6
+   },
+   {
+    "key": "color",
+    "type": "color",
+    "def": "#000000"
+   },
+   {
+    "key": "opacity",
+    "type": "slider",
+    "def": 40
+   }
+  ],
+  "params": {},
+  "processor": "dropShadow"
+ },
+ {
+  "slug": "instagram-post-resizer",
+  "name": "Instagram Post",
+  "h1": "Instagram Post Resizer — 1080×1080",
+  "desc": "Resize images to perfect Instagram post size 1080×1080 square. Cover-crop or pad — free, instant, batch-friendly.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1080,
+   "__h": 1080
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "instagram-story-resizer",
+  "name": "Instagram Story",
+  "h1": "Instagram Story Resizer — 1080×1920",
+  "desc": "Resize images to Instagram Story size 1080×1920 vertical. Perfect full-screen stories and Reels covers.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1080,
+   "__h": 1920
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "instagram-portrait-resizer",
+  "name": "Instagram Portrait",
+  "h1": "Instagram Portrait Resizer — 1080×1350",
+  "desc": "Resize images to Instagram portrait post size 1080×1350 (4:5). Maximum feed real estate.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1080,
+   "__h": 1350
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "facebook-cover-resizer",
+  "name": "Facebook Cover",
+  "h1": "Facebook Cover Photo Resizer — 851×315",
+  "desc": "Resize images to Facebook cover size 851×315. Nail the desktop banner crop on the first try.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 851,
+   "__h": 315
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "facebook-profile-resizer",
+  "name": "Facebook Profile",
+  "h1": "Facebook Profile Picture Resizer — 720×720",
+  "desc": "Resize images to Facebook profile picture size 720×720 square for a crisp profile photo.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 720,
+   "__h": 720
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "twitter-header-resizer",
+  "name": "X / Twitter Header",
+  "h1": "X (Twitter) Header Resizer — 1500×500",
+  "desc": "Resize images to X (Twitter) header size 1500×500. Get your banner crop right without trial and error.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1500,
+   "__h": 500
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "x-post-resizer",
+  "name": "X / Twitter Post",
+  "h1": "X (Twitter) Post Resizer — 1200×675",
+  "desc": "Resize images to X (Twitter) post size 1200×675 (16:9) for maximum timeline impact.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1200,
+   "__h": 675
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "linkedin-banner-resizer",
+  "name": "LinkedIn Banner",
+  "h1": "LinkedIn Banner Resizer — 1584×396",
+  "desc": "Resize images to LinkedIn profile banner size 1584×396. Look professional from the first impression.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1584,
+   "__h": 396
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "linkedin-post-resizer",
+  "name": "LinkedIn Post",
+  "h1": "LinkedIn Post Resizer — 1200×1200",
+  "desc": "Resize images to LinkedIn post size 1200×1200 square for clean professional feeds.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1200,
+   "__h": 1200
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "youtube-thumbnail-resizer",
+  "name": "YouTube Thumbnail",
+  "h1": "YouTube Thumbnail Resizer — 1280×720",
+  "desc": "Resize images to YouTube thumbnail size 1280×720 (16:9). Click-worthy thumbnails, exact spec.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1280,
+   "__h": 720
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "youtube-banner-resizer",
+  "name": "YouTube Banner",
+  "h1": "YouTube Channel Banner Resizer — 2048×1152",
+  "desc": "Resize images to YouTube channel banner size 2048×1152. Channel art that fits every device.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 2048,
+   "__h": 1152
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "pinterest-pin-resizer",
+  "name": "Pinterest Pin",
+  "h1": "Pinterest Pin Resizer — 1000×1500",
+  "desc": "Resize images to Pinterest pin size 1000×1500 (2:3). Optimal vertical pins that get saves.",
+  "cat": "social",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "fit",
+    "type": "select",
+    "def": "cover"
+   },
+   {
+    "key": "bgColor",
+    "type": "color",
+    "def": "#ffffff"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 88
+   }
+  ],
+  "params": {
+   "__w": 1000,
+   "__h": 1500
+  },
+  "processor": "socialResize"
+ },
+ {
+  "slug": "passport-photo-maker",
+  "name": "Passport Photo Maker",
+  "h1": "Passport Photo Maker — All Standards",
+  "desc": "Make passport photos online free with official size guides. US, UK, EU, India & more — 35×45mm or 2×2in at 300 DPI.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "passport",
+  "options": [
+   {
+    "key": "preset",
+    "type": "select",
+    "def": "35x45mm"
+   },
+   {
+    "key": "bg",
+    "type": "select",
+    "def": "white"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 95
+   }
+  ],
+  "params": {},
+  "processor": "cropManual"
+ },
+ {
+  "slug": "us-passport-photo",
+  "name": "US Passport Photo",
+  "h1": "US Passport Photo Maker — 2×2 inch",
+  "desc": "Create compliant US passport photos: 2×2 inches (600×600px) at 300 DPI with official head guides.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "passport",
+  "options": [
+   {
+    "key": "bg",
+    "type": "select",
+    "def": "white"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 95
+   }
+  ],
+  "params": {
+   "__pw": 600,
+   "__ph": 600
+  },
+  "processor": "cropManual"
+ },
+ {
+  "slug": "schengen-visa-photo",
+  "name": "Schengen Visa Photo",
+  "h1": "Schengen Visa Photo Maker — 35×45mm",
+  "desc": "Create Schengen visa photos at 35×45mm (413×531px @300DPI) with ICAO head-position guides.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "passport",
+  "options": [
+   {
+    "key": "bg",
+    "type": "select",
+    "def": "white"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 95
+   }
+  ],
+  "params": {
+   "__pw": 413,
+   "__ph": 531
+  },
+  "processor": "cropManual"
+ },
+ {
+  "slug": "china-visa-photo",
+  "name": "China Visa Photo",
+  "h1": "China Visa Photo Maker — 33×48mm",
+  "desc": "Create China visa photos at 33×48mm (390×567px @300DPI) with official guide overlay.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "passport",
+  "options": [
+   {
+    "key": "bg",
+    "type": "select",
+    "def": "white"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 95
+   }
+  ],
+  "params": {
+   "__pw": 390,
+   "__ph": 567
+  },
+  "processor": "cropManual"
+ },
+ {
+  "slug": "id-photo-1-inch",
+  "name": "1-Inch ID Photo",
+  "h1": "1-Inch ID Photo Maker — 295×413",
+  "desc": "Make standard 1-inch (25×35mm) ID photos at 295×413px — the universal badge and student-card size.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "passport",
+  "options": [
+   {
+    "key": "bg",
+    "type": "select",
+    "def": "white"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 95
+   }
+  ],
+  "params": {
+   "__pw": 295,
+   "__ph": 413
+  },
+  "processor": "cropManual"
+ },
+ {
+  "slug": "linkedin-profile-photo",
+  "name": "LinkedIn Headshot",
+  "h1": "LinkedIn Profile Photo Maker — 400×400",
+  "desc": "Crop professional LinkedIn headshots to 400×400 square with the ideal 60% face framing guide.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": false,
+  "interactive": "passport",
+  "options": [
+   {
+    "key": "bg",
+    "type": "select",
+    "def": "white"
+   },
+   {
+    "key": "format",
+    "type": "select",
+    "def": "image/jpeg"
+   },
+   {
+    "key": "quality",
+    "type": "slider",
+    "def": 95
+   }
+  ],
+  "params": {
+   "__pw": 400,
+   "__ph": 400
+  },
+  "processor": "cropManual"
+ },
+ {
+  "slug": "photo-print-sheet",
+  "name": "Photo Print Sheet",
+  "h1": "Passport Photo Print Sheet (4×6)",
+  "desc": "Arrange passport photos on a 4×6 inch print sheet at 300 DPI with cut lines. Take it to any photo kiosk.",
+  "cat": "passport",
+  "accept": [
+   "image/jpeg",
+   "image/png",
+   "image/webp"
+  ],
+  "multiple": true,
+  "interactive": null,
+  "options": [
+   {
+    "key": "photoWidthPx",
+    "type": "select",
+    "def": "413"
+   },
+   {
+    "key": "photoHeightPx",
+    "type": "number",
+    "def": 531
+   },
+   {
+    "key": "cutLines",
+    "type": "toggle",
+    "def": true
+   }
+  ],
+  "params": {},
+  "processor": "printSheet"
+ }
+]

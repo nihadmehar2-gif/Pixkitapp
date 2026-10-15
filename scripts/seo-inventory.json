@@ -1,0 +1,3509 @@
+{
+ "categories": [
+  {
+   "id": "compression",
+   "slug": "compress",
+   "name": "Compression",
+   "tools": 11
+  },
+  {
+   "id": "resizing",
+   "slug": "resize",
+   "name": "Resizing",
+   "tools": 11
+  },
+  {
+   "id": "cropping",
+   "slug": "crop",
+   "name": "Cropping",
+   "tools": 8
+  },
+  {
+   "id": "conversion",
+   "slug": "convert",
+   "name": "Conversion",
+   "tools": 20
+  },
+  {
+   "id": "rotation",
+   "slug": "rotate",
+   "name": "Rotation & Flipping",
+   "tools": 7
+  },
+  {
+   "id": "filters",
+   "slug": "filters",
+   "name": "Filters & Effects",
+   "tools": 15
+  },
+  {
+   "id": "optimization",
+   "slug": "optimize",
+   "name": "Optimization",
+   "tools": 7
+  },
+  {
+   "id": "metadata",
+   "slug": "metadata",
+   "name": "Metadata & EXIF",
+   "tools": 3
+  },
+  {
+   "id": "color",
+   "slug": "color",
+   "name": "Color Utilities",
+   "tools": 9
+  },
+  {
+   "id": "watermarking",
+   "slug": "watermark",
+   "name": "Watermarking",
+   "tools": 5
+  },
+  {
+   "id": "text",
+   "slug": "text",
+   "name": "Text on Images",
+   "tools": 5
+  },
+  {
+   "id": "transparency",
+   "slug": "transparency",
+   "name": "Transparency",
+   "tools": 7
+  },
+  {
+   "id": "social",
+   "slug": "social",
+   "name": "Social Media Sizes",
+   "tools": 12
+  },
+  {
+   "id": "passport",
+   "slug": "passport-photos",
+   "name": "Passport & ID Photos",
+   "tools": 7
+  }
+ ],
+ "tools": [
+  {
+   "slug": "image-compressor",
+   "url": "https://pixkitapp.com/image-compressor",
+   "name": "Image Compressor",
+   "h1": "Free Image Compressor",
+   "description": "Compress JPG, PNG and WebP images online for free. Reduce file size up to 90% — private, no upload, instant results in your browser.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:quality",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Free Image Compressor – Shrink JPG, PNG, WebP",
+    "description": "Compress JPG, PNG and WebP images up to 90% smaller right in your browser. No upload, no signup, no watermark — free image compression in seconds.",
+    "primaryKeyword": "image compressor"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "image compressor",
+    "compress image online",
+    "reduce image size",
+    "photo compressor free"
+   ]
+  },
+  {
+   "slug": "compress-png-image",
+   "url": "https://pixkitapp.com/compress-png-image",
+   "name": "Compress PNG",
+   "h1": "Compress PNG Images",
+   "description": "Compress PNG files online with optional color reduction. Shrink PNG screenshots, logos and graphics while keeping transparency.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/png",
+   "multiple": true,
+   "options": [
+    "select:colors(256/128/64/32/16/8)",
+    "toggle:grayscale"
+   ],
+   "seo": {
+    "title": "Compress PNG Online – Keep Transparency",
+    "description": "Compress PNG files online free with optional palette reduction to 8–256 colors. Shrink screenshots, logos and graphics while transparency survives intact.",
+    "primaryKeyword": "compress png"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "compress png",
+    "png compressor",
+    "shrink png file",
+    "reduce png size"
+   ]
+  },
+  {
+   "slug": "compress-jpeg-image",
+   "url": "https://pixkitapp.com/compress-jpeg-image",
+   "name": "Compress JPEG",
+   "h1": "Compress JPEG Images",
+   "description": "Compress JPG/JPEG photos online free. Fine-tune quality, keep photos sharp, and shrink files for email or web — no upload needed.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg",
+   "multiple": true,
+   "options": [
+    "slider:quality",
+    "toggle:keepMetadata"
+   ],
+   "seo": {
+    "title": "Compress JPEG/JPG Online – Quality Slider",
+    "description": "Compress JPEG photos online with a precise quality slider and metadata control. Get email- and web-ready JPGs without uploads — free and private.",
+    "primaryKeyword": "compress jpeg online"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "compress jpeg",
+    "jpg compressor",
+    "compress jpg online",
+    "jpeg optimizer"
+   ]
+  },
+  {
+   "slug": "compress-webp-image",
+   "url": "https://pixkitapp.com/compress-webp-image",
+   "name": "Compress WebP",
+   "h1": "Compress WebP Images",
+   "description": "Compress WebP images online free. Reduce WebP file size with a quality slider while keeping modern browser compatibility.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/webp",
+   "multiple": true,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Compress WebP Images Online – Free & Instant",
+    "description": "Reduce WebP file size online with a live quality slider. Smaller modern-format images for faster sites — free, private, no upload required.",
+    "primaryKeyword": "compress webp"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "compress webp",
+    "webp compressor",
+    "reduce webp size"
+   ]
+  },
+  {
+   "slug": "compress-image-to-50kb",
+   "url": "https://pixkitapp.com/compress-image-to-50kb",
+   "name": "Compress to 50KB",
+   "h1": "Compress Image to 50KB",
+   "description": "Compress any image to exactly 50KB or less. Perfect for form uploads, avatars and small attachments. Free, private, in-browser.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Compress Image to 50KB Online – Exact Target",
+    "description": "Compress any photo to 50KB or less online free. Smart quality search finds the best-looking result that fits strict upload limits — no upload needed.",
+    "primaryKeyword": "compress image to 50kb"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "compress image to 50kb",
+    "50kb photo converter",
+    "image size reducer 50kb"
+   ]
+  },
+  {
+   "slug": "compress-image-to-100kb",
+   "url": "https://pixkitapp.com/compress-image-to-100kb",
+   "name": "Compress to 100KB",
+   "h1": "Compress Image to 100KB",
+   "description": "Reduce any photo to 100KB or smaller online. Ideal for online applications, profiles and uploads with strict size limits.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Compress Image to 100KB Online – Free",
+    "description": "Reduce any image to 100KB or smaller in your browser. Ideal for online applications, profiles and portal uploads with strict size caps — private and instant.",
+    "primaryKeyword": "compress image to 100kb"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "compress image to 100kb",
+    "100kb image converter",
+    "photo compress 100kb"
+   ]
+  },
+  {
+   "slug": "compress-image-to-200kb",
+   "url": "https://pixkitapp.com/compress-image-to-200kb",
+   "name": "Compress to 200KB",
+   "h1": "Compress Image to 200KB",
+   "description": "Compress images to 200KB online free. Hit upload limits for forms, forums and email while keeping your photo sharp.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Compress Image to 200KB Online – Best Quality Fit",
+    "description": "Compress photos to 200KB online free with smart quality search. Hit upload limits for forms, forums and email while your photo stays sharp.",
+    "primaryKeyword": "compress image to 200kb"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "compress image to 200kb",
+    "200kb photo size",
+    "reduce image to 200kb"
+   ]
+  },
+  {
+   "slug": "compress-image-to-500kb",
+   "url": "https://pixkitapp.com/compress-image-to-500kb",
+   "name": "Compress to 500KB",
+   "h1": "Compress Image to 500KB",
+   "description": "Compress photos to 500KB online. Perfect balance of size and quality for email attachments and web uploads. Free and private.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Compress Image to 500KB Online – Free & Private",
+    "description": "Shrink photos to 500KB or below with near-original quality. Perfect balance of size and sharpness for email, uploads and the web — runs in your browser.",
+    "primaryKeyword": "compress image to 500kb"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "compress image to 500kb",
+    "500kb photo",
+    "reduce photo size 500kb"
+   ]
+  },
+  {
+   "slug": "compress-image-to-specific-size",
+   "url": "https://pixkitapp.com/compress-image-to-specific-size",
+   "name": "Compress to Custom KB",
+   "h1": "Compress Image to a Custom Size",
+   "description": "Compress any image to an exact KB target you choose — 30KB, 75KB, 1MB, anything. Smart quality search keeps it sharp.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "number:targetKB",
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Compress Image to Exact KB – Custom Target",
+    "description": "Compress images to any KB target you choose — 30KB, 75KB, 1MB, whatever the form demands. Smart search keeps quality as high as the size allows.",
+    "primaryKeyword": "compress image to specific size"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "compress image to specific size",
+    "custom kb compressor",
+    "exact file size image"
+   ]
+  },
+  {
+   "slug": "lossless-image-compressor",
+   "url": "https://pixkitapp.com/lossless-image-compressor",
+   "name": "Lossless Compressor",
+   "h1": "Visually Lossless Image Compressor",
+   "description": "Shrink photos with zero visible quality loss. Tries the highest quality settings first and keeps your image pixel-identical to the eye.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Visually Lossless Image Compressor – No Quality Loss",
+    "description": "Shrink photos with zero visible quality loss. The compressor tries the highest quality settings first and keeps output pixel-identical to the eye — free.",
+    "primaryKeyword": "lossless image compressor"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "lossless image compressor",
+    "visually lossless",
+    "compress without quality loss"
+   ]
+  },
+  {
+   "slug": "bulk-image-compressor",
+   "url": "https://pixkitapp.com/bulk-image-compressor",
+   "name": "Bulk Image Compressor",
+   "h1": "Bulk Image Compressor — Up to 10 Images",
+   "description": "Compress up to 10 images at once and see total savings. Batch compress JPG, PNG and WebP files with one click, download as ZIP.",
+   "category": "Compression",
+   "categorySlug": "compress",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:quality",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Bulk Image Compressor – Batch of 10 at Once",
+    "description": "Compress up to 10 images in one click and see total savings across the batch. JPG, PNG and WebP supported — download everything as a ZIP.",
+    "primaryKeyword": "bulk image compressor"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "bulk image compressor",
+    "batch compress images",
+    "compress multiple photos"
+   ]
+  },
+  {
+   "slug": "image-resizer",
+   "url": "https://pixkitapp.com/image-resizer",
+   "name": "Image Resizer",
+   "h1": "Free Image Resizer",
+   "description": "Resize images to exact width & height online free. Lock aspect ratio, choose output format, batch up to 10 photos.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "number:width",
+    "number:height",
+    "toggle:keepAspect",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Free Image Resizer – Exact W×H Online",
+    "description": "Resize images to exact width and height online free. Lock aspect ratio, choose output format, batch up to 10 photos — private, no upload.",
+    "primaryKeyword": "image resizer"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "image resizer",
+    "resize image online",
+    "change image dimensions",
+    "photo resizer"
+   ]
+  },
+  {
+   "slug": "resize-image-by-percentage",
+   "url": "https://pixkitapp.com/resize-image-by-percentage",
+   "name": "Resize by Percentage",
+   "h1": "Resize Image by Percentage",
+   "description": "Scale images to 10%–400% of original size. Quick percentage-based resizing with quality control — free and instant.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:percent",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Resize Image by Percentage – 10%–400%",
+    "description": "Scale images to any percentage of original size, from 10% to 400%. Quick proportional resizing with quality control — free, instant, in-browser.",
+    "primaryKeyword": "resize image by percentage"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize image percentage",
+    "scale image",
+    "shrink image 50 percent"
+   ]
+  },
+  {
+   "slug": "resize-image-to-width",
+   "url": "https://pixkitapp.com/resize-image-to-width",
+   "name": "Resize to Width",
+   "h1": "Resize Image to a Fixed Width",
+   "description": "Set an exact width and get the height automatically. Ideal for blog content widths, hero images and gallery columns.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "number:width",
+    "select:preset(custom/640/800/1200/1920)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Resize Image to Fixed Width – Auto Height",
+    "description": "Set an exact width and get the height calculated automatically. Built-in presets for 640, 800, 1200 and 1920px — free browser-based resizer.",
+    "primaryKeyword": "resize image to width"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize image to width",
+    "fixed width resize",
+    "blog image width"
+   ]
+  },
+  {
+   "slug": "resize-image-to-height",
+   "url": "https://pixkitapp.com/resize-image-to-height",
+   "name": "Resize to Height",
+   "h1": "Resize Image to a Fixed Height",
+   "description": "Set an exact height and the width adjusts automatically. Great for story frames, banners and profile covers.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "number:height",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Resize Image to Fixed Height – Auto Width",
+    "description": "Set an exact height and the width adjusts automatically to keep proportions. Great for story frames, banners and profile covers — free, private, instant.",
+    "primaryKeyword": "resize image to height"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize image to height",
+    "fixed height resize"
+   ]
+  },
+  {
+   "slug": "resize-image-to-dimensions",
+   "url": "https://pixkitapp.com/resize-image-to-dimensions",
+   "name": "Resize to Dimensions",
+   "h1": "Resize to Exact Dimensions (W×H)",
+   "description": "Force images to exact dimensions with fit modes: stretch, cover-crop or contain-pad. Control every output pixel.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "number:width",
+    "number:height",
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Resize to Exact Dimensions (W×H) – Fit Modes",
+    "description": "Force images to exact pixel dimensions with stretch, cover-crop or contain-pad fit modes. Total control over every output pixel — free and private.",
+    "primaryKeyword": "resize to exact dimensions"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize to dimensions",
+    "exact size image",
+    "cover crop resize"
+   ]
+  },
+  {
+   "slug": "resize-image-to-kb",
+   "url": "https://pixkitapp.com/resize-image-to-kb",
+   "name": "Resize to KB",
+   "h1": "Resize Image to a Target File Size",
+   "description": "Resize and compress until your image hits an exact KB target — smart search over dimensions and quality finds the best fit.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "number:targetKB",
+    "slider:maxDimension",
+    "select:format(image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "Resize Image to a Target KB – Dual Search",
+    "description": "Resize and compress until your image hits an exact KB target. Smart search over dimensions and quality finds the best possible fit — free, no upload.",
+    "primaryKeyword": "resize image to kb"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize image to kb",
+    "resize to file size",
+    "image to specific kb"
+   ]
+  },
+  {
+   "slug": "resize-png-image",
+   "url": "https://pixkitapp.com/resize-png-image",
+   "name": "Resize PNG",
+   "h1": "Resize PNG Images",
+   "description": "Resize PNG files while keeping transparency and crispness. Perfect for logos, screenshots and UI graphics.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/png",
+   "multiple": true,
+   "options": [
+    "number:width",
+    "toggle:keepAspect",
+    "toggle:mode"
+   ],
+   "seo": {
+    "title": "Resize PNG Images – Keep Transparency",
+    "description": "Resize PNG files online while transparency and crisp edges survive. Built for logos, screenshots and UI graphics — free, batch up to 10.",
+    "primaryKeyword": "resize png"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize png",
+    "png resizer",
+    "shrink png dimensions"
+   ]
+  },
+  {
+   "slug": "resize-jpg-image",
+   "url": "https://pixkitapp.com/resize-jpg-image",
+   "name": "Resize JPG",
+   "h1": "Resize JPG Images",
+   "description": "Resize JPG photos with quality control and smart scaling. Fast, free, and batch-friendly — up to 10 photos per run.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg",
+   "multiple": true,
+   "options": [
+    "number:width",
+    "toggle:mode",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Resize JPG Images – Quality Control Included",
+    "description": "Resize JPG photos online with smart scaling and a quality slider. Fast, free, batch-friendly — up to 10 photos processed entirely in your browser.",
+    "primaryKeyword": "resize jpg"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize jpg",
+    "jpg resizer",
+    "resize photos online"
+   ]
+  },
+  {
+   "slug": "resize-webp-image",
+   "url": "https://pixkitapp.com/resize-webp-image",
+   "name": "Resize WebP",
+   "h1": "Resize WebP Images",
+   "description": "Resize WebP images with a quality slider. Keep modern-format efficiency while hitting your target dimensions.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/webp",
+   "multiple": true,
+   "options": [
+    "number:width",
+    "toggle:mode",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Resize WebP Images – Modern Format Control",
+    "description": "Resize WebP images with a quality slider while keeping modern-format efficiency. Hit target dimensions without losing WebP's size advantage.",
+    "primaryKeyword": "resize webp"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize webp",
+    "webp resizer"
+   ]
+  },
+  {
+   "slug": "enlarge-image",
+   "url": "https://pixkitapp.com/enlarge-image",
+   "name": "Enlarge Image",
+   "h1": "Enlarge Images (2x–4x Upscale)",
+   "description": "Enlarge images up to 4x with multi-step upscaling and optional sharpening. Better than naive stretching — free in-browser.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:factor(2/3/4)",
+    "toggle:sharpen",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Enlarge Image 2x–4x – Smart Upscale",
+    "description": "Enlarge images up to 4x with multi-step upscaling and optional sharpening. Noticeably better than naive stretching — free, private, in-browser.",
+    "primaryKeyword": "enlarge image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "enlarge image",
+    "upscale image",
+    "increase image size 2x 4x"
+   ]
+  },
+  {
+   "slug": "thumbnail-maker",
+   "url": "https://pixkitapp.com/thumbnail-maker",
+   "name": "Thumbnail Maker",
+   "h1": "Thumbnail Maker — Square or Fit",
+   "description": "Generate square center-crop thumbnails or fit-scale thumbnails in sizes from 64 to 640px. Batch process 10 images.",
+   "category": "Resizing",
+   "categorySlug": "resize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:size(64/128/256/400/640)",
+    "select:fit(cover/contain)",
+    "select:format(image/webp/image/jpeg/image/png)"
+   ],
+   "seo": {
+    "title": "Thumbnail Maker – Square or Fit, 64–640px",
+    "description": "Generate square center-crop or fit-scale thumbnails in sizes from 64 to 640px. Batch process 10 images into clean, consistent thumbnails.",
+    "primaryKeyword": "thumbnail maker"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "thumbnail maker",
+    "create thumbnails",
+    "square thumbnail generator"
+   ]
+  },
+  {
+   "slug": "crop-image",
+   "url": "https://pixkitapp.com/crop-image",
+   "name": "Crop Image",
+   "h1": "Free Online Image Cropper",
+   "description": "Crop images online with a live interactive editor — drag the frame, lock aspect ratios, and export JPG, PNG or WebP.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Free Online Image Cropper – Interactive Editor",
+    "description": "Crop images online with a live interactive editor — drag the frame, lock aspect ratios, rotate and flip, then export JPG, PNG or WebP.",
+    "primaryKeyword": "crop image online"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "crop image online",
+    "image cropper",
+    "photo crop tool free"
+   ]
+  },
+  {
+   "slug": "crop-image-to-square",
+   "url": "https://pixkitapp.com/crop-image-to-square",
+   "name": "Crop to Square",
+   "h1": "Crop Image to Square (1:1)",
+   "description": "Center-crop any photo to a perfect square in one click. Great for Instagram, avatars and product shots.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:anchor(center/top/top-heavy/bottom)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Crop Image to Square (1:1) – One Click",
+    "description": "Center-crop any photo to a perfect square instantly, with top, center or bottom anchoring. Batch-crop 10 images for Instagram and avatars.",
+    "primaryKeyword": "crop image to square"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "crop to square",
+    "square crop",
+    "1:1 crop",
+    "instagram square crop"
+   ]
+  },
+  {
+   "slug": "crop-image-to-circle",
+   "url": "https://pixkitapp.com/crop-image-to-circle",
+   "name": "Crop to Circle",
+   "h1": "Crop Image to a Circle",
+   "description": "Cut a circular crop from any photo and download as a transparent PNG. Perfect for profile pictures and badges.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:anchor(center/top/top-heavy)"
+   ],
+   "seo": {
+    "title": "Crop Image to a Circle – Transparent PNG",
+    "description": "Cut a perfect circular crop from any photo and download as a transparent PNG. Ideal for profile pictures, badges and round UI avatars.",
+    "primaryKeyword": "circle crop"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "circle crop",
+    "circular crop",
+    "round profile picture",
+    "crop circle png"
+   ]
+  },
+  {
+   "slug": "crop-image-16-9",
+   "url": "https://pixkitapp.com/crop-image-16-9",
+   "name": "Crop 16:9",
+   "h1": "Crop Image to 16:9 Widescreen",
+   "description": "Center-crop photos to 16:9 for YouTube thumbnails, monitors and video frames. One click, batch supported.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:anchor(center/top/top-heavy/bottom)",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Crop Image to 16:9 Widescreen – One Click",
+    "description": "Center-crop photos to 16:9 widescreen for YouTube thumbnails, monitors and video frames. Batch support and anchor control — free, instant.",
+    "primaryKeyword": "crop 16:9"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "crop 16:9",
+    "widescreen crop",
+    "youtube thumbnail crop"
+   ]
+  },
+  {
+   "slug": "crop-image-9-16",
+   "url": "https://pixkitapp.com/crop-image-9-16",
+   "name": "Crop 9:16",
+   "h1": "Crop Image to 9:16 Vertical",
+   "description": "Crop to 9:16 vertical for Instagram Stories, TikTok, Reels and Shorts. Turn landscape photos into vertical hits.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:anchor(center/top)",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Crop Image to 9:16 Vertical – Stories & Reels",
+    "description": "Crop photos to 9:16 vertical for Instagram Stories, TikTok, Reels and Shorts. Turn landscape shots into full-screen verticals — free, in-browser.",
+    "primaryKeyword": "crop 9:16"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "crop 9:16",
+    "vertical crop",
+    "story crop",
+    "tiktok crop"
+   ]
+  },
+  {
+   "slug": "crop-image-4-3",
+   "url": "https://pixkitapp.com/crop-image-4-3",
+   "name": "Crop 4:3",
+   "h1": "Crop Image to 4:3 Classic",
+   "description": "Crop photos to the classic 4:3 ratio for prints, presentations and photo albums. One-click, in-browser.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:anchor(center/top/bottom)",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Crop Image to 4:3 Classic Ratio – One Click",
+    "description": "Crop photos to the classic 4:3 ratio for prints, presentations and photo albums. Anchored cropping with batch support — free and instant.",
+    "primaryKeyword": "crop 4:3"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "crop 4:3",
+    "classic photo ratio",
+    "presentation crop"
+   ]
+  },
+  {
+   "slug": "crop-image-3-2",
+   "url": "https://pixkitapp.com/crop-image-3-2",
+   "name": "Crop 3:2",
+   "h1": "Crop Image to 3:2 Photo Ratio",
+   "description": "Crop to 3:2 — the 35mm film and DSLR standard — for prints and photography portfolios. Free, instant, private.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:anchor(center/top/bottom)",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Crop Image to 3:2 Photo Ratio – 35mm Classic",
+    "description": "Crop to 3:2 — the 35mm film and DSLR standard — for prints and photography portfolios. Anchored, batch-friendly, entirely in-browser.",
+    "primaryKeyword": "crop 3:2"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "crop 3:2",
+    "35mm ratio crop",
+    "print ratio crop"
+   ]
+  },
+  {
+   "slug": "crop-borders-auto",
+   "url": "https://pixkitapp.com/crop-borders-auto",
+   "name": "Auto Trim Borders",
+   "h1": "Auto-Trim Image Borders",
+   "description": "Automatically detect and remove plain borders around screenshots and scanned photos. Adjustable tolerance + padding.",
+   "category": "Cropping",
+   "categorySlug": "crop",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:tolerance",
+    "number:padding"
+   ],
+   "seo": {
+    "title": "Auto-Trim Image Borders – Remove White Edges",
+    "description": "Automatically detect and remove plain borders around screenshots and scans. Adjustable tolerance and padding — batch up to 10 images, free.",
+    "primaryKeyword": "trim image borders"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "trim borders",
+    "auto crop screenshot",
+    "remove white border",
+    "scan trim"
+   ]
+  },
+  {
+   "slug": "webp-to-jpg",
+   "url": "https://pixkitapp.com/webp-to-jpg",
+   "name": "WebP to JPG",
+   "h1": "Convert WebP to JPG",
+   "description": "Convert WebP images to JPG online free. Universal compatibility for any app or website — private, instant, batch-friendly.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/webp",
+   "multiple": true,
+   "options": [
+    "slider:quality",
+    "color:background"
+   ],
+   "seo": {
+    "title": "WebP to JPG Converter Online – Free",
+    "description": "Convert WebP to JPG online for free — batch up to 10 images with quality control and transparency flattening. Private, instant, no upload.",
+    "primaryKeyword": "WebP to JPG converter online"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "webp to jpg",
+    "convert webp to jpeg",
+    "webp converter"
+   ]
+  },
+  {
+   "slug": "webp-to-png",
+   "url": "https://pixkitapp.com/webp-to-png",
+   "name": "WebP to PNG",
+   "h1": "Convert WebP to PNG",
+   "description": "Convert WebP to PNG while keeping transparency and lossless quality. Free, private, works in any modern browser.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "WebP to PNG Converter – Lossless & Transparent",
+    "description": "Convert WebP to PNG online free with full transparency preserved. Lossless output for graphics, logos and screenshots — private, in-browser, instant.",
+    "primaryKeyword": "webp to png converter"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "webp to png",
+    "convert webp png",
+    "webp png converter"
+   ]
+  },
+  {
+   "slug": "jpg-to-png",
+   "url": "https://pixkitapp.com/jpg-to-png",
+   "name": "JPG to PNG",
+   "h1": "Convert JPG to PNG",
+   "description": "Convert JPG photos to PNG format online free. Lossless output with no quality loss — private in-browser conversion.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/jpeg",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "JPG to PNG Converter – Lossless Output",
+    "description": "Convert JPG to PNG online free. Lossless output with no further quality loss, ideal for editing masters and text-heavy images — private, instant.",
+    "primaryKeyword": "jpg to png converter"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "jpg to png",
+    "jpeg to png",
+    "convert jpg to png online"
+   ]
+  },
+  {
+   "slug": "png-to-jpg",
+   "url": "https://pixkitapp.com/png-to-jpg",
+   "name": "PNG to JPG",
+   "h1": "Convert PNG to JPG",
+   "description": "Convert PNG to JPG with background color control for transparency. Slash file sizes for photos — free, instant, private.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/png",
+   "multiple": true,
+   "options": [
+    "slider:quality",
+    "color:background"
+   ],
+   "seo": {
+    "title": "PNG to JPG Converter – Background Control",
+    "description": "Convert PNG to JPG online with a background color picker for transparency. Slash file sizes on photos — free, instant, batch of 10, no upload.",
+    "primaryKeyword": "png to jpg converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "png to jpg",
+    "convert png to jpeg",
+    "png jpeg converter"
+   ]
+  },
+  {
+   "slug": "png-to-webp",
+   "url": "https://pixkitapp.com/png-to-webp",
+   "name": "PNG to WebP",
+   "h1": "Convert PNG to WebP",
+   "description": "Convert PNG images to WebP online. Same crispness, dramatically smaller files — the modern format for the modern web.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/png",
+   "multiple": true,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "PNG to WebP Converter – Same Quality, Less Size",
+    "description": "Convert PNG to WebP online free. PNG-class quality and transparency at a fraction of the file size — the modern format for faster websites.",
+    "primaryKeyword": "png to webp converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "png to webp",
+    "convert png webp",
+    "webp converter online"
+   ]
+  },
+  {
+   "slug": "jpg-to-webp",
+   "url": "https://pixkitapp.com/jpg-to-webp",
+   "name": "JPG to WebP",
+   "h1": "Convert JPG to WebP",
+   "description": "Convert JPG to WebP for 25–50% smaller files at the same visual quality. Boost site speed — free browser converter.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/jpeg",
+   "multiple": true,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "JPG to WebP Converter – 25–50% Smaller Files",
+    "description": "Convert JPG to WebP online free for 25–50% smaller files at the same visual quality. Boost site speed with the modern codec — private and instant.",
+    "primaryKeyword": "jpg to webp converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "jpg to webp",
+    "convert jpeg to webp",
+    "webp image converter"
+   ]
+  },
+  {
+   "slug": "gif-to-png",
+   "url": "https://pixkitapp.com/gif-to-png",
+   "name": "GIF to PNG",
+   "h1": "Extract GIF Frame as PNG",
+   "description": "Turn a GIF's first frame into a high-quality PNG image. Perfect for previews and thumbnails from animated GIFs.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/gif",
+   "multiple": false,
+   "options": [],
+   "seo": {
+    "title": "GIF to PNG Converter – Extract First Frame",
+    "description": "Turn a GIF's first frame into a full-quality PNG image online. Perfect for previews, thumbnails and GIF-free platforms — free, private, instant.",
+    "primaryKeyword": "gif to png converter"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "gif to png",
+    "gif frame extract",
+    "gif screenshot"
+   ]
+  },
+  {
+   "slug": "gif-to-webp",
+   "url": "https://pixkitapp.com/gif-to-webp",
+   "name": "GIF to WebP",
+   "h1": "Convert GIF to WebP Image",
+   "description": "Convert GIF files to efficient WebP images in your browser. Smaller, modern output from any animated or static GIF.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/gif",
+   "multiple": false,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "GIF to WebP Converter – Modern & Smaller",
+    "description": "Convert GIF files to efficient WebP images in your browser. Better compression and color depth from any GIF — free, private, no upload.",
+    "primaryKeyword": "gif to webp converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "gif to webp",
+    "convert gif",
+    "gif webp converter"
+   ]
+  },
+  {
+   "slug": "bmp-to-jpg",
+   "url": "https://pixkitapp.com/bmp-to-jpg",
+   "name": "BMP to JPG",
+   "h1": "Convert BMP to JPG",
+   "description": "Convert Windows BMP bitmaps to compact JPG images online. Turn huge uncompressed files into shareable photos.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/bmp,.bmp",
+   "multiple": true,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "BMP to JPG Converter – Shrink Bitmaps 95%",
+    "description": "Convert Windows BMP bitmaps to compact JPG online. Turn huge uncompressed files into shareable photos — free, private, batch-friendly.",
+    "primaryKeyword": "bmp to jpg converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "bmp to jpg",
+    "convert bmp",
+    "bitmap to jpeg"
+   ]
+  },
+  {
+   "slug": "bmp-to-png",
+   "url": "https://pixkitapp.com/bmp-to-png",
+   "name": "BMP to PNG",
+   "h1": "Convert BMP to PNG",
+   "description": "Convert BMP bitmaps to lossless PNG online free. Same pixels, modern format, far smaller file — no upload.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/bmp,.bmp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "BMP to PNG Converter – Lossless Modernization",
+    "description": "Convert BMP bitmaps to lossless PNG online free. Same pixels, modern format, far smaller file — private, instant, batch up to 10.",
+    "primaryKeyword": "bmp to png converter"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "bmp to png",
+    "bitmap to png",
+    "convert bmp lossless"
+   ]
+  },
+  {
+   "slug": "jpg-to-bmp",
+   "url": "https://pixkitapp.com/jpg-to-bmp",
+   "name": "JPG to BMP",
+   "h1": "Convert JPG to BMP",
+   "description": "Convert JPG images to uncompressed BMP format. For legacy software, industrial tools and systems that demand raw bitmaps.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/jpeg",
+   "multiple": false,
+   "options": [],
+   "seo": {
+    "title": "JPG to BMP Converter – Raw Bitmap Output",
+    "description": "Convert JPG images to uncompressed BMP format online. For legacy software, industrial tools and systems that demand raw bitmaps — free, private.",
+    "primaryKeyword": "jpg to bmp converter"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "jpg to bmp",
+    "jpeg to bitmap",
+    "convert to bmp"
+   ]
+  },
+  {
+   "slug": "png-to-bmp",
+   "url": "https://pixkitapp.com/png-to-bmp",
+   "name": "PNG to BMP",
+   "h1": "Convert PNG to BMP",
+   "description": "Convert PNG images to BMP bitmap format. Lossless raw output for legacy apps — transparency flattened to your color.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/png",
+   "multiple": false,
+   "options": [
+    "color:background"
+   ],
+   "seo": {
+    "title": "PNG to BMP Converter – Flatten & Rasterize",
+    "description": "Convert PNG images to BMP bitmap format online. Lossless raw output for legacy apps — transparency flattened to your chosen color.",
+    "primaryKeyword": "png to bmp converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "png to bmp",
+    "png bitmap convert"
+   ]
+  },
+  {
+   "slug": "avif-to-jpg",
+   "url": "https://pixkitapp.com/avif-to-jpg",
+   "name": "AVIF to JPG",
+   "h1": "Convert AVIF to JPG",
+   "description": "Convert next-gen AVIF images to universal JPG. Works in Chrome, Edge and Opera — private browser conversion.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/avif,.avif",
+   "multiple": true,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "AVIF to JPG Converter – Next-Gen to Universal",
+    "description": "Convert AVIF images to universal JPG online free. Works in Chrome, Edge and Opera — private browser conversion for the newest image format.",
+    "primaryKeyword": "avif to jpg converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "avif to jpg",
+    "convert avif",
+    "avif jpeg converter"
+   ]
+  },
+  {
+   "slug": "avif-to-png",
+   "url": "https://pixkitapp.com/avif-to-png",
+   "name": "AVIF to PNG",
+   "h1": "Convert AVIF to PNG",
+   "description": "Convert AVIF images to lossless PNG with transparency support. Free in-browser tool for the newest image format.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/avif,.avif",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "AVIF to PNG Converter – Lossless with Alpha",
+    "description": "Convert AVIF images to lossless PNG with transparency support online. Free in-browser tool for the newest image format — private and instant.",
+    "primaryKeyword": "avif to png converter"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "avif to png",
+    "avif png converter"
+   ]
+  },
+  {
+   "slug": "image-to-pdf",
+   "url": "https://pixkitapp.com/image-to-pdf",
+   "name": "Image to PDF",
+   "h1": "Image to PDF Converter",
+   "description": "Convert JPG, PNG and WebP images to PDF — one image per page, up to 10 pages. Choose A4/Letter, orientation and margins.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:pageSize(a4/letter/a5/a3)",
+    "select:orientation(auto/portrait/landscape)",
+    "slider:margin",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Image to PDF Converter – Multi-Page & A4",
+    "description": "Convert JPG, PNG and WebP images to PDF online — one image per page, up to 10 pages. Choose A4/Letter, orientation and margins. Free and private.",
+    "primaryKeyword": "image to pdf converter"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "image to pdf",
+    "jpg to pdf",
+    "png to pdf",
+    "photo to pdf converter"
+   ]
+  },
+  {
+   "slug": "image-to-ico",
+   "url": "https://pixkitapp.com/image-to-ico",
+   "name": "Image to ICO",
+   "h1": "Convert Image to ICO",
+   "description": "Create a Windows .ico file with multiple embedded sizes (16–256px) from any image. Perfect favicon and app-icon maker.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/png,image/jpeg,image/webp,image/svg+xml",
+   "multiple": false,
+   "options": [
+    "text:sizes"
+   ],
+   "seo": {
+    "title": "Image to ICO Converter – Multi-Size Windows Icons",
+    "description": "Create a Windows .ico file with embedded sizes from 16 to 256px from any image. The favicon and app-icon maker — free, private, in-browser.",
+    "primaryKeyword": "image to ico converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "image to ico",
+    "ico converter",
+    "create ico file",
+    "windows icon"
+   ]
+  },
+  {
+   "slug": "image-to-base64",
+   "url": "https://pixkitapp.com/image-to-base64",
+   "name": "Image to Base64",
+   "h1": "Image to Base64 Encoder",
+   "description": "Encode images to Base64 strings or data URIs for CSS, HTML and JSON embedding. Copy or download the text instantly.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/jpeg,image/png,image/webp,image/gif,image/svg+xml",
+   "multiple": false,
+   "options": [
+    "toggle:dataUri"
+   ],
+   "seo": {
+    "title": "Image to Base64 Encoder – Data URI Generator",
+    "description": "Encode images to Base64 strings or data URIs for CSS, HTML and JSON embedding. Copy or download the text instantly — free, private, in-browser.",
+    "primaryKeyword": "image to base64"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "image to base64",
+    "base64 encoder",
+    "data uri generator",
+    "img src base64"
+   ]
+  },
+  {
+   "slug": "base64-to-image",
+   "url": "https://pixkitapp.com/base64-to-image",
+   "name": "Base64 to Image",
+   "h1": "Decode Base64 to Image",
+   "description": "Decode Base64 strings or data URIs back into viewable, downloadable images. Paste text or drop a .txt file.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": ".txt,text/plain",
+   "multiple": false,
+   "options": [
+    "textarea:input"
+   ],
+   "seo": {
+    "title": "Base64 to Image Decoder – Paste & Preview",
+    "description": "Decode Base64 strings or data URIs back into viewable, downloadable images. Paste text or drop a .txt file — instant preview, free and private.",
+    "primaryKeyword": "base64 to image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "base64 to image",
+    "decode base64",
+    "data uri decoder"
+   ]
+  },
+  {
+   "slug": "svg-to-png",
+   "url": "https://pixkitapp.com/svg-to-png",
+   "name": "SVG to PNG",
+   "h1": "Convert SVG to PNG",
+   "description": "Rasterize SVG vectors to sharp PNG at 1x–4x scale. Perfect for icons, logos and print — free in-browser converter.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/svg+xml,.svg",
+   "multiple": false,
+   "options": [
+    "select:scale(1/2/3/4)",
+    "select:format(image/png/image/jpeg/image/webp)"
+   ],
+   "seo": {
+    "title": "SVG to PNG Converter – 1x–4x Sharp Export",
+    "description": "Rasterize SVG vectors to sharp PNG at 1x–4x scale. Perfect for icons, logos and print — free in-browser converter with format options.",
+    "primaryKeyword": "svg to png"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "svg to png",
+    "convert svg",
+    "svg rasterize",
+    "vector to png"
+   ]
+  },
+  {
+   "slug": "image-format-converter",
+   "url": "https://pixkitapp.com/image-format-converter",
+   "name": "Universal Converter",
+   "h1": "Universal Image Format Converter",
+   "description": "Convert any image to JPG, PNG or WebP in one place. Smart defaults, transparency handling and batch support.",
+   "category": "Conversion",
+   "categorySlug": "convert",
+   "accept": "image/jpeg,image/png,image/webp,image/gif,image/bmp,image/avif,.bmp,.avif,.svg",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/png/image/webp)",
+    "slider:quality",
+    "color:background"
+   ],
+   "seo": {
+    "title": "Universal Image Converter – JPG, PNG, WebP",
+    "description": "Convert any image to JPG, PNG or WebP in one place. Smart defaults, transparency handling and batch support — free, private, no upload.",
+    "primaryKeyword": "universal image converter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "image converter",
+    "convert any image",
+    "universal image converter"
+   ]
+  },
+  {
+   "slug": "rotate-image",
+   "url": "https://pixkitapp.com/rotate-image",
+   "name": "Rotate Image",
+   "h1": "Rotate Image to Any Angle",
+   "description": "Rotate images to any degree — fine-tune from -180° to 180° with background fill or auto-crop. Free browser tool.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:angle",
+    "toggle:autoCrop",
+    "toggle:transparentBg",
+    "color:background",
+    "select:format(auto/image/jpeg/image/png/image/webp)"
+   ],
+   "seo": {
+    "title": "Rotate Image to Any Angle Online – Free",
+    "description": "Rotate images to any degree from -180° to 180° with background fill or auto-crop. Fine-tune tilts in single degrees — free, private, in-browser.",
+    "primaryKeyword": "rotate image online"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "rotate image",
+    "rotate photo online",
+    "image rotation tool",
+    "tilt image"
+   ]
+  },
+  {
+   "slug": "rotate-image-90",
+   "url": "https://pixkitapp.com/rotate-image-90",
+   "name": "Rotate 90° Clockwise",
+   "h1": "Rotate Image 90 Degrees Clockwise",
+   "description": "Quarter-turn images clockwise instantly. Pixel-perfect 90° rotation with no quality loss — batch up to 10.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Rotate Image 90 Degrees Clockwise – Instant",
+    "description": "Quarter-turn images clockwise instantly. Pixel-perfect 90° rotation with no quality loss — batch up to 10, free, private, in-browser.",
+    "primaryKeyword": "rotate image 90 degrees"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "rotate 90",
+    "rotate clockwise",
+    "quarter turn image"
+   ]
+  },
+  {
+   "slug": "rotate-image-180",
+   "url": "https://pixkitapp.com/rotate-image-180",
+   "name": "Rotate 180°",
+   "h1": "Rotate Image 180 Degrees",
+   "description": "Flip images fully upside down with pixel-perfect 180° rotation. Zero quality loss, instant results, completely private.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Rotate Image 180 Degrees – Upside Down Fix",
+    "description": "Flip images fully upside down with pixel-perfect 180° rotation. Zero quality loss, instant results, completely private — batch of 10.",
+    "primaryKeyword": "rotate image 180 degrees"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "rotate 180",
+    "upside down image",
+    "flip upside down"
+   ]
+  },
+  {
+   "slug": "rotate-image-270",
+   "url": "https://pixkitapp.com/rotate-image-270",
+   "name": "Rotate 270° (90° CCW)",
+   "h1": "Rotate Image 270° — Counterclockwise Quarter Turn",
+   "description": "Rotate images 270° clockwise (90° counterclockwise). Pixel-perfect, lossless quarter-turn the other way.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Rotate Image 270° – Counterclockwise Quarter Turn",
+    "description": "Rotate images 270° clockwise (90° counterclockwise). Pixel-perfect, lossless quarter-turn the other way — batch of 10, free and private.",
+    "primaryKeyword": "rotate image 270 degrees"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "rotate 270",
+    "rotate counterclockwise",
+    "rotate 90 ccw"
+   ]
+  },
+  {
+   "slug": "flip-image-horizontal",
+   "url": "https://pixkitapp.com/flip-image-horizontal",
+   "name": "Flip Horizontal",
+   "h1": "Flip Image Horizontally (Mirror)",
+   "description": "Mirror images left-to-right instantly. Pixel-perfect horizontal flip for selfies, designs and text-free photos.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Flip Image Horizontally (Mirror) – Instant",
+    "description": "Mirror images left-to-right instantly with a pixel-perfect horizontal flip. Great for selfies, designs and text-free photos — free and private.",
+    "primaryKeyword": "flip image horizontally"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "flip image horizontal",
+    "mirror image",
+    "flip photo online"
+   ]
+  },
+  {
+   "slug": "flip-image-vertical",
+   "url": "https://pixkitapp.com/flip-image-vertical",
+   "name": "Flip Vertical",
+   "h1": "Flip Image Vertically (Upside-Down Mirror)",
+   "description": "Flip images top-to-bottom with a vertical mirror. Useful for scans, reflections and design work — instant and lossless.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Flip Image Vertically – Upside-Down Mirror",
+    "description": "Flip images top-to-bottom with a vertical mirror. Useful for scans, reflections and design work — instant, lossless and completely private.",
+    "primaryKeyword": "flip image vertically"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "flip image vertical",
+    "vertical flip photo",
+    "upside down mirror"
+   ]
+  },
+  {
+   "slug": "straighten-image",
+   "url": "https://pixkitapp.com/straighten-image",
+   "name": "Straighten Image",
+   "h1": "Straighten Crooked Photos",
+   "description": "Fix tilted horizons with fine ±15° correction and smart zoom-fill that hides the corners. Gallery-quality leveling.",
+   "category": "Rotation & Flipping",
+   "categorySlug": "rotate",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "slider:angle",
+    "toggle:zoomFill"
+   ],
+   "seo": {
+    "title": "Straighten Crooked Photos – ±15° Correction",
+    "description": "Fix tilted horizons with fine angle correction from -15° to +15° and smart zoom-fill that hides the corners. Gallery-quality leveling, in-browser.",
+    "primaryKeyword": "straighten image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "straighten image",
+    "fix tilted photo",
+    "level horizon",
+    "rotate slightly"
+   ]
+  },
+  {
+   "slug": "grayscale-image",
+   "url": "https://pixkitapp.com/grayscale-image",
+   "name": "Grayscale Image",
+   "h1": "Convert Image to Grayscale",
+   "description": "Turn photos black & white online with luminance-accurate grayscale. Timeless monochrome in one click — free, private.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:grayscale"
+   ],
+   "seo": {
+    "title": "Grayscale Image Converter – Black & White",
+    "description": "Turn photos black & white online with luminance-accurate grayscale. Adjustable mix from tinted color to full monochrome — free, private, instant.",
+    "primaryKeyword": "convert image to grayscale"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "grayscale image",
+    "black and white photo",
+    "convert to grayscale",
+    "monochrome filter"
+   ]
+  },
+  {
+   "slug": "sepia-image",
+   "url": "https://pixkitapp.com/sepia-image",
+   "name": "Sepia Image",
+   "h1": "Apply Sepia Tone to Photos",
+   "description": "Give photos a warm vintage sepia tone in one click. Adjustable intensity from subtle warmth to full antique brown.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:sepia"
+   ],
+   "seo": {
+    "title": "Sepia Photo Filter Online – Vintage Tone",
+    "description": "Give photos a warm vintage sepia tone in one click. Adjustable intensity from subtle warmth to full antique brown — free, private, in-browser.",
+    "primaryKeyword": "sepia filter online"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "sepia image",
+    "sepia filter",
+    "vintage photo effect",
+    "old photo effect"
+   ]
+  },
+  {
+   "slug": "invert-image-colors",
+   "url": "https://pixkitapp.com/invert-image-colors",
+   "name": "Invert Colors",
+   "h1": "Invert Image Colors (Negative)",
+   "description": "Create photo negatives by inverting colors online. Instant color inversion for art, OCR prep and design effects.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:invert"
+   ],
+   "seo": {
+    "title": "Invert Image Colors Online – Photo Negative",
+    "description": "Create photo negatives by inverting colors online. Instant RGB inversion for art, OCR preparation and design effects — free, private, instant.",
+    "primaryKeyword": "invert image colors"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "invert colors",
+    "image negative",
+    "color inversion",
+    "negative photo"
+   ]
+  },
+  {
+   "slug": "blur-image",
+   "url": "https://pixkitapp.com/blur-image",
+   "name": "Blur Image",
+   "h1": "Blur Images Online",
+   "description": "Blur photos with adjustable Gaussian blur from 1px soft focus to heavy censoring. Free, instant, no signup.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:blur"
+   ],
+   "seo": {
+    "title": "Blur Image Online – Gaussian Blur Control",
+    "description": "Blur photos with adjustable Gaussian blur from 1px soft focus to heavy censoring. Free, instant, no signup — everything stays on your device.",
+    "primaryKeyword": "blur image online"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "blur image",
+    "gaussian blur photo",
+    "censor photo",
+    "soft focus effect"
+   ]
+  },
+  {
+   "slug": "sharpen-image",
+   "url": "https://pixkitapp.com/sharpen-image",
+   "name": "Sharpen Image",
+   "h1": "Sharpen Images Online",
+   "description": "Make photos crisper with an unsharp-mask convolution kernel. Adjustable strength brings back micro-detail.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:amount"
+   ],
+   "seo": {
+    "title": "Sharpen Image Online – Unsharp Mask",
+    "description": "Make photos crisper with an unsharp-mask convolution kernel. Adjustable strength brings back micro-detail — free, private, in-browser.",
+    "primaryKeyword": "sharpen image online"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "sharpen image",
+    "image sharpener",
+    "unsharp mask",
+    "make photo clearer"
+   ]
+  },
+  {
+   "slug": "brightness-adjuster",
+   "url": "https://pixkitapp.com/brightness-adjuster",
+   "name": "Brightness Adjuster",
+   "h1": "Adjust Image Brightness",
+   "description": "Brighten dark photos or dim overexposed ones with a precise slider. Instant preview, no quality robbing rounds.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:brightness"
+   ],
+   "seo": {
+    "title": "Adjust Image Brightness Online – Precise Slider",
+    "description": "Brighten dark photos or dim overexposed ones with a precise slider and instant preview. Fix exposure in seconds — free, private, no upload.",
+    "primaryKeyword": "adjust image brightness"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "adjust brightness",
+    "brighten image",
+    "darken photo",
+    "photo brightness editor"
+   ]
+  },
+  {
+   "slug": "contrast-adjuster",
+   "url": "https://pixkitapp.com/contrast-adjuster",
+   "name": "Contrast Adjuster",
+   "h1": "Adjust Image Contrast",
+   "description": "Boost washed-out photos or soften harsh contrast with one slider. Make images pop — free browser editor.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:contrast"
+   ],
+   "seo": {
+    "title": "Adjust Image Contrast Online – Instant Preview",
+    "description": "Boost washed-out photos or soften harsh contrast with one slider. Make images pop with richer blacks and brighter whites — free, in-browser.",
+    "primaryKeyword": "adjust image contrast"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "adjust contrast",
+    "contrast editor",
+    "increase photo contrast"
+   ]
+  },
+  {
+   "slug": "saturation-adjuster",
+   "url": "https://pixkitapp.com/saturation-adjuster",
+   "name": "Saturation Adjuster",
+   "h1": "Adjust Color Saturation",
+   "description": "Boost vivid colors or mute them with a precise saturation slider. From pastel softness to hyper-vivid pop.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:saturate"
+   ],
+   "seo": {
+    "title": "Adjust Color Saturation Online – Vivid or Muted",
+    "description": "Boost vivid colors or mute them with a precise saturation slider. From pastel softness to hyper-vivid pop — free, private, instant results.",
+    "primaryKeyword": "adjust color saturation"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "adjust saturation",
+    "vivid colors",
+    "color boost",
+    "desaturate image"
+   ]
+  },
+  {
+   "slug": "hue-rotate-image",
+   "url": "https://pixkitapp.com/hue-rotate-image",
+   "name": "Hue Rotate",
+   "h1": "Rotate Image Hue",
+   "description": "Shift all colors around the wheel — turn blue skies purple, greens teal, or find creative color grades in seconds.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:hue"
+   ],
+   "seo": {
+    "title": "Hue Rotate Image Online – Shift All Colors",
+    "description": "Shift all colors around the wheel — turn blue skies purple, greens teal, or find creative color grades in seconds. Free, private, in-browser.",
+    "primaryKeyword": "hue rotate image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "hue rotate",
+    "shift colors",
+    "color wheel shift",
+    "hue shift image"
+   ]
+  },
+  {
+   "slug": "vintage-filter",
+   "url": "https://pixkitapp.com/vintage-filter",
+   "name": "Vintage Filter",
+   "h1": "Vintage Photo Filter",
+   "description": "One-click retro look: faded sepia warmth, softened contrast, film grain and a gentle vignette — fully tunable.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:strength",
+    "toggle:vignette",
+    "toggle:grain"
+   ],
+   "seo": {
+    "title": "Vintage Photo Filter – Retro Film Look",
+    "description": "One-click retro look: faded sepia warmth, softened contrast, film grain and a gentle vignette — each layer tunable. Free, private, in-browser.",
+    "primaryKeyword": "vintage photo filter"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "vintage filter",
+    "retro photo effect",
+    "old photo filter",
+    "film look"
+   ]
+  },
+  {
+   "slug": "posterize-image",
+   "url": "https://pixkitapp.com/posterize-image",
+   "name": "Posterize Image",
+   "h1": "Posterize Images Online",
+   "description": "Reduce images to bold flat tones for poster art and screen prints. 2–16 levels per channel, instant results.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:levels"
+   ],
+   "seo": {
+    "title": "Posterize Image Online – Bold Flat Tones",
+    "description": "Reduce images to bold flat tones for poster art and screen prints. 2–16 levels per channel with instant preview — free and private.",
+    "primaryKeyword": "posterize image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "posterize image",
+    "poster effect",
+    "flat color effect",
+    "screen print effect"
+   ]
+  },
+  {
+   "slug": "pixelate-image",
+   "url": "https://pixkitapp.com/pixelate-image",
+   "name": "Pixelate Image",
+   "h1": "Pixelate Images Online",
+   "description": "Censor photos with retro pixel blocks. Choose block size from subtle 4px mosaic to chunky 64px squares.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:block"
+   ],
+   "seo": {
+    "title": "Pixelate Image Online – Mosaic Censor Effect",
+    "description": "Censor photos with retro pixel blocks from subtle 4px mosaic to chunky 64px squares. Free, instant, private — nothing leaves your device.",
+    "primaryKeyword": "pixelate image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "pixelate image",
+    "mosaic censor",
+    "pixel effect",
+    "blur faces pixels"
+   ]
+  },
+  {
+   "slug": "duotone-image",
+   "url": "https://pixkitapp.com/duotone-image",
+   "name": "Duotone Effect",
+   "h1": "Duotone Image Effect",
+   "description": "Map photos to two brand colors for striking graphics. Pick shadow and highlight tones — instant gradient-map look.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "color:shadowColor",
+    "color:highlightColor"
+   ],
+   "seo": {
+    "title": "Duotone Image Effect – Two-Color Branding",
+    "description": "Map photos to two brand colors for striking graphics. Pick shadow and highlight tones for an instant gradient-map look — free, in-browser.",
+    "primaryKeyword": "duotone effect"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "duotone effect",
+    "two tone image",
+    "brand color photo",
+    "gradient map"
+   ]
+  },
+  {
+   "slug": "film-grain-effect",
+   "url": "https://pixkitapp.com/film-grain-effect",
+   "name": "Film Grain",
+   "h1": "Add Film Grain to Photos",
+   "description": "Overlay analog film grain for texture and mood. Adjustable intensity adds authentic photographic character.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:amount"
+   ],
+   "seo": {
+    "title": "Add Film Grain to Photos – Analog Texture",
+    "description": "Overlay analog film grain for texture and mood. Adjustable intensity adds authentic photographic character to digital images — free, private.",
+    "primaryKeyword": "film grain effect"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "film grain",
+    "noise effect",
+    "analog photo texture",
+    "grainy photo"
+   ]
+  },
+  {
+   "slug": "vignette-effect",
+   "url": "https://pixkitapp.com/vignette-effect",
+   "name": "Vignette Effect",
+   "h1": "Add Vignette to Photos",
+   "description": "Darken photo edges with a natural lens-style vignette. Control strength and reach to focus attention on your subject.",
+   "category": "Filters & Effects",
+   "categorySlug": "filters",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:strength",
+    "slider:size"
+   ],
+   "seo": {
+    "title": "Add Vignette to Photos – Edge Darkening",
+    "description": "Darken photo edges with a natural lens-style vignette. Control strength and reach to focus attention on your subject — free, private, instant.",
+    "primaryKeyword": "vignette effect"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "vignette effect",
+    "darken edges",
+    "lens vignette",
+    "photo edge darkening"
+   ]
+  },
+  {
+   "slug": "image-optimizer",
+   "url": "https://pixkitapp.com/image-optimizer",
+   "name": "Image Optimizer",
+   "h1": "All-in-One Image Optimizer",
+   "description": "Optimize images with smart resize + compression in one step. Set max dimensions and quality — perfect for websites and blogs.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:maxDimension",
+    "slider:quality",
+    "select:format(image/webp/image/jpeg/image/png)"
+   ],
+   "seo": {
+    "title": "All-in-One Image Optimizer – Resize + Compress",
+    "description": "Optimize images with smart resizing and compression in a single step. Set max dimensions and quality for lean, fast-loading photos — free and private.",
+    "primaryKeyword": "image optimizer"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "image optimizer",
+    "optimize images",
+    "smart image compression"
+   ]
+  },
+  {
+   "slug": "optimize-image-for-web",
+   "url": "https://pixkitapp.com/optimize-image-for-web",
+   "name": "Optimize for Web",
+   "h1": "Optimize Images for the Web",
+   "description": "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly output in seconds.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:maxDimension",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Optimize Images for the Web – WebP Preset",
+    "description": "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly images in seconds — no upload, free forever.",
+    "primaryKeyword": "optimize image for web"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "optimize image for web",
+    "web image optimizer",
+    "lighthouse image optimization"
+   ]
+  },
+  {
+   "slug": "optimize-png-for-web",
+   "url": "https://pixkitapp.com/optimize-png-for-web",
+   "name": "Optimize PNG for Web",
+   "h1": "Optimize PNG Images for the Web",
+   "description": "Make PNGs web-ready: optional palette reduction, smart dimensions and re-encoding. Keep transparency, cut the bloat.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/png",
+   "multiple": true,
+   "options": [
+    "select:colors(256/128/64/32)",
+    "toggle:grayscale"
+   ],
+   "seo": {
+    "title": "Optimize PNG for Web – Palette + Re-encode",
+    "description": "Make PNGs web-ready with palette reduction and smart re-encoding. Keep transparency, cut the bloat — free browser-based PNG optimizer.",
+    "primaryKeyword": "optimize png for web"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "optimize png",
+    "png optimizer",
+    "png for web"
+   ]
+  },
+  {
+   "slug": "optimize-jpg-for-web",
+   "url": "https://pixkitapp.com/optimize-jpg-for-web",
+   "name": "Optimize JPG for Web",
+   "h1": "Optimize JPG Images for the Web",
+   "description": "Re-encode JPGs at web-tuned quality. Strip camera bloat, hit fast-loading file sizes, keep photos beautiful.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/jpeg",
+   "multiple": true,
+   "options": [
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Optimize JPG for Web – Web-Tuned Quality",
+    "description": "Re-encode JPGs at web-tuned quality and strip camera bloat. Fast-loading, beautiful photos for pages and stores — free, private, batch-friendly.",
+    "primaryKeyword": "optimize jpg for web"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "optimize jpg",
+    "jpg optimizer",
+    "jpeg web optimization"
+   ]
+  },
+  {
+   "slug": "favicon-generator",
+   "url": "https://pixkitapp.com/favicon-generator",
+   "name": "Favicon Generator",
+   "h1": "Favicon Generator — All Sizes + ICO",
+   "description": "Generate favicons for all platforms: 16, 32, 48, 96, 180px PNGs plus a classic favicon.ico. Preview every size before download.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/png,image/jpeg,image/webp,image/svg+xml",
+   "multiple": false,
+   "options": [
+    "slider:padding",
+    "select:background(transparent/color)",
+    "color:bgColor"
+   ],
+   "seo": {
+    "title": "Favicon Generator – All Sizes + favicon.ico",
+    "description": "Generate every favicon you need from one image: 16, 32, 48, 96 and 180px PNGs plus a classic favicon.ico. Preview all sizes before download.",
+    "primaryKeyword": "favicon generator"
+   },
+   "faqCount": 1,
+   "keywords": [
+    "favicon generator",
+    "create favicon",
+    "favicon from image",
+    "ico generator"
+   ]
+  },
+  {
+   "slug": "email-image-resizer",
+   "url": "https://pixkitapp.com/email-image-resizer",
+   "name": "Email Image Resizer",
+   "h1": "Resize Images for Email",
+   "description": "Prepare photos for email: 800px wide, JPEG quality 70 — small enough to send, sharp enough to enjoy. Batch up to 10.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:maxDimension",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Resize Images for Email – 800px Preset",
+    "description": "Prepare photos for email automatically: 800px wide, JPEG quality 70 — small enough to send, sharp enough to enjoy. Batch up to 10, free and private.",
+    "primaryKeyword": "resize image for email"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "resize image for email",
+    "email photo size",
+    "shrink photos email"
+   ]
+  },
+  {
+   "slug": "image-size-reducer",
+   "url": "https://pixkitapp.com/image-size-reducer",
+   "name": "Image Size Reducer",
+   "h1": "Image Size Reducer — Before/After Compare",
+   "description": "Reduce image size by percentage or dimension scale with a live before/after size comparison. See exactly what you save.",
+   "category": "Optimization",
+   "categorySlug": "optimize",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:scalePercent",
+    "slider:quality",
+    "select:format(image/jpeg/image/webp/image/png)"
+   ],
+   "seo": {
+    "title": "Image Size Reducer – Before/After Compare",
+    "description": "Reduce image size by percentage or dimension with a live before/after comparison. See exactly what you save before you download — free browser tool.",
+    "primaryKeyword": "image size reducer"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "image size reducer",
+    "reduce photo size",
+    "shrink image dimensions"
+   ]
+  },
+  {
+   "slug": "image-metadata-viewer",
+   "url": "https://pixkitapp.com/image-metadata-viewer",
+   "name": "Metadata Viewer",
+   "h1": "Image Metadata & EXIF Viewer",
+   "description": "Inspect EXIF, GPS and PNG metadata of any image — camera model, date, settings, location. private, in-browser — the file never leaves your device.",
+   "category": "Metadata & EXIF",
+   "categorySlug": "metadata",
+   "accept": "image/jpeg,image/png,image/webp,image/gif",
+   "multiple": false,
+   "options": [],
+   "seo": {
+    "title": "Image Metadata & EXIF Viewer Online – Private",
+    "description": "Inspect EXIF, GPS and PNG metadata of any image — camera model, settings, date, location. private: the file never leaves your browser.",
+    "primaryKeyword": "exif viewer online"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "image metadata viewer",
+    "exif viewer online",
+    "photo info",
+    "exif reader"
+   ]
+  },
+  {
+   "slug": "remove-image-metadata",
+   "url": "https://pixkitapp.com/remove-image-metadata",
+   "name": "Remove Metadata",
+   "h1": "Remove Image Metadata (EXIF Stripper)",
+   "description": "Strip EXIF, GPS and hidden metadata from images before sharing. Re-encoded clean output — privacy in one click.",
+   "category": "Metadata & EXIF",
+   "categorySlug": "metadata",
+   "accept": "image/jpeg,image/png",
+   "multiple": true,
+   "options": [
+    "toggle:keepFormat",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Remove Image Metadata – EXIF Stripper Online",
+    "description": "Strip EXIF, GPS and hidden metadata from images before sharing. Re-encoded clean output in one click — free, private, batch of 10.",
+    "primaryKeyword": "remove exif data"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "remove exif",
+    "strip metadata",
+    "remove photo location",
+    "exif remover online"
+   ]
+  },
+  {
+   "slug": "remove-gps-data",
+   "url": "https://pixkitapp.com/remove-gps-data",
+   "name": "Remove GPS Data",
+   "h1": "Remove GPS Location from Photos",
+   "description": "Delete GPS coordinates from photos before posting online. See if your image has location data and scrub it clean.",
+   "category": "Metadata & EXIF",
+   "categorySlug": "metadata",
+   "accept": "image/jpeg,image/png",
+   "multiple": true,
+   "options": [
+    "toggle:keepFormat",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Remove GPS Location from Photos Online",
+    "description": "Delete GPS coordinates from photos before posting online. See if your image has location data and scrub it clean — free, private, batch-friendly.",
+    "primaryKeyword": "remove gps from photo"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "remove gps from photo",
+    "delete location metadata",
+    "photo privacy"
+   ]
+  },
+  {
+   "slug": "image-color-picker",
+   "url": "https://pixkitapp.com/image-color-picker",
+   "name": "Color Picker",
+   "h1": "Image Color Picker — Grab Any Pixel",
+   "description": "Pick exact colors from any image. Click anywhere to get HEX, RGB and HSL values with a live zoom magnifier.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [],
+   "seo": {
+    "title": "Image Color Picker – Grab Any Pixel's HEX",
+    "description": "Pick exact colors from any image. Click anywhere to get HEX, RGB and HSL values with a live zoom magnifier — free, private, in-browser.",
+    "primaryKeyword": "image color picker"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "image color picker",
+    "pick color from image",
+    "eyedropper online",
+    "hex from image"
+   ]
+  },
+  {
+   "slug": "image-color-palette",
+   "url": "https://pixkitapp.com/image-color-palette",
+   "name": "Color Palette Extractor",
+   "h1": "Extract Color Palette from Image",
+   "description": "Pull the dominant color palette from any image with median-cut quantization. Copy HEX codes or download a swatch sheet.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "slider:colors"
+   ],
+   "seo": {
+    "title": "Color Palette Extractor from Image – HEX Codes",
+    "description": "Pull the dominant color palette from any image with median-cut quantization. Copy HEX codes or download a swatch sheet — free and instant.",
+    "primaryKeyword": "color palette from image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "color palette from image",
+    "extract colors",
+    "dominant colors",
+    "palette generator"
+   ]
+  },
+  {
+   "slug": "image-dominant-color",
+   "url": "https://pixkitapp.com/image-dominant-color",
+   "name": "Dominant Color",
+   "h1": "Find the Dominant Color of an Image",
+   "description": "Get the single dominant color of any photo as a HEX swatch. Great for dynamic theming and auto-accent colors.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Find the Dominant Color of an Image – HEX",
+    "description": "Get the single dominant color of any photo as a HEX swatch. Great for dynamic theming and auto-accent colors — free, private, batch-friendly.",
+    "primaryKeyword": "dominant color of image"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "dominant color",
+    "main color of image",
+    "primary color extract"
+   ]
+  },
+  {
+   "slug": "image-average-color",
+   "url": "https://pixkitapp.com/image-average-color",
+   "name": "Average Color",
+   "h1": "Calculate the Average Color of an Image",
+   "description": "Compute the exact average color of any photo — useful for ambient lighting effects and quick color analysis.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [],
+   "seo": {
+    "title": "Average Color of Image – Mean Color Calculator",
+    "description": "Compute the exact average color of any photo — useful for ambient lighting effects, blur placeholders and quick color analysis. Free and private.",
+    "primaryKeyword": "average color of image"
+   },
+   "faqCount": 3,
+   "keywords": [
+    "average color",
+    "mean color image",
+    "image color analysis"
+   ]
+  },
+  {
+   "slug": "replace-color-in-image",
+   "url": "https://pixkitapp.com/replace-color-in-image",
+   "name": "Replace Color",
+   "h1": "Replace a Color in Any Image",
+   "description": "Swap one color for another with tolerance control. Perfect for mockups, logo variants and product colorways.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "color:fromColor",
+    "color:toColor",
+    "slider:tolerance"
+   ],
+   "seo": {
+    "title": "Replace Color in Image Online – Tolerance Control",
+    "description": "Swap one color for another with adjustable tolerance. Perfect for mockups, logo variants and product colorways — free, private, in-browser.",
+    "primaryKeyword": "replace color in image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "replace color",
+    "change color image",
+    "color swap",
+    "recolor image"
+   ]
+  },
+  {
+   "slug": "remove-color-from-image",
+   "url": "https://pixkitapp.com/remove-color-from-image",
+   "name": "Remove Color (Chroma Key)",
+   "h1": "Remove a Color — Chroma Key Tool",
+   "description": "Key out any color to transparency with feathered edges. Green-screen style background removal for any color.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "color:keyColor",
+    "slider:tolerance",
+    "slider:feather"
+   ],
+   "seo": {
+    "title": "Remove Color – Chroma Key Tool Online",
+    "description": "Key out any color to transparency with feathered edges. Green-screen style background removal for any color — free, private, in-browser.",
+    "primaryKeyword": "chroma key online"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "remove color",
+    "chroma key online",
+    "color to transparent",
+    "green screen removal"
+   ]
+  },
+  {
+   "slug": "image-color-temperature",
+   "url": "https://pixkitapp.com/image-color-temperature",
+   "name": "Color Temperature",
+   "h1": "Adjust Image Color Temperature",
+   "description": "Make photos warmer (golden) or cooler (blue) with a Kelvin-style slider. Fix white balance creatively — free tool.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:temp"
+   ],
+   "seo": {
+    "title": "Adjust Image Color Temperature – Warm or Cool",
+    "description": "Make photos warmer (golden) or cooler (blue) with a Kelvin-style slider. Fix white balance creatively — free, private, instant results.",
+    "primaryKeyword": "adjust image color temperature"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "color temperature",
+    "warm photo filter",
+    "cool photo filter",
+    "white balance adjust"
+   ]
+  },
+  {
+   "slug": "threshold-image",
+   "url": "https://pixkitapp.com/threshold-image",
+   "name": "B&W Threshold",
+   "h1": "Black & White Threshold Converter",
+   "description": "Convert images to pure black & white with an adjustable threshold. Crisp 1-bit style output for stamps and stencils.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "slider:threshold",
+    "toggle:invert"
+   ],
+   "seo": {
+    "title": "Black & White Threshold Converter – 1-bit Style",
+    "description": "Convert images to pure black & white with an adjustable threshold. Crisp 1-bit style output for stamps and stencils — free, private, instant.",
+    "primaryKeyword": "black and white threshold"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "black white threshold",
+    "binarize image",
+    "1-bit image",
+    "stencil image"
+   ]
+  },
+  {
+   "slug": "swap-color-channels",
+   "url": "https://pixkitapp.com/swap-color-channels",
+   "name": "Channel Mixer",
+   "h1": "Swap RGB Color Channels",
+   "description": "Remix red, green and blue channels for psychedelic color shifts and infrared-style looks. Nerdy, fun, free.",
+   "category": "Color Utilities",
+   "categorySlug": "color",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:mode(rgb-gbr/rgb-brg/rgb-bgr)"
+   ],
+   "seo": {
+    "title": "Swap RGB Color Channels – Channel Mixer Effect",
+    "description": "Remix red, green and blue channels for psychedelic color shifts and infrared-style looks. Nerdy, fun and free — runs entirely in your browser.",
+    "primaryKeyword": "swap color channels"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "swap color channels",
+    "rgb channel mixer",
+    "channel swap effect"
+   ]
+  },
+  {
+   "slug": "watermark-image",
+   "url": "https://pixkitapp.com/watermark-image",
+   "name": "Text Watermark",
+   "h1": "Add a Text Watermark to Photos",
+   "description": "Watermark photos with custom text — choose position, size, opacity, color and rotation. Protect your work free.",
+   "category": "Watermarking",
+   "categorySlug": "watermark",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:text",
+    "slider:size",
+    "slider:opacity",
+    "color:color",
+    "select:position(top-left/top-center/top-right/center/bottom-left/bottom-center/bottom-right)",
+    "slider:rotation",
+    "toggle:shadow"
+   ],
+   "seo": {
+    "title": "Add Text Watermark to Photos – Free Online",
+    "description": "Watermark photos with custom text — position, size, opacity, color, rotation and shadow all under your control. Protect your work free.",
+    "primaryKeyword": "add text watermark to photo"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "watermark image",
+    "add text watermark",
+    "photo watermark free",
+    "copyright watermark"
+   ]
+  },
+  {
+   "slug": "add-logo-watermark",
+   "url": "https://pixkitapp.com/add-logo-watermark",
+   "name": "Logo Watermark",
+   "h1": "Add a Logo Watermark to Images",
+   "description": "Overlay your logo on photos with position, scale and opacity control. Perfect transparent PNG logo support.",
+   "category": "Watermarking",
+   "categorySlug": "watermark",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:__logoFiles",
+    "slider:scale",
+    "slider:opacity",
+    "select:position(top-left/top-center/top-right/center/bottom-left/bottom-center/bottom-right)",
+    "slider:margin"
+   ],
+   "seo": {
+    "title": "Add Logo Watermark to Images – Brand Photos",
+    "description": "Overlay your logo on photos with position, scale and opacity control. Transparent PNG logos supported — free, private, batch-friendly.",
+    "primaryKeyword": "add logo watermark"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "logo watermark",
+    "add logo to photo",
+    "brand watermark",
+    "overlay logo"
+   ]
+  },
+  {
+   "slug": "tiled-watermark",
+   "url": "https://pixkitapp.com/tiled-watermark",
+   "name": "Tiled Watermark",
+   "h1": "Tiled Repeating Watermark",
+   "description": "Cover images with a diagonal repeating text watermark — the strongest visible protection for previews and proofs.",
+   "category": "Watermarking",
+   "categorySlug": "watermark",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:text",
+    "slider:opacity",
+    "slider:gap",
+    "slider:angle",
+    "slider:size",
+    "color:color"
+   ],
+   "seo": {
+    "title": "Tiled Repeating Watermark – Diagonal Protection",
+    "description": "Cover images with a diagonal repeating text watermark — the strongest visible protection for previews and proofs. Angle, gap and opacity control.",
+    "primaryKeyword": "tiled watermark"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "tiled watermark",
+    "repeating watermark",
+    "diagonal watermark",
+    "proof watermark"
+   ]
+  },
+  {
+   "slug": "date-watermark",
+   "url": "https://pixkitapp.com/date-watermark",
+   "name": "Date Watermark",
+   "h1": "Add a Date Stamp to Photos",
+   "description": "Stamp today's date (or any date) on photos — the classic camera timestamp for documentation and records.",
+   "category": "Watermarking",
+   "categorySlug": "watermark",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:customDate",
+    "slider:size",
+    "slider:opacity",
+    "color:color",
+    "select:position(top-left/top-center/top-right/center/bottom-left/bottom-center/bottom-right)",
+    "toggle:shadow"
+   ],
+   "seo": {
+    "title": "Add Date Stamp to Photos – Timestamp Online",
+    "description": "Stamp today's date (or any date) on photos — the classic camera timestamp for documentation and records. Color, size and position control.",
+    "primaryKeyword": "date stamp photo"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "date stamp photo",
+    "timestamp image",
+    "date watermark"
+   ]
+  },
+  {
+   "slug": "bulk-watermark",
+   "url": "https://pixkitapp.com/bulk-watermark",
+   "name": "Bulk Watermark",
+   "h1": "Bulk Watermark Up to 10 Photos",
+   "description": "Apply one text watermark to a whole batch of photos at once. Same settings across all — then download all as ZIP.",
+   "category": "Watermarking",
+   "categorySlug": "watermark",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:text",
+    "slider:size",
+    "slider:opacity",
+    "color:color",
+    "select:position(top-left/top-center/top-right/center/bottom-left/bottom-center/bottom-right)"
+   ],
+   "seo": {
+    "title": "Bulk Watermark Photos – Batch of 10 at Once",
+    "description": "Apply one text watermark to a whole batch of photos at once. Identical settings across all images, then download everything as a ZIP.",
+    "primaryKeyword": "bulk watermark photos"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "bulk watermark",
+    "batch watermark photos",
+    "watermark multiple images"
+   ]
+  },
+  {
+   "slug": "add-text-to-image",
+   "url": "https://pixkitapp.com/add-text-to-image",
+   "name": "Add Text to Image",
+   "h1": "Add Text to Any Image",
+   "description": "Write on images with full typography control — font size, color, weight, position and optional background pill.",
+   "category": "Text on Images",
+   "categorySlug": "text",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "textarea:text",
+    "slider:fontSize",
+    "color:color",
+    "select:weight(normal/bold)",
+    "select:position(top-left/top-center/top-right/center/bottom-left/bottom-center/bottom-right)",
+    "toggle:background",
+    "color:bgColor",
+    "slider:bgOpacity"
+   ],
+   "seo": {
+    "title": "Add Text to Image Online – Full Typography",
+    "description": "Write on images with full typography control — font size, color, weight, position and an optional background pill. Free, private, no signup.",
+    "primaryKeyword": "add text to image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "add text to image",
+    "write on photo",
+    "text overlay",
+    "caption maker"
+   ]
+  },
+  {
+   "slug": "add-caption-to-image",
+   "url": "https://pixkitapp.com/add-caption-to-image",
+   "name": "Caption Bar",
+   "h1": "Add a Caption Bar to Images",
+   "description": "Append a styled caption bar under (or over) your image with automatic text wrapping. Great for galleries and posts.",
+   "category": "Text on Images",
+   "categorySlug": "text",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:caption",
+    "slider:barHeight",
+    "select:position(bottom/top)",
+    "color:bgColor",
+    "color:textColor"
+   ],
+   "seo": {
+    "title": "Add Caption Bar to Images – Styled Captions",
+    "description": "Append a styled caption bar under (or over) your image with automatic text wrapping. Great for galleries, documentation and social posts.",
+    "primaryKeyword": "add caption to image"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "caption image",
+    "add caption bar",
+    "image caption maker"
+   ]
+  },
+  {
+   "slug": "meme-generator",
+   "url": "https://pixkitapp.com/meme-generator",
+   "name": "Meme Generator",
+   "h1": "Meme Generator — Top & Bottom Text",
+   "description": "Create classic memes with bold Impact top/bottom text. Instant, private, no watermark — your memes stay yours.",
+   "category": "Text on Images",
+   "categorySlug": "text",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "text:topText",
+    "text:bottomText",
+    "slider:fontSize",
+    "toggle:uppercase",
+    "color:textColor",
+    "color:strokeColor"
+   ],
+   "seo": {
+    "title": "Meme Generator Online – Top & Bottom Text",
+    "description": "Create classic memes with bold top and bottom text, uppercase toggle and outline colors. Instant, private, no watermark — your memes stay yours.",
+    "primaryKeyword": "meme generator"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "meme generator",
+    "make a meme",
+    "meme maker free",
+    "impact text meme"
+   ]
+  },
+  {
+   "slug": "quote-card-maker",
+   "url": "https://pixkitapp.com/quote-card-maker",
+   "name": "Quote Card",
+   "h1": "Quote Card Maker",
+   "description": "Turn quotes into shareable image cards with elegant serif typography and author attribution. Instagram-ready.",
+   "category": "Text on Images",
+   "categorySlug": "text",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "textarea:quote",
+    "text:author",
+    "toggle:overlay",
+    "color:overlayColor",
+    "slider:overlayOpacity",
+    "color:textColor"
+   ],
+   "seo": {
+    "title": "Quote Card Maker – Quote to Image Online",
+    "description": "Turn quotes into shareable image cards with elegant serif typography and author attribution. Instagram-ready output — free, private, instant.",
+    "primaryKeyword": "quote card maker"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "quote card maker",
+    "quote image",
+    "quote to image",
+    "instagram quote"
+   ]
+  },
+  {
+   "slug": "add-title-to-image",
+   "url": "https://pixkitapp.com/add-title-to-image",
+   "name": "Title Banner",
+   "h1": "Add a Title Banner to Images",
+   "description": "Create blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle.",
+   "category": "Text on Images",
+   "categorySlug": "text",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "text:title",
+    "text:subtitle",
+    "select:position(bottom/top)",
+    "color:barColor",
+    "slider:barOpacity",
+    "color:textColor",
+    "color:accentColor"
+   ],
+   "seo": {
+    "title": "Add Title Banner to Images – Thumbnail Maker",
+    "description": "Create blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle. Batch-friendly and free.",
+    "primaryKeyword": "title banner maker"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "title banner",
+    "blog thumbnail maker",
+    "youtube title image",
+    "cover image maker"
+   ]
+  },
+  {
+   "slug": "remove-white-background",
+   "url": "https://pixkitapp.com/remove-white-background",
+   "name": "Remove White Background",
+   "h1": "Remove White Background from Image",
+   "description": "Make white backgrounds transparent with smart flood-fill that keeps white details inside your subject. Free PNG output.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "slider:tolerance",
+    "toggle:connectedOnly"
+   ],
+   "seo": {
+    "title": "Remove White Background from Image – Smart",
+    "description": "Make white backgrounds transparent with smart flood-fill that keeps white details inside your subject. Free PNG output, entirely in-browser.",
+    "primaryKeyword": "remove white background"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "remove white background",
+    "make background transparent",
+    "white to transparent"
+   ]
+  },
+  {
+   "slug": "make-image-transparent",
+   "url": "https://pixkitapp.com/make-image-transparent",
+   "name": "Make Transparent",
+   "h1": "Make Image Background Transparent",
+   "description": "Remove any solid background color — white, black or custom — with tolerance and feathering. Clean PNG cutouts.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "color:keyColor",
+    "slider:tolerance",
+    "slider:feather"
+   ],
+   "seo": {
+    "title": "Make Image Background Transparent – Any Color",
+    "description": "Remove any solid background color — white, black or custom — with tolerance and feathering. Clean PNG cutouts, free and private in-browser.",
+    "primaryKeyword": "make image transparent"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "make image transparent",
+    "transparent background maker",
+    "background remover"
+   ]
+  },
+  {
+   "slug": "add-white-background",
+   "url": "https://pixkitapp.com/add-white-background",
+   "name": "Add White Background",
+   "h1": "Add a White Background to Transparent PNGs",
+   "description": "Flatten transparent PNGs onto a white background — required by marketplaces like Amazon and many print shops.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:format(image/jpeg/image/png)"
+   ],
+   "seo": {
+    "title": "Add White Background to Transparent PNG",
+    "description": "Flatten transparent PNGs onto a white background — the requirement of marketplaces like Amazon and many print shops. Batch of 10, free.",
+    "primaryKeyword": "add white background to png"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "add white background png",
+    "flatten transparency",
+    "png white background"
+   ]
+  },
+  {
+   "slug": "add-background-color",
+   "url": "https://pixkitapp.com/add-background-color",
+   "name": "Add Background Color",
+   "h1": "Add a Solid Background Color",
+   "description": "Place transparent images on any solid color — brand tints, pastels, darks. Choose your hex and export instantly.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "color:color",
+    "select:format(image/png/image/jpeg)"
+   ],
+   "seo": {
+    "title": "Add Background Color to Transparent PNG",
+    "description": "Place transparent images on any solid color — brand tints, pastels, darks. Pick your hex and export instantly. Free, private, batch of 10.",
+    "primaryKeyword": "add background color to png"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "add background color",
+    "png background color",
+    "transparent to color"
+   ]
+  },
+  {
+   "slug": "round-corners-image",
+   "url": "https://pixkitapp.com/round-corners-image",
+   "name": "Round Corners",
+   "h1": "Round Image Corners",
+   "description": "Round the corners of any image with adjustable radius and transparent outside. Modern UI-ready PNG output.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "slider:radius"
+   ],
+   "seo": {
+    "title": "Round Image Corners Online – Radius Control",
+    "description": "Round the corners of any image with an adjustable radius and transparent outside. Modern UI-ready PNG output — free, private, in-browser.",
+    "primaryKeyword": "round image corners"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "round image corners",
+    "rounded corners png",
+    "radius image"
+   ]
+  },
+  {
+   "slug": "transparent-png-maker",
+   "url": "https://pixkitapp.com/transparent-png-maker",
+   "name": "Transparent PNG Maker",
+   "h1": "Transparent PNG Maker — Alpha Cleaner",
+   "description": "Convert any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Preview on checkerboard.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "slider:alphaThreshold",
+    "toggle:binarize"
+   ],
+   "seo": {
+    "title": "Transparent PNG Maker – Alpha Cleaner",
+    "description": "Convert any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Preview on checkerboard — free, in-browser.",
+    "primaryKeyword": "transparent png maker"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "transparent png maker",
+    "alpha channel",
+    "clean alpha edges"
+   ]
+  },
+  {
+   "slug": "png-drop-shadow",
+   "url": "https://pixkitapp.com/png-drop-shadow",
+   "name": "PNG Drop Shadow",
+   "h1": "Add Drop Shadow to PNG",
+   "description": "Give transparent PNGs a professional drop shadow — blur, offset, color and opacity control. Design-ready output.",
+   "category": "Transparency",
+   "categorySlug": "transparency",
+   "accept": "image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "slider:blur",
+    "slider:offsetX",
+    "slider:offsetY",
+    "color:color",
+    "slider:opacity"
+   ],
+   "seo": {
+    "title": "Add Drop Shadow to PNG – Professional Depth",
+    "description": "Give transparent PNGs a professional drop shadow — blur, offset, color and opacity control. Design-ready output, free and private.",
+    "primaryKeyword": "png drop shadow"
+   },
+   "faqCount": 4,
+   "keywords": [
+    "png drop shadow",
+    "add shadow to image",
+    "shadow effect png"
+   ]
+  },
+  {
+   "slug": "instagram-post-resizer",
+   "url": "https://pixkitapp.com/instagram-post-resizer",
+   "name": "Instagram Post",
+   "h1": "Instagram Post Resizer — 1080×1080",
+   "description": "Resize images to perfect Instagram post size 1080×1080 square. Cover-crop or pad — free, instant, batch-friendly.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Instagram Post Resizer – 1080×1080 Square",
+    "description": "Resize images to perfect Instagram post size 1080×1080 square. Cover-crop, pad or stretch — free, instant, batch-friendly, no upload.",
+    "primaryKeyword": "instagram post size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "instagram post size",
+    "instagram square resize",
+    "1080x1080",
+    "1080x1080",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "instagram-story-resizer",
+   "url": "https://pixkitapp.com/instagram-story-resizer",
+   "name": "Instagram Story",
+   "h1": "Instagram Story Resizer — 1080×1920",
+   "description": "Resize images to Instagram Story size 1080×1920 vertical. Perfect full-screen stories and Reels covers.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Instagram Story Resizer – 1080×1920 Vertical",
+    "description": "Resize images to Instagram Story size 1080×1920 vertical. Full-screen stories and Reels covers that fit perfectly — free, private, batch of 10.",
+    "primaryKeyword": "instagram story size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "instagram story size",
+    "1080x1920",
+    "story resizer",
+    "1080x1920",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "instagram-portrait-resizer",
+   "url": "https://pixkitapp.com/instagram-portrait-resizer",
+   "name": "Instagram Portrait",
+   "h1": "Instagram Portrait Resizer — 1080×1350",
+   "description": "Resize images to Instagram portrait post size 1080×1350 (4:5). Maximum feed real estate.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Instagram Portrait Resizer – 1080×1350 (4:5)",
+    "description": "Resize images to Instagram portrait post size 1080×1350 — the 4:5 ratio that takes maximum feed real estate. Free, instant, batch-friendly.",
+    "primaryKeyword": "instagram portrait size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "instagram portrait size",
+    "1080x1350",
+    "4:5 post",
+    "1080x1350",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "facebook-cover-resizer",
+   "url": "https://pixkitapp.com/facebook-cover-resizer",
+   "name": "Facebook Cover",
+   "h1": "Facebook Cover Photo Resizer — 851×315",
+   "description": "Resize images to Facebook cover size 851×315. Nail the desktop banner crop on the first try.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Facebook Cover Resizer – 851×315 Banner",
+    "description": "Resize images to Facebook cover size 851×315. Nail the desktop banner crop on the first try — free, private, no upload, batch-friendly.",
+    "primaryKeyword": "facebook cover size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "facebook cover size",
+    "851x315",
+    "facebook banner",
+    "851x315",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "facebook-profile-resizer",
+   "url": "https://pixkitapp.com/facebook-profile-resizer",
+   "name": "Facebook Profile",
+   "h1": "Facebook Profile Picture Resizer — 720×720",
+   "description": "Resize images to Facebook profile picture size 720×720 square for a crisp profile photo.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Facebook Profile Picture Resizer – 720×720",
+    "description": "Resize images to Facebook profile picture size 720×720 square for a crisp, correctly framed profile photo. Free, instant, private.",
+    "primaryKeyword": "facebook profile size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "facebook profile size",
+    "720x720",
+    "facebook pfp",
+    "720x720",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "twitter-header-resizer",
+   "url": "https://pixkitapp.com/twitter-header-resizer",
+   "name": "X / Twitter Header",
+   "h1": "X (Twitter) Header Resizer — 1500×500",
+   "description": "Resize images to X (Twitter) header size 1500×500. Get your banner crop right without trial and error.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "X (Twitter) Header Resizer – 1500×500",
+    "description": "Resize images to X (Twitter) header size 1500×500. Get your banner crop right without trial and error — free, private, instant.",
+    "primaryKeyword": "twitter header size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "twitter header size",
+    "1500x500",
+    "x banner size",
+    "1500x500",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "x-post-resizer",
+   "url": "https://pixkitapp.com/x-post-resizer",
+   "name": "X / Twitter Post",
+   "h1": "X (Twitter) Post Resizer — 1200×675",
+   "description": "Resize images to X (Twitter) post size 1200×675 (16:9) for maximum timeline impact.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "X (Twitter) Post Resizer – 1200×675 (16:9)",
+    "description": "Resize images to X (Twitter) post size 1200×675 — the 16:9 ratio that fills the timeline card perfectly. Free, private, batch of 10.",
+    "primaryKeyword": "twitter post size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "twitter post size",
+    "1200x675",
+    "x post image",
+    "1200x675",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "linkedin-banner-resizer",
+   "url": "https://pixkitapp.com/linkedin-banner-resizer",
+   "name": "LinkedIn Banner",
+   "h1": "LinkedIn Banner Resizer — 1584×396",
+   "description": "Resize images to LinkedIn profile banner size 1584×396. Look professional from the first impression.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "LinkedIn Banner Resizer – 1584×396 Cover",
+    "description": "Resize images to LinkedIn profile banner size 1584×396. Look professional from the first impression — free, private, no upload.",
+    "primaryKeyword": "linkedin banner size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "linkedin banner size",
+    "1584x396",
+    "linkedin cover",
+    "1584x396",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "linkedin-post-resizer",
+   "url": "https://pixkitapp.com/linkedin-post-resizer",
+   "name": "LinkedIn Post",
+   "h1": "LinkedIn Post Resizer — 1200×1200",
+   "description": "Resize images to LinkedIn post size 1200×1200 square for clean professional feeds.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "LinkedIn Post Resizer – 1200×1200 Square",
+    "description": "Resize images to LinkedIn post size 1200×1200 square for clean, professional feeds. Free, instant, batch-friendly — nothing uploaded.",
+    "primaryKeyword": "linkedin post size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "linkedin post size",
+    "1200x1200",
+    "1200x1200",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "youtube-thumbnail-resizer",
+   "url": "https://pixkitapp.com/youtube-thumbnail-resizer",
+   "name": "YouTube Thumbnail",
+   "h1": "YouTube Thumbnail Resizer — 1280×720",
+   "description": "Resize images to YouTube thumbnail size 1280×720 (16:9). Click-worthy thumbnails, exact spec.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "YouTube Thumbnail Resizer – 1280×720 Exact",
+    "description": "Resize images to YouTube thumbnail size 1280×720 (16:9). Click-worthy thumbnails at exact spec — free, private, batch of 10.",
+    "primaryKeyword": "youtube thumbnail size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "youtube thumbnail size",
+    "1280x720",
+    "yt thumbnail",
+    "1280x720",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "youtube-banner-resizer",
+   "url": "https://pixkitapp.com/youtube-banner-resizer",
+   "name": "YouTube Banner",
+   "h1": "YouTube Channel Banner Resizer — 2048×1152",
+   "description": "Resize images to YouTube channel banner size 2048×1152. Channel art that fits every device.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "YouTube Banner Resizer – 2048×1152 Channel Art",
+    "description": "Resize images to YouTube channel banner size 2048×1152. Channel art that fits TV, desktop and mobile — free, private, instant.",
+    "primaryKeyword": "youtube banner size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "youtube banner size",
+    "2048x1152",
+    "channel art",
+    "2048x1152",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "pinterest-pin-resizer",
+   "url": "https://pixkitapp.com/pinterest-pin-resizer",
+   "name": "Pinterest Pin",
+   "h1": "Pinterest Pin Resizer — 1000×1500",
+   "description": "Resize images to Pinterest pin size 1000×1500 (2:3). Optimal vertical pins that get saves.",
+   "category": "Social Media Sizes",
+   "categorySlug": "social",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:fit(cover/contain/stretch)",
+    "color:bgColor",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Pinterest Pin Resizer – 1000×1500 (2:3)",
+    "description": "Resize images to Pinterest pin size 1000×1500 — the 2:3 vertical ratio optimized for saves and clicks. Free, private, batch-friendly.",
+    "primaryKeyword": "pinterest pin size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "pinterest pin size",
+    "1000x1500",
+    "pinterest 2:3",
+    "1000x1500",
+    "social media image size",
+    "resize for social"
+   ]
+  },
+  {
+   "slug": "passport-photo-maker",
+   "url": "https://pixkitapp.com/passport-photo-maker",
+   "name": "Passport Photo Maker",
+   "h1": "Passport Photo Maker — All Standards",
+   "description": "Make passport photos online free with official size guides. US, UK, EU, India & more — 35×45mm or 2×2in at 300 DPI.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:preset(35x45mm/2x2in/33x48mm/35x35mm/3.5x4.5cm)",
+    "select:bg(white/lightgray/keep)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Passport Photo Maker – All Standards Online",
+    "description": "Make passport photos online free with official size guides. US, UK, EU, India presets — 35×45mm or 2×2in at 300 DPI. Private, in-browser.",
+    "primaryKeyword": "passport photo maker"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "passport photo maker",
+    "passport photo online",
+    "passport size photo",
+    "biometric photo"
+   ]
+  },
+  {
+   "slug": "us-passport-photo",
+   "url": "https://pixkitapp.com/us-passport-photo",
+   "name": "US Passport Photo",
+   "h1": "US Passport Photo Maker — 2×2 inch",
+   "description": "Create compliant US passport photos: 2×2 inches (600×600px) at 300 DPI with official head guides.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:bg(white/lightgray/keep)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "US Passport Photo Maker – 2×2 Inch at 300 DPI",
+    "description": "Create compliant US passport photos: 2×2 inches (600×600px) at 300 DPI with official head guides. Free, private, in your browser.",
+    "primaryKeyword": "us passport photo"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "us passport photo",
+    "2x2 passport photo",
+    "600x600 photo",
+    "US passport (2×2 in) photo size",
+    "passport photo maker",
+    "id photo online"
+   ]
+  },
+  {
+   "slug": "schengen-visa-photo",
+   "url": "https://pixkitapp.com/schengen-visa-photo",
+   "name": "Schengen Visa Photo",
+   "h1": "Schengen Visa Photo Maker — 35×45mm",
+   "description": "Create Schengen visa photos at 35×45mm (413×531px @300DPI) with ICAO head-position guides.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:bg(white/lightgray/keep)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "Schengen Visa Photo Maker – 35×45mm ICAO",
+    "description": "Create Schengen visa photos at 35×45mm (413×531px @300DPI) with ICAO head-position guides. Free, private, entirely in-browser.",
+    "primaryKeyword": "schengen visa photo"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "schengen visa photo",
+    "35x45mm photo",
+    "europe visa photo",
+    "Schengen visa (35×45mm) photo size",
+    "passport photo maker",
+    "id photo online"
+   ]
+  },
+  {
+   "slug": "china-visa-photo",
+   "url": "https://pixkitapp.com/china-visa-photo",
+   "name": "China Visa Photo",
+   "h1": "China Visa Photo Maker — 33×48mm",
+   "description": "Create China visa photos at 33×48mm (390×567px @300DPI) with official guide overlay.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:bg(white/lightgray/keep)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "China Visa Photo Maker – 33×48mm Online",
+    "description": "Create China visa photos at 33×48mm (390×567px @300DPI) with the official guide overlay. Free, private — no photo booth required.",
+    "primaryKeyword": "china visa photo"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "china visa photo",
+    "33x48mm photo",
+    "China visa (33×48mm) photo size",
+    "passport photo maker",
+    "id photo online"
+   ]
+  },
+  {
+   "slug": "id-photo-1-inch",
+   "url": "https://pixkitapp.com/id-photo-1-inch",
+   "name": "1-Inch ID Photo",
+   "h1": "1-Inch ID Photo Maker — 295×413",
+   "description": "Make standard 1-inch (25×35mm) ID photos at 295×413px — the universal badge and student-card size.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:bg(white/lightgray/keep)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "1-Inch ID Photo Maker – 295×413 at 300 DPI",
+    "description": "Make standard 1-inch (25×35mm) ID photos at 295×413px — the universal badge, student-card and employee-file size. Free and private.",
+    "primaryKeyword": "1 inch id photo"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "1 inch id photo",
+    "295x413 photo",
+    "one inch photo",
+    "1-inch ID (25×35mm) photo size",
+    "passport photo maker",
+    "id photo online"
+   ]
+  },
+  {
+   "slug": "linkedin-profile-photo",
+   "url": "https://pixkitapp.com/linkedin-profile-photo",
+   "name": "LinkedIn Headshot",
+   "h1": "LinkedIn Profile Photo Maker — 400×400",
+   "description": "Crop professional LinkedIn headshots to 400×400 square with the ideal 60% face framing guide.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": false,
+   "options": [
+    "select:bg(white/lightgray/keep)",
+    "select:format(auto/image/jpeg/image/png/image/webp)",
+    "slider:quality"
+   ],
+   "seo": {
+    "title": "LinkedIn Profile Photo Maker – 400×400 Crop",
+    "description": "Crop professional LinkedIn headshots to 400×400 square with the ideal 60% face framing guide. Free, private, in-browser.",
+    "primaryKeyword": "linkedin photo size"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "linkedin photo size",
+    "linkedin headshot crop",
+    "400x400 profile",
+    "LinkedIn profile (1:1) photo size",
+    "passport photo maker",
+    "id photo online"
+   ]
+  },
+  {
+   "slug": "photo-print-sheet",
+   "url": "https://pixkitapp.com/photo-print-sheet",
+   "name": "Photo Print Sheet",
+   "h1": "Passport Photo Print Sheet (4×6)",
+   "description": "Arrange passport photos on a 4×6 inch print sheet at 300 DPI with cut lines. Take it to any photo kiosk.",
+   "category": "Passport & ID Photos",
+   "categorySlug": "passport-photos",
+   "accept": "image/jpeg,image/png,image/webp",
+   "multiple": true,
+   "options": [
+    "select:photoWidthPx(413/600/390/295)",
+    "number:photoHeightPx",
+    "toggle:cutLines"
+   ],
+   "seo": {
+    "title": "Passport Photo Print Sheet – 4×6 at 300 DPI",
+    "description": "Arrange passport photos on a 4×6 inch print sheet at 300 DPI with cut lines. Take it to any photo kiosk — free, private, in-browser.",
+    "primaryKeyword": "passport photo print sheet"
+   },
+   "faqCount": 2,
+   "keywords": [
+    "passport photo print sheet",
+    "4x6 photo sheet",
+    "print passport photos"
+   ]
+  }
+ ]
+}

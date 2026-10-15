@@ -1,0 +1,15 @@
+import { chromium } from "playwright-core";
+import { readFileSync } from "node:fs";
+const EXEC = "/home/z/.agent-browser/browsers/chrome-155.0.8059.39/chrome";
+const browser = await chromium.launch({ executablePath: EXEC, args: ["--no-sandbox", "--disable-dev-shm-usage", "--enable-unsafe-swiftshader"] });
+const page = await (await browser.newContext({ viewport: { width: 1280, height: 900 } })).newPage();
+page.on("console", m => { if (m.type() === "error") console.log("CONSOLE-ERR:", m.text().slice(0, 150)); });
+page.on("pageerror", e => console.log("PAGEERROR:", String(e).slice(0, 150)));
+await page.goto("http://localhost:3000/compress-image-to-50kb", { waitUntil: "load" });
+const input = page.locator('input[type=file]').first();
+await input.setInputFiles([{ name: "photo.jpg", mimeType: "", buffer: readFileSync("/tmp/pxaudit/photo.jpg") }]);
+await page.waitForTimeout(2500);
+const buttons = await page.locator("button").allTextContents();
+console.log("BUTTONS:", JSON.stringify(buttons));
+await page.screenshot({ path: "/tmp/debug-50kb.png" });
+await browser.close();

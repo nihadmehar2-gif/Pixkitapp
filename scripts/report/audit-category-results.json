@@ -1,0 +1,538 @@
+{
+ "compression": [
+  [
+   "image-compressor",
+   "download magic-ok, dims decoded | ZIP 3 entries"
+  ],
+  [
+   "compress-png-image",
+   "download magic-ok, transparency kept | ZIP 2 entries"
+  ],
+  [
+   "compress-jpeg-image",
+   "download magic-ok | ZIP 2 entries"
+  ],
+  [
+   "compress-webp-image",
+   "download magic-ok | ZIP 2 entries"
+  ],
+  [
+   "compress-image-to-50kb",
+   "JPG 49,796B <= 50KB target | ZIP 3 entries; WebP 50,624B <= target"
+  ],
+  [
+   "compress-image-to-100kb",
+   "97,091B <= 100KB target | ZIP 3 entries"
+  ],
+  [
+   "compress-image-to-200kb",
+   "203,520B <= 200KB target | ZIP 3 entries"
+  ],
+  [
+   "compress-image-to-500kb",
+   "301,555B <= 500KB target | ZIP 3 entries"
+  ],
+  [
+   "compress-image-to-specific-size",
+   "custom 150KB: 114,426B | custom 10KB: 8,265B | ZIP 3 entries"
+  ],
+  [
+   "lossless-image-compressor",
+   "download magic-ok, near-lossless note | ZIP 3 entries"
+  ],
+  [
+   "bulk-image-compressor",
+   "3-file batch | ZIP 3 entries verified"
+  ]
+ ],
+ "resizing": [
+  [
+   "image-resizer",
+   "download magic-ok, dims decoded | ZIP 3 entries"
+  ],
+  [
+   "resize-image-by-percentage",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "resize-image-to-width",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "resize-image-to-height",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "resize-image-to-dimensions",
+   "exact output dims decoded | ZIP 3 entries"
+  ],
+  [
+   "resize-image-to-kb",
+   "default 200KB: 203,520B | custom 30KB: 30,504B | ZIP 3 entries"
+  ],
+  [
+   "resize-png-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "resize-jpg-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "resize-webp-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "enlarge-image",
+   "2x output 6.4MB PNG, dims doubled, magic-ok"
+  ],
+  [
+   "thumbnail-maker",
+   "256px thumb, magic-ok | ZIP 3 entries"
+  ]
+ ],
+ "cropping": [
+  [
+   "crop-image",
+   "interactive editor export 258KB magic-ok, dims decoded"
+  ],
+  [
+   "crop-image-to-square",
+   "1:1 dims verified | ZIP 3 entries"
+  ],
+  [
+   "crop-image-to-circle",
+   "PNG with alpha, magic-ok"
+  ],
+  [
+   "crop-image-16-9",
+   "16:9 dims verified | ZIP 3 entries"
+  ],
+  [
+   "crop-image-9-16",
+   "9:16 dims verified | ZIP 3 entries"
+  ],
+  [
+   "crop-image-4-3",
+   "4:3 dims verified | ZIP 3 entries"
+  ],
+  [
+   "crop-image-3-2",
+   "3:2 dims verified | ZIP 3 entries"
+  ],
+  [
+   "crop-borders-auto",
+   "border scan ran, output magic-ok | ZIP 3 entries"
+  ]
+ ],
+ "conversion": [
+  [
+   "webp-to-jpg",
+   "WebP in -> JPG out, magic-ok | ZIP 2 entries"
+  ],
+  [
+   "webp-to-png",
+   "magic-ok | ZIP 2 entries"
+  ],
+  [
+   "jpg-to-png",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "png-to-jpg",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "png-to-webp",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "jpg-to-webp",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "gif-to-png",
+   "real GIF fixture 600x400 -> PNG magic-ok, dims decoded"
+  ],
+  [
+   "gif-to-webp",
+   "real GIF fixture -> WebP magic-ok (first frame per docs)"
+  ],
+  [
+   "bmp-to-jpg",
+   "real BMP fixture -> JPG magic-ok"
+  ],
+  [
+   "bmp-to-png",
+   "real BMP fixture -> PNG magic-ok"
+  ],
+  [
+   "jpg-to-bmp",
+   "JPG -> 24-bit BMP magic-ok (BM header)"
+  ],
+  [
+   "png-to-bmp",
+   "PNG -> 24-bit BMP magic-ok"
+  ],
+  [
+   "avif-to-jpg",
+   "real AVIF fixture -> JPG magic-ok"
+  ],
+  [
+   "avif-to-png",
+   "real AVIF fixture -> PNG magic-ok"
+  ],
+  [
+   "image-to-pdf",
+   "PDF magic %PDF verified (2-image batch)"
+  ],
+  [
+   "image-to-ico",
+   "ICO magic 00 00 01 00 verified"
+  ],
+  [
+   "image-to-base64",
+   "data-URI .txt emitted, copied/downloaded"
+  ],
+  [
+   "base64-to-image",
+   ".txt upload decoded to valid PNG 892KB (fix verified on dev+prod)"
+  ],
+  [
+   "svg-to-png",
+   "SVG rasterized at 2x, magic-ok"
+  ],
+  [
+   "image-format-converter",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ]
+ ],
+ "rotation": [
+  [
+   "rotate-image",
+   "free-angle slider render + download magic-ok"
+  ],
+  [
+   "rotate-image-90",
+   "90deg: dims swapped & verified | ZIP 3 entries; re-verified on prod"
+  ],
+  [
+   "rotate-image-180",
+   "dims unchanged & verified | ZIP 3 entries"
+  ],
+  [
+   "rotate-image-270",
+   "dims swapped & verified | ZIP 3 entries"
+  ],
+  [
+   "flip-image-horizontal",
+   "mirror dims verified | ZIP 3 entries"
+  ],
+  [
+   "flip-image-vertical",
+   "mirror dims verified | ZIP 3 entries"
+  ],
+  [
+   "straighten-image",
+   "angled render + download magic-ok"
+  ]
+ ],
+ "filters": [
+  [
+   "grayscale-image",
+   "filter applied, magic-ok | ZIP 3 entries"
+  ],
+  [
+   "sepia-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "invert-image-colors",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "blur-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "sharpen-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "brightness-adjuster",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "contrast-adjuster",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "saturation-adjuster",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "hue-rotate-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "vintage-filter",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "posterize-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "pixelate-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "duotone-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "film-grain-effect",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "vignette-effect",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ]
+ ],
+ "optimization": [
+  [
+   "image-optimizer",
+   "WebP out, filename fix verified (photo-optimized.webp) | ZIP 3 entries"
+  ],
+  [
+   "optimize-image-for-web",
+   "1920px cap + WebP, filename fix verified | ZIP 3 entries"
+  ],
+  [
+   "optimize-png-for-web",
+   "palette reduction, magic-ok | ZIP 2 entries"
+  ],
+  [
+   "optimize-jpg-for-web",
+   "re-encode, magic-ok | ZIP 2 entries"
+  ],
+  [
+   "favicon-generator",
+   "6 outputs (16/32/48/96/180 + .ico), 16x16 dims verified | ZIP 6 entries"
+  ],
+  [
+   "email-image-resizer",
+   "800px cap, filename fix verified | ZIP 3 entries"
+  ],
+  [
+   "image-size-reducer",
+   "percent scale 27.8KB output | ZIP 3 entries"
+  ]
+ ],
+ "metadata": [
+  [
+   "image-metadata-viewer",
+   "metadata report rendered (dims/format/type)"
+  ],
+  [
+   "remove-image-metadata",
+   "re-encoded clean JPG magic-ok | ZIP 3 entries"
+  ],
+  [
+   "remove-gps-data",
+   "re-encoded clean JPG magic-ok | ZIP 3 entries"
+  ]
+ ],
+ "color": [
+  [
+   "image-color-picker",
+   "canvas click sampled #861C74 (valid HEX)"
+  ],
+  [
+   "image-color-palette",
+   "palette PNG output magic-ok"
+  ],
+  [
+   "image-dominant-color",
+   "swatch PNG magic-ok | ZIP 3 entries"
+  ],
+  [
+   "image-average-color",
+   "swatch PNG magic-ok | ZIP 3 entries"
+  ],
+  [
+   "replace-color-in-image",
+   "recolor PNG magic-ok | ZIP 3 entries"
+  ],
+  [
+   "remove-color-from-image",
+   "keyed transparent PNG magic-ok"
+  ],
+  [
+   "image-color-temperature",
+   "temperature shift, magic-ok | ZIP 3 entries"
+  ],
+  [
+   "threshold-image",
+   "1-bit style output magic-ok | ZIP 3 entries"
+  ],
+  [
+   "swap-color-channels",
+   "channel remap magic-ok | ZIP 3 entries"
+  ]
+ ],
+ "watermarking": [
+  [
+   "watermark-image",
+   "text stamp rendered, magic-ok | ZIP 3 entries"
+  ],
+  [
+   "add-logo-watermark",
+   "logo PNG via second input composited, magic-ok"
+  ],
+  [
+   "tiled-watermark",
+   "tile pattern rendered | ZIP 3 entries"
+  ],
+  [
+   "date-watermark",
+   "date stamp rendered | ZIP 3 entries"
+  ],
+  [
+   "bulk-watermark",
+   "batch stamped | ZIP 3 entries"
+  ]
+ ],
+ "text": [
+  [
+   "add-text-to-image",
+   "download magic-ok, dims decoded"
+  ],
+  [
+   "add-caption-to-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "meme-generator",
+   "download magic-ok, dims decoded"
+  ],
+  [
+   "quote-card-maker",
+   "download magic-ok, dims decoded"
+  ],
+  [
+   "add-title-to-image",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ]
+ ],
+ "transparency": [
+  [
+   "remove-white-background",
+   "download magic-ok, dims decoded"
+  ],
+  [
+   "make-image-transparent",
+   "download magic-ok, dims decoded"
+  ],
+  [
+   "add-white-background",
+   "PNG-only accept verified; composited JPG out | ZIP 2 entries"
+  ],
+  [
+   "add-background-color",
+   "composited PNG out | ZIP 2 entries"
+  ],
+  [
+   "round-corners-image",
+   "rounded alpha PNG magic-ok"
+  ],
+  [
+   "transparent-png-maker",
+   "alpha PNG magic-ok"
+  ],
+  [
+   "png-drop-shadow",
+   "shadow PNG 918KB magic-ok"
+  ]
+ ],
+ "social": [
+  [
+   "instagram-post-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "instagram-story-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "instagram-portrait-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "facebook-cover-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "facebook-profile-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "twitter-header-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "x-post-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "linkedin-banner-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "linkedin-post-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "youtube-thumbnail-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "youtube-banner-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ],
+  [
+   "pinterest-pin-resizer",
+   "download magic-ok, dims decoded | ZIP entries verified"
+  ]
+ ],
+ "passport": [
+  [
+   "passport-photo-maker",
+   "interactive guide editor -> 35x45mm sheet, magic-ok (prod re-run)"
+  ],
+  [
+   "us-passport-photo",
+   "interactive editor -> photo output magic-ok"
+  ],
+  [
+   "schengen-visa-photo",
+   "interactive editor -> photo output magic-ok"
+  ],
+  [
+   "china-visa-photo",
+   "interactive editor -> photo output magic-ok"
+  ],
+  [
+   "id-photo-1-inch",
+   "interactive editor -> photo output magic-ok"
+  ],
+  [
+   "linkedin-profile-photo",
+   "400x400 editor -> output magic-ok"
+  ],
+  [
+   "photo-print-sheet",
+   "4x6 print sheet 446KB magic-ok | ZIP 3 entries"
+  ]
+ ]
+}

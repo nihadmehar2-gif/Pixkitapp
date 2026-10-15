@@ -1,0 +1,15 @@
+import { chromium } from "playwright-core";
+import { readFileSync } from "node:fs";
+const EXEC = "/home/z/.agent-browser/browsers/chrome-155.0.8059.39/chrome";
+const browser = await chromium.launch({ executablePath: EXEC, args: ["--no-sandbox", "--disable-dev-shm-usage", "--enable-unsafe-swiftshader"] });
+const page = await (await browser.newContext({ viewport: { width: 1280, height: 900 } })).newPage();
+page.on("console", m => { if (m.type() === "error") console.log("CONSOLE-ERR:", m.text().slice(0, 200)); });
+page.on("pageerror", e => console.log("PAGEERROR:", String(e).slice(0, 200)));
+await page.goto("http://localhost:3000/png-drop-shadow", { waitUntil: "load" });
+const input = page.locator('input[type=file]').first();
+await input.setInputFiles([{ name: "photo.png", mimeType: "image/png", buffer: readFileSync("/tmp/pxaudit/photo.png") }]);
+await page.waitForTimeout(2500);
+console.log("BUTTONS:", JSON.stringify(await page.locator("button").allTextContents()));
+console.log("ALERTS:", JSON.stringify(await page.locator('[role=alert]').allTextContents().catch(() => [])));
+await page.screenshot({ path: "/tmp/debug-shadow.png" });
+await browser.close();
