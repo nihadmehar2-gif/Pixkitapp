@@ -5,14 +5,14 @@ Brand-consistent with the site: dark background (#1a1625), violet->orange
 gradient accent (matches public/logo.svg), Inter-like heavy sans (DejaVu Sans
 Bold is the closest installed), same wordmark treatment.
 
-Output: public/og-image.png — served at https://pixkitapp.com/og-image.png
+Output: public/og-default.png — served at https://pixkitapp.com/og-default.png
 """
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import math
 import os
 
 W, H = 1200, 630
-OUT = os.path.join(os.path.dirname(__file__), "..", "public", "og-image.png")
+OUT = os.path.join(os.path.dirname(__file__), "..", "public", "og-default.png")
 
 # ---- palette (from globals.css / logo.svg) --------------------------------
 BG_TOP = (26, 22, 37)       # #1a1625 (dark --background)

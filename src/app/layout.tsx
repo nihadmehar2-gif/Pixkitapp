@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "PixKitApp",
     type: "website",
+    locale: "en_US",
     images: OG_IMAGES,
   },
   twitter: {

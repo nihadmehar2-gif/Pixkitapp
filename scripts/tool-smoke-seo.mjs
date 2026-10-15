@@ -9,7 +9,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 
 const EXEC = "/home/z/.agent-browser/browsers/chrome-155.0.8059.39/chrome";
-const BASE = "http://localhost:3000";
+const BASE = process.argv[2] || "http://localhost:3000";
 const TMP = mkdtempSync(join(tmpdir(), "pxseo-"));
 const fails = [];
 const ok = (n, c, d = "") => { console.log(`${c ? "PASS" : "FAIL"} ${n}${c ? "" : " — " + d}`); if (!c) fails.push(n); };

@@ -108,11 +108,11 @@ def page_checks(path, expect_title_frag, expect_h1_frag, expect_guide_frag, expe
     expected_og_url = "https://pixkitapp.com" if path == "/" else f"https://pixkitapp.com{path}"
     check(f"{path} og:url = production path", og_url is not None and og_url.group(1) == expected_og_url, og_url.group(1) if og_url else "none")
     check(f"{path} og:type = website", og_type is not None and og_type.group(1) == "website", og_type.group(1) if og_type else "none")
-    check(f"{path} og:image = production og-image.png", og_img is not None and og_img.group(1) == "https://pixkitapp.com/og-image.png", og_img.group(1) if og_img else "none")
+    check(f"{path} og:image = production og-default.png", og_img is not None and og_img.group(1) == "https://pixkitapp.com/og-default.png", og_img.group(1) if og_img else "none")
     check(f"{path} twitter:card = summary_large_image", tw_card is not None and tw_card.group(1) == "summary_large_image", tw_card.group(1) if tw_card else "none")
     check(f"{path} twitter:title", tw_title is not None and len(tw_title.group(1)) > 5)
     check(f"{path} twitter:description", tw_desc is not None and len(tw_desc.group(1)) > 20)
-    check(f"{path} twitter:image", tw_img is not None and tw_img.group(1) == "https://pixkitapp.com/og-image.png", tw_img.group(1) if tw_img else "none")
+    check(f"{path} twitter:image", tw_img is not None and tw_img.group(1) == "https://pixkitapp.com/og-default.png", tw_img.group(1) if tw_img else "none")
     for tag, m in [("og:image", og_img), ("twitter:image", tw_img), ("og:url", og_url), ("og:title", og_title), ("twitter:title", tw_title)]:
         n = len(re.findall(r'<meta (?:property|name)="' + tag + r'"', html))
         check(f"{path} exactly one {tag} tag", n == 1, f"found {n}")
@@ -179,9 +179,9 @@ st, _ = get("/categories/not-a-category")
 check("unknown category returns 404", st == 404, str(st))
 
 # ---------- 5. Social image asset is served ----------
-st, body, hdr = get("/og-image.png", want_headers=True)
-check("og-image.png served locally (200 + image/png)", st == 200 and hdr.get("Content-Type", "").startswith("image/png"), f"{st} {hdr.get('Content-Type')}")
-check("og-image.png reasonable size (<1MB)", len(body) < 1_000_000, f"{len(body)} bytes")
+st, body, hdr = get("/og-default.png", want_headers=True)
+check("og-default.png served locally (200 + image/png)", st == 200 and hdr.get("Content-Type", "").startswith("image/png"), f"{st} {hdr.get('Content-Type')}")
+check("og-default.png reasonable size (<1MB)", len(body) < 1_000_000, f"{len(body)} bytes")
 
 # ---------- 6. Every sitemap URL is directly accessible ----------
 bad = []

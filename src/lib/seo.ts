@@ -38,12 +38,13 @@ export const ROBOTS_DIRECTIVES: Metadata["robots"] = IS_PREVIEW
   : { index: true, follow: true };
 
 /**
- * Stable, publicly served social sharing image — 1200×630 PNG in /public.
- * Resolves to the absolute production URL https://pixkitapp.com/og-image.png
- * via metadataBase, so scrapers always see a production asset that will
- * exist once the site is deployed (it ships in /public).
+ * Stable, publicly served social sharing image — 1200×630 PNG in /public
+ * (professional branded card, <300 KB). Resolves to the absolute production
+ * URL https://pixkitapp.com/og-default.png via metadataBase, so scrapers
+ * always see a production asset that will exist once the site is deployed
+ * (it ships in /public).
  */
-export const OG_IMAGE = "/og-image.png";
+export const OG_IMAGE = "/og-default.png";
 export const OG_IMAGE_ALT =
   "PixKitApp — 127 free online image tools that run privately in your browser";
 
@@ -71,6 +72,7 @@ export function socialMeta(opts: {
       url,
       siteName: "PixKitApp",
       type: "website",
+      locale: "en_US",
       images: OG_IMAGES,
     },
     twitter: {

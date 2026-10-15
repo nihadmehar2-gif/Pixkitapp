@@ -17,7 +17,7 @@ Checks per mode (against `next build` output in .next/):
   3. sitemap.xml (147 URLs vs empty urlset)
   4. routes-manifest.json X-Robots-Tag header (absent vs present)
   5. sample tool + category page robots meta
-  6. og-image.png shipped in standalone public/
+  6. og-default.png shipped in standalone public/
   7. canonical + og:image absolute production URL on home
 """
 import json
@@ -87,8 +87,8 @@ def check(mode: str) -> None:
     req(expect_prod != has_noindex, "home robots meta", "index,follow" if expect_prod else "noindex,nofollow")
     req('rel="canonical" href="https://pixkitapp.com"' in home,
         "home canonical = production root", "https://pixkitapp.com")
-    req('property="og:image" content="https://pixkitapp.com/og-image.png"' in home,
-        "home og:image absolute production URL", "https://pixkitapp.com/og-image.png")
+    req('property="og:image" content="https://pixkitapp.com/og-default.png"' in home,
+        "home og:image absolute production URL", "https://pixkitapp.com/og-default.png")
 
     # --- 2: robots.txt -------------------------------------------------------
     robots = ""
@@ -143,8 +143,8 @@ def check(mode: str) -> None:
         print("  [WARN] no category page artifact found (skipped)")
 
     # --- 6: og-image in standalone output ------------------------------------
-    og = os.path.join(PROJECT, ".next", "standalone", "public", "og-image.png")
-    req(os.path.exists(og), "og-image.png in standalone public", "exists")
+    og = os.path.join(PROJECT, ".next", "standalone", "public", "og-default.png")
+    req(os.path.exists(og), "og-default.png in standalone public", "exists")
 
     if failures:
         print(f"[{mode}] RESULT: {len(failures)} FAILURE(S): {failures}\n")

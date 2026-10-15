@@ -47,7 +47,7 @@ for f in indexable:
     def count(tag):
         return len(re.findall(r'<meta (?:property|name)="' + tag + r'"', html))
 
-    if count("og:image") != 1 or "https://pixkitapp.com/og-image.png" not in html:
+    if count("og:image") != 1 or "https://pixkitapp.com/og-default.png" not in html:
         og_missing.append(rel)
     if count("og:image") > 1 or count("twitter:image") > 1 or count("og:title") > 1 or count("og:url") > 1:
         og_dup.append(rel)
@@ -104,8 +104,8 @@ else:
     check("prerendered robots.txt file found", False, rb)
 
 # og-image ships in standalone public/ (deployed asset)
-check("og-image.png in standalone public/", os.path.exists(".next/standalone/public/og-image.png"))
-check("og-image.png 1200x630 (from PIL)", True)  # verified separately in verification step
+check("og-default.png in standalone public/", os.path.exists(".next/standalone/public/og-default.png"))
+check("og-default.png 1200x630 (from PIL)", True)  # verified separately in verification step
 
 print(f"PASSED: {len(passes)}")
 print(f"FAILED: {len(fails)}")

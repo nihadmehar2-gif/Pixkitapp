@@ -48,6 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${SITE_URL}/${tool.slug}`,
       siteName: "PixKitApp",
       type: "website",
+      locale: "en_US",
       images: OG_IMAGES,
     },
     twitter: {
