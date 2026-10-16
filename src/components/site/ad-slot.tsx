@@ -27,6 +27,14 @@ const MIN_H: Record<AdSlotId, string> = {
   "pre-footer": "min-h-[100px] sm:min-h-[110px]",
 };
 
+// Unique landmark names: two complementary landmarks with the same label
+// fail axe's landmark-unique rule (top + pre-footer slots render together).
+const LANDMARK_LABEL: Record<AdSlotId, string> = {
+  top: "Advertisement space (top)",
+  "in-content": "Advertisement space (in content)",
+  "pre-footer": "Advertisement space (bottom)",
+};
+
 declare global {
   interface Window {
     adsbygoogle?: unknown[];
@@ -55,7 +63,7 @@ export function AdSlot({ id, className }: { id: AdSlotId; className?: string }) 
     return (
       <div
         role="complementary"
-        aria-label="Advertisement space"
+        aria-label={LANDMARK_LABEL[id]}
         className={cn("mx-auto w-full max-w-7xl px-4 sm:px-6", className)}
       >
         <div
@@ -64,7 +72,9 @@ export function AdSlot({ id, className }: { id: AdSlotId; className?: string }) 
             MIN_H[id]
           )}
         >
-          <span className="select-none text-xs uppercase tracking-wider text-muted-foreground/60">
+          {/* Full-strength muted-foreground: 5.5:1 on white (light) and 7:1 on
+              dark card — passes WCAG AA. The old /60 opacity measured 2.4:1. */}
+          <span className="select-none text-xs uppercase tracking-wider text-muted-foreground">
             Advertisement
           </span>
         </div>
@@ -75,7 +85,7 @@ export function AdSlot({ id, className }: { id: AdSlotId; className?: string }) 
   return (
     <div
       role="complementary"
-      aria-label="Advertisement"
+      aria-label={LANDMARK_LABEL[id]}
       className={cn("mx-auto w-full max-w-7xl px-4 sm:px-6", className)}
     >
       <div className={cn("flex items-center justify-center overflow-hidden", MIN_H[id])}>

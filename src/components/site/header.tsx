@@ -38,7 +38,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground ${
+              className={`inline-flex min-h-[44px] items-center rounded-full px-3.5 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground ${
                 pathname === item.href ? "text-primary" : "text-muted-foreground"
               }`}
             >
@@ -54,7 +54,7 @@ export function SiteHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="h-10 w-10"
+            className="h-11 w-11"
             onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
             aria-label="Toggle dark mode"
           >
@@ -64,7 +64,7 @@ export function SiteHeader() {
           <Button
             variant="ghost"
             size="icon"
-            className="h-10 w-10 sm:hidden"
+            className="h-11 w-11 sm:hidden"
             onClick={() => setSearchOpen(true)}
             aria-label="Search tools"
           >
@@ -73,14 +73,14 @@ export function SiteHeader() {
 
           <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-10 w-10 lg:hidden" aria-label="Open menu">
+              <Button variant="ghost" size="icon" className="h-11 w-11 lg:hidden" aria-label="Open menu">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] overflow-y-auto">
               <SheetTitle className="sr-only">Navigation menu</SheetTitle>
               <div className="mt-2 flex flex-col gap-1">
-                <Link href="/tools" onClick={() => setMenuOpen(false)} className="rounded-lg px-3 py-2.5 text-base font-semibold hover:bg-accent">
+                <Link href="/tools" onClick={() => setMenuOpen(false)} className="inline-flex min-h-[44px] items-center rounded-lg px-3 py-2.5 text-base font-semibold hover:bg-accent">
                   All Tools
                 </Link>
                 {CATEGORIES.map((cat) => (
@@ -88,7 +88,7 @@ export function SiteHeader() {
                     key={cat.id}
                     href={`/categories/${cat.slug}`}
                     onClick={() => setMenuOpen(false)}
-                    className="flex items-center justify-between rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                    className="flex min-h-[44px] items-center justify-between rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                   >
                     <span>{cat.name}</span>
                     <span className="text-xs">{CATEGORY_COUNTS[cat.id] ?? 0}</span>
@@ -96,7 +96,7 @@ export function SiteHeader() {
                 ))}
                 <div className="my-2 h-px bg-border" />
                 {["/about", "/contact", "/privacy", "/terms"].map((href) => (
-                  <Link key={href} href={href} onClick={() => setMenuOpen(false)} className="rounded-lg px-3 py-2.5 text-sm capitalize hover:bg-accent">
+                  <Link key={href} href={href} onClick={() => setMenuOpen(false)} className="inline-flex min-h-[44px] items-center rounded-lg px-3 py-2.5 text-sm capitalize hover:bg-accent">
                     {href.replace("/", "")}
                   </Link>
                 ))}

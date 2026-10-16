@@ -73,7 +73,7 @@ export function ToolsBrowser({ categories, tools, allTools }: Props) {
           {q && (
             <button
               onClick={() => setQ("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-muted-foreground hover:bg-accent"
+              className="absolute right-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground hover:bg-accent"
               aria-label="Clear search"
             >
               <X className="h-4 w-4" />
@@ -86,7 +86,7 @@ export function ToolsBrowser({ categories, tools, allTools }: Props) {
             role="tab"
             aria-selected={cat === "all"}
             className={cn(
-              "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
+              "inline-flex min-h-[40px] shrink-0 items-center rounded-full border px-4 py-2 text-sm font-medium transition-colors",
               cat === "all" ? "border-primary bg-primary text-primary-foreground" : "bg-card text-muted-foreground hover:bg-accent"
             )}
           >
@@ -99,7 +99,7 @@ export function ToolsBrowser({ categories, tools, allTools }: Props) {
               role="tab"
               aria-selected={cat === c.id}
               className={cn(
-                "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
+                "inline-flex min-h-[40px] shrink-0 items-center rounded-full border px-4 py-2 text-sm font-medium transition-colors",
                 cat === c.id ? "border-primary bg-primary text-primary-foreground" : "bg-card text-muted-foreground hover:bg-accent"
               )}
             >
@@ -121,19 +121,19 @@ export function ToolsBrowser({ categories, tools, allTools }: Props) {
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {filtered.map((tool) => (
-            <ToolCard key={tool.slug} tool={tool} />
+            <ToolCard key={tool.slug} tool={tool} heading="h2" />
           ))}
         </div>
       )}
 
       <section className="mt-10 border-t pt-8">
         <h2 className="text-lg font-semibold">Browse by category page</h2>
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap gap-2.5">
           {categories.map((c) => (
             <a
               key={c.id}
               href={`/categories/${c.slug}`}
-              className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3.5 py-1.5 text-sm text-muted-foreground hover:text-foreground"
+              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full border bg-card px-3.5 py-2 text-sm text-muted-foreground hover:text-foreground"
             >
               <ToolIcon name={c.icon} className="h-3.5 w-3.5" />
               {c.name}

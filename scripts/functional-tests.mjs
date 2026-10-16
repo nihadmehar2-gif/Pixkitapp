@@ -6,7 +6,7 @@ import { chromium } from "playwright-core";
 import { writeFileSync, readFileSync, copyFileSync, existsSync, mkdirSync, unlinkSync } from "node:fs";
 
 const EXEC = "/home/z/.agent-browser/browsers/chrome-155.0.8059.39/chrome";
-const BASE = "http://localhost:3000";
+const BASE = process.argv[2] || "http://localhost:3000";
 const TMP = "/tmp/pxtest";
 if (!existsSync(TMP)) mkdirSync(TMP, { recursive: true });
 

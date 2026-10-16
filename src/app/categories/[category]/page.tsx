@@ -103,7 +103,7 @@ export default async function CategoryPage({ params }: Props) {
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {tools.map((tool) => (
-          <ToolCard key={tool.slug} tool={tool} />
+          <ToolCard key={tool.slug} tool={tool} heading="h2" />
         ))}
       </div>
 

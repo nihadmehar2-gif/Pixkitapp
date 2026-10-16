@@ -137,11 +137,12 @@ export default async function ToolPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-1 text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-primary">Home</Link>
+        {/* Padding + negative margin: hit area ~36px tall without changing the visual layout. */}
+        <Link href="/" className="inline-block py-2.5 -my-2.5 px-1.5 -mx-1.5 hover:text-primary">Home</Link>
         <ChevronRight className="h-3.5 w-3.5" />
         {category && (
           <>
-            <Link href={`/categories/${category.slug}`} className="hover:text-primary">{category.name}</Link>
+            <Link href={`/categories/${category.slug}`} className="inline-block py-2.5 -my-2.5 px-1.5 -mx-1.5 hover:text-primary">{category.name}</Link>
             <ChevronRight className="h-3.5 w-3.5" />
           </>
         )}
@@ -232,7 +233,7 @@ export default async function ToolPage({ params }: Props) {
             ))}
           </div>
           <div className="mt-4">
-            <Link href="/tools" className="text-sm font-medium text-primary hover:underline">
+            <Link href="/tools" className="inline-block py-2.5 -my-2.5 text-sm font-medium text-primary hover:underline">
               Browse all {TOOLS.length} tools →
             </Link>
           </div>

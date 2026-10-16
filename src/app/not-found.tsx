@@ -19,7 +19,7 @@ export default function NotFound() {
       </Link>
       <div className="mt-10 grid gap-3 text-left sm:grid-cols-3">
         {popularTools(3).map((tool) => (
-          <ToolCard key={tool.slug} tool={tool} />
+          <ToolCard key={tool.slug} tool={tool} heading="h2" />
         ))}
       </div>
     </div>

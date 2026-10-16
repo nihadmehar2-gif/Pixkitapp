@@ -4,7 +4,8 @@ import type { ToolLite } from "@/lib/tools";
 import type { ToolCategory } from "@/lib/tools/types";
 import { cn } from "@/lib/utils";
 
-export function ToolCard({ tool, className }: { tool: ToolLite; className?: string }) {
+export function ToolCard({ tool, className, heading = "h3" }: { tool: ToolLite; className?: string; heading?: "h2" | "h3" }) {
+  const Heading = heading;
   return (
     <Link
       href={`/${tool.slug}`}
@@ -16,7 +17,9 @@ export function ToolCard({ tool, className }: { tool: ToolLite; className?: stri
       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
         <ToolIcon name={tool.icon} className="h-5 w-5" />
       </div>
-      <h3 className="font-semibold leading-snug">{tool.name}</h3>
+      {/* heading="h2" when cards sit directly under the page h1 (no intervening
+          section h2) so the outline never skips a level. */}
+      <Heading className="font-semibold leading-snug">{tool.name}</Heading>
       <p className="line-clamp-2 text-sm text-muted-foreground">{tool.description}</p>
     </Link>
   );

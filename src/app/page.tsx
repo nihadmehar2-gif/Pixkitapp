@@ -243,12 +243,12 @@ export default function HomePage() {
                     {cat.name}
                     <span className="rounded-full bg-muted px-2 py-0.5 text-xs normal-case">{tools.length}</span>
                   </h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2.5">
                     {tools.map((t) => (
                       <Link
                         key={t.slug}
                         href={`/${t.slug}`}
-                        className="rounded-full border bg-card px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:bg-accent hover:text-accent-foreground"
+                        className="inline-flex min-h-[40px] items-center rounded-full border bg-card px-3.5 py-2 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:bg-accent hover:text-accent-foreground"
                       >
                         {t.name}
                       </Link>

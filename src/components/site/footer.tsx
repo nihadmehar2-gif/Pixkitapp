@@ -17,20 +17,20 @@ export function SiteFooter() {
           </div>
           <div>
             <h3 className="text-sm font-semibold">Categories</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+            <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
               {CATEGORIES.map((cat) => (
                 <li key={cat.id}>
-                  <Link href={`/categories/${cat.slug}`} className="hover:text-primary">{cat.name}</Link>
+                  <Link href={`/categories/${cat.slug}`} className="inline-flex min-h-[36px] items-center hover:text-primary">{cat.name}</Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold">Popular Tools</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+            <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
               {["image-compressor", "image-resizer", "crop-image", "webp-to-jpg", "image-to-pdf", "passport-photo-maker"].map((slug) => (
                 <li key={slug}>
-                  <Link href={`/${slug}`} className="hover:text-primary">
+                  <Link href={`/${slug}`} className="inline-flex min-h-[36px] items-center hover:text-primary">
                     {TOOLS.find((t) => t.slug === slug)?.name ?? slug}
                   </Link>
                 </li>
@@ -39,12 +39,12 @@ export function SiteFooter() {
           </div>
           <div>
             <h3 className="text-sm font-semibold">Company</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
-              <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>
-              <li><Link href="/tools" className="hover:text-primary">All {TOOLS.length} Tools</Link></li>
+            <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
+              <li><Link href="/about" className="inline-flex min-h-[36px] items-center hover:text-primary">About Us</Link></li>
+              <li><Link href="/contact" className="inline-flex min-h-[36px] items-center hover:text-primary">Contact</Link></li>
+              <li><Link href="/privacy" className="inline-flex min-h-[36px] items-center hover:text-primary">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="inline-flex min-h-[36px] items-center hover:text-primary">Terms of Service</Link></li>
+              <li><Link href="/tools" className="inline-flex min-h-[36px] items-center hover:text-primary">All {TOOLS.length} Tools</Link></li>
             </ul>
           </div>
         </div>

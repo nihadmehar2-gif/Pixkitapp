@@ -28,7 +28,16 @@ export const metadata: Metadata = {
   // their own deduplicated, tool-specific keyword lists.
   authors: [{ name: "PixKitApp" }],
   creator: "PixKitApp",
-  icons: { icon: "/logo.svg" },
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "PixKitApp — Free Online Image Tools",
     description: "127 private, browser-based image tools. No uploads, no signups, no watermarks.",

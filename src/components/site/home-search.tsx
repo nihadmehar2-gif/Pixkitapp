@@ -41,12 +41,12 @@ export function HomeSearch() {
           Search <ArrowRight className="h-4 w-4" />
         </button>
       </form>
-      <div className="mt-3 flex flex-wrap justify-center gap-2">
+      <div className="mt-3 flex flex-wrap justify-center gap-2.5">
         {SUGGESTIONS.map((s) => (
           <button
             key={s}
             onClick={() => go(s)}
-            className="rounded-full border bg-card px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
+            className="inline-flex min-h-[40px] items-center rounded-full border bg-card px-3.5 py-2 text-xs text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
           >
             {s}
           </button>
