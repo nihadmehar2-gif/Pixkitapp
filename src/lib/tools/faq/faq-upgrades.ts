@@ -185,7 +185,7 @@ export const FAQ_UPGRADES: Record<string, { replace?: FaqItem[]; add?: FaqItem[]
     add: [
       {
         q: "What are the US passport photo rules?",
-        a: "2×2 inches (51×51 mm) printed at 300 DPI = 600×600 pixels, taken within the last 6 months on a plain white or off-white background, neutral expression, no glasses. The US Department of State accepts photos taken at home with a phone camera if these rules are met.",
+        a: "2×2 inches (51×51 mm) printed at 300 DPI = 600×600 pixels, taken within the last 6 months on a plain white or off-white background, neutral expression, no glasses. The US Department of State accepts photos taken at home with a phone camera if these rules are met — check travel.state.gov for the current requirements before you apply, since they can change.",
       },
     ],
   },
@@ -193,7 +193,7 @@ export const FAQ_UPGRADES: Record<string, { replace?: FaqItem[]; add?: FaqItem[]
     add: [
       {
         q: "What are the China visa photo requirements?",
-        a: "33×48 mm at 300 DPI = 390×567 pixels, on a plain white or near-white background, full face visible with a neutral expression and no head covering (unless worn daily for religious reasons). Photos must be recent — taken within the last 6 months.",
+        a: "33×48 mm at 300 DPI = 390×567 pixels, on a plain white or near-white background, full face visible with a neutral expression and no head covering (unless worn daily for religious reasons). Photos must be recent — taken within the last 6 months. Exact specifications are set by the Chinese embassy or consulate handling your application, so confirm the current rules with them before submitting.",
       },
       {
         q: "Can I print a China visa photo at home?",
@@ -205,7 +205,7 @@ export const FAQ_UPGRADES: Record<string, { replace?: FaqItem[]; add?: FaqItem[]
     add: [
       {
         q: "What is a 1-inch ID photo in pixels?",
-        a: "25×35 mm at 300 DPI equals 295×413 pixels — exactly what this tool outputs. The one-inch format is the standard for Chinese ID cards, resumes and application forms; the two-inch version (35×49 mm) is a separate preset in the passport category.",
+        a: "25×35 mm at 300 DPI equals 295×413 pixels — exactly what this tool outputs. The one-inch format is a standard for small ID cards, resumes and application forms. Requirements for specific documents vary by issuer, so confirm the size your document needs before printing.",
       },
     ],
   },
@@ -235,11 +235,11 @@ export const FAQ_UPGRADES: Record<string, { replace?: FaqItem[]; add?: FaqItem[]
     add: [
       {
         q: "How do I print passport photos at home?",
-        a: "Generate the photo with the passport maker, open this print sheet tool, and print the 4×6-inch (10×15 cm) sheet on photo paper at 300 DPI. Cut along the cut lines — each cell is exactly the official photo size.",
+        a: "Generate the photo with the passport maker, open this print sheet tool, and print the 4×6-inch (10×15 cm) sheet on photo paper at 300 DPI. Cut along the cut lines — each cell is exactly the photo size you selected.",
       },
       {
-        q: "How many photos fit on one sheet?",
-        a: "On 4×6-inch paper: two 35×45 mm rows of four (8 photos) at the standard size. The sheet arranges as many copies as fit the photo size you selected, with optional cut lines to make trimming easy.",
+        q: "What paper should I print the sheet on?",
+        a: "Any 4×6-inch photo paper works — glossy or matte. Kiosks and minilabs print at 300 DPI natively, so the sheet comes out at exactly the right physical size. Avoid plain office paper: it's thinner and colors look duller, which matters for ID photos.",
       },
     ],
   },
@@ -295,7 +295,7 @@ export const FAQ_UPGRADES: Record<string, { replace?: FaqItem[]; add?: FaqItem[]
     add: [
       {
         q: "How much can I rotate to straighten a photo?",
-        a: "The slider covers fine adjustments in small steps — typically enough for tilted horizons of a few degrees in either direction. Zoom-fill trims the corners that appear when the frame rotates, so the straightened image stays rectangular.",
+        a: "The slider covers ±15° in 0.5° steps — typically enough for tilted horizons, which rarely exceed a few degrees. Zoom-fill scales the frame up just enough to hide the corners that appear when the image rotates, so the straightened result stays rectangular.",
       },
     ],
   },

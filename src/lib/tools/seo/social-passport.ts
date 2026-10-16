@@ -124,7 +124,7 @@ export const SOCIAL_SEO: Record<string, ToolSeo> = {
   ),
   "us-passport-photo": seo(
     "US Passport Photo Maker – 2×2 Inch at 300 DPI",
-    "Create compliant US passport photos: 2×2 inches (600×600px) at 300 DPI with official head guides. Free, private, in your browser — no photo studio required.",
+    "Create US passport photos at the official 2×2 inch size: 600×600px at 300 DPI with head guides. Free, private, in your browser — no photo studio required.",
     "us passport photo",
     "The editor targets the US State Department spec: a 2×2 inch print (600×600 pixels at 300 DPI) with head between 50–69% of frame height. The overlay shows exactly where crown and chin must sit, and the optional background replacement cleans up imperfect home backdrops to plain white.",
     "Drop one photo shot against a plain light wall, drag the crop until the head guides align, pick a white background treatment, and download the 600×600 master for printing or online submission.",
@@ -173,7 +173,7 @@ export const SOCIAL_SEO: Record<string, ToolSeo> = {
     "passport photo print sheet",
     "The tool tiles your finished ID photos onto a single 4×6 inch sheet at 300 DPI (1200×1800 pixels) — the size every drugstore kiosk prints — and draws optional cut lines between copies. You choose the photo dimensions from the standard set, and the sheet packs as many copies as fit.",
     "Drop your master photo, pick the photo size (413×531 for 35×45mm, 600×600 for US 2×2, and others), toggle cut lines, and generate the sheet. Print it at any kiosk and cut along the lines.",
-    "Accepts .jpg, .png and .webp up to 30MB; batch-friendly if your photos share dimensions; output is one 1200×1800px sheet. A 35×45mm sheet fits 8 copies; the US 2×2 fits 4 — the tool arranges automatically.",
-    "Turning one compliant photo into a wallet of spares for forms, applications and institutions that want physical copies — at kiosk prices instead of photographer prices."
+    "Accepts .jpg, .png and .webp up to 30MB; batch-friendly if your photos share dimensions; output is one 1200×1800px sheet. A 35×45mm photo tiles 2×3 = 6 copies; US 2×2 also tiles 2×3 = 6 — the tool arranges as many as fit automatically.",
+    "Turning one correctly sized photo into a wallet of spares for forms, applications and institutions that want physical copies — at kiosk prices instead of photographer prices."
   ),
 };

@@ -90,7 +90,7 @@ const Q1 = [
 ];
 const A1 = [
   () => `No — the file is read straight into your browser tab and processed on your device. Nothing is transmitted, stored, or logged anywhere, and results appear instantly because no server round-trip is involved.`,
-  () => `Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it.`,
+  () => `Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor.`,
   () => `Fully local: the picture is decoded into your browser's memory, processed there, and handed straight back to you. No upload step exists at any point.`,
   () => `Your device does all the work — the image is processed inside the browser sandbox and saved back to your disk directly. No server ever sees the file.`,
   () => `Nothing is sent over the internet. The whole pipeline — decode, process, encode, download — happens in this tab, which is also why it stays fast on slow connections.`,
@@ -103,10 +103,12 @@ const Q2 = [
   (t: ToolDef) => `What kind of image files work with this tool?`,
   (t: ToolDef) => `Which file types are supported?`,
 ];
+// Every A2 variant must make sense under any Q2 variant (they pair via staggered
+// indices), so answers state formats + limits directly instead of yes/no openers.
 const A2 = [
-  (t: ToolDef) => `${fmtList(t)} files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step.`,
-  (t: ToolDef) => `Yes — ${fmtList(t)} inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back.`,
-  () => `A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued.`,
+  (t: ToolDef) => `${fmtList(t)} files up to 30 MB each are accepted.${t.multiple ? " Drop in one file or a whole batch" : " Drop a single file in"} (paste and drag also work), check the preview, and export in the format shown at the download step.`,
+  (t: ToolDef) => `${fmtList(t)} inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back.`,
+  (t: ToolDef) => `The common formats are covered — ${fmtList(t)}, each up to 30 MB.${t.multiple ? " Queue them one batch at a time." : " One photo is processed per run."}`,
   (t: ToolDef) => `Common formats are covered: ${fmtList(t)}, each up to 30 MB. Paste from the clipboard, drag and drop, or use the select button.`,
 ];
 
@@ -117,11 +119,19 @@ const Q3 = [
   () => `How many images can I process at once?`,
   () => `Is there a file size limit?`,
 ];
-const A3 = [
+// Batch answers branch on the tool's REAL input mode: single-file tools must
+// never claim batch processing or ZIP downloads.
+const A3_BATCH = [
   () => `Up to 10 images per batch, 30 MB per file, and unlimited runs — no signup, no counters, and no watermark stamped on results.`,
   () => `There are no artificial limits: use it as often as you like, free. Practical caps are 30 MB per image and 10 files per batch, and outputs stay watermark-free.`,
-  () => `You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed.`,
+  () => `You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP.`,
   () => `Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need.`,
+];
+const A3_SINGLE = [
+  () => `One image is processed per run, up to 30 MB — and you can run it as many times as you like. No signup, no counters, and no watermark on results.`,
+  () => `There are no artificial limits: use it as often as you like, free. The practical cap is 30 MB per image, and outputs stay watermark-free.`,
+  () => `This tool handles one image at a time (up to 30 MB). For batch work, use one of the multi-file tools instead — the per-image result is the same.`,
+  () => `Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another.`,
 ];
 
 // --- Q4/A4: controls ----------------------------------------------------------------
@@ -140,6 +150,7 @@ const A4 = [
  *  from aligning across neighbouring tools, cutting template duplication. */
 function faqFor(t: ToolDef, i: number): { q: string; a: string }[] {
   const hasOpts = t.options.length > 0;
+  const A3 = t.multiple ? A3_BATCH : A3_SINGLE;
   const q1 = pick(Q1, i * 2)(t), a1 = pick(A1, i * 5 + 1)();
   const q2 = pick(Q2, i * 3 + 1)(t), a2 = pick(A2, i * 5 + 2)(t);
   const q3 = pick(Q3, i * 2 + 2)(t), a3 = pick(A3, i * 5 + 3)();

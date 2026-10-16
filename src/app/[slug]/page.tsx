@@ -100,12 +100,13 @@ export default async function ToolPage({ params }: Props) {
         operatingSystem: "Any (web browser)",
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         description: tool.seo?.metaDescription ?? tool.description,
-        // Verifiable product features (true of every tool on the site) —
+        // Verifiable product features (true of THIS tool) —
         // deliberately NOT the meta keywords, which are search phrases.
+        // The batch/ZIP feature only applies to tools that accept multiple files.
         featureList: [
           "Runs entirely in your browser — images are never uploaded",
           "Free to use with no signup and no watermarks",
-          "Process up to 10 images per run with ZIP download",
+          ...(tool.multiple ? ["Process up to 10 images per run with ZIP download"] : ["Processes one image at a time, right in your browser"]),
         ],
       },
       {
@@ -162,7 +163,7 @@ export default async function ToolPage({ params }: Props) {
           { icon: ShieldCheck, label: "Private — images never uploaded" },
           { icon: Zap, label: "Instant processing" },
           { icon: Lock, label: "No signup required" },
-          { icon: Wifi, label: "Works offline after load" },
+          { icon: Wifi, label: "No uploads, no waiting" },
         ].map(({ icon: Icon, label }) => (
           <span key={label} className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-1.5 text-muted-foreground">
             <Icon className="h-3.5 w-3.5 text-primary" /> {label}

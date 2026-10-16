@@ -25,7 +25,7 @@ export const RESIZE_TOOLS: ToolDef[] = [
     ],
     processor: "resize",
     params: { mode: "both" },
-    about: "Resize any image to exact pixel dimensions with high-quality multi-step scaling that avoids the blur of naive resizing. Lock the aspect ratio to fit inside your target box, or unlock for precise width × height control. Everything runs locally — even 30MB camera originals resize in about a second.",
+    about: "Resize any image to exact pixel dimensions with high-quality multi-step scaling that avoids the blur of naive resizing. Lock the aspect ratio to fit inside your target box, or unlock for precise width × height control. Everything runs locally on your device — no upload step, so even large camera originals finish in seconds.",
     faq: [
       { q: "Will resizing reduce quality?", a: "Downscaling with our multi-step algorithm stays sharp. Upscaling can soften detail — use the dedicated Enlarge tool with sharpening for that." },
       { q: "Can I resize many images at once?", a: "Yes, up to 10 per batch, each keeping its own aspect ratio." },
@@ -35,7 +35,7 @@ export const RESIZE_TOOLS: ToolDef[] = [
     slug: "resize-image-by-percentage",
     name: "Resize by Percentage",
     h1: "Resize Image by Percentage",
-    description: "Scale images to 10%–400% of original size. Quick percentage-based resizing with quality control — free and instant.",
+    description: "Scale images from 1% to 400% of original size. Quick percentage-based resizing with quality control — free and instant.",
     keywords: ["resize image percentage", "scale image", "shrink image 50 percent"],
     category: "resizing",
     icon: "Percent",
@@ -155,7 +155,6 @@ export const RESIZE_TOOLS: ToolDef[] = [
     options: [
       optNumber("width", "Width", 800, 1, 12000, "px"),
       optToggle("keepAspect", "Lock aspect ratio", true),
-      optToggle("mode", "Use width only (auto height)", true),
     ],
     processor: "resize",
     params: { mode: "width", format: "image/png" },
@@ -173,7 +172,6 @@ export const RESIZE_TOOLS: ToolDef[] = [
     multiple: true,
     options: [
       optNumber("width", "Width", 1600, 1, 12000, "px"),
-      optToggle("mode", "Use width only (auto height)", true),
       optSlider("quality", "JPEG quality", 85, 30, 100, 1, "%"),
     ],
     processor: "resize",
@@ -192,7 +190,6 @@ export const RESIZE_TOOLS: ToolDef[] = [
     multiple: true,
     options: [
       optNumber("width", "Width", 1200, 1, 12000, "px"),
-      optToggle("mode", "Use width only (auto height)", true),
       optSlider("quality", "WebP quality", 85, 30, 100, 1, "%"),
     ],
     processor: "resize",

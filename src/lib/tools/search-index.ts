@@ -172,7 +172,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "resize-image-by-percentage",
     "name": "Resize by Percentage",
-    "description": "Scale images to 10%–400% of original size. Quick percentage-based resizing with quality control — free and instant.",
+    "description": "Scale images from 1% to 400% of original size. Quick percentage-based resizing with quality control — free and instant.",
     "category": "resizing",
     "icon": "Percent",
     "keywords": [
@@ -1580,7 +1580,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "us-passport-photo",
     "name": "US Passport Photo",
-    "description": "Create compliant US passport photos: 2×2 inches (600×600px) at 300 DPI with official head guides.",
+    "description": "Create US passport photos at the official 2×2 inch size (600×600px) at 300 DPI with official head guides.",
     "category": "passport",
     "icon": "IdCard",
     "keywords": [

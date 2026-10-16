@@ -24,7 +24,7 @@ export default function ContactPage() {
       <p className="mt-3 leading-relaxed text-muted-foreground">
         Questions, bug reports, tool requests or partnership ideas — we want to hear them. The fastest way to reach the team
         is the form below: it prepares an email draft in your own mail client, so nothing you write passes through a web
-        server first. We typically reply within two business days.
+        server first. Every message gets read, and we reply as quickly as we can.
       </p>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-3">

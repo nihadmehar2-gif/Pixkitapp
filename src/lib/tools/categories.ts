@@ -41,7 +41,7 @@ export const CATEGORIES: ToolCategory[] = [
     description: "Convert between JPG, PNG, WebP, BMP, PDF, ICO and Base64 — right in your browser.",
     metaTitle: "Conversion Tools — 20 Free Online Converters",
     metaDescription:
-      "Convert between JPG, PNG, WebP, BMP, PDF, ICO and Base64 — right in your browser. Twenty free converters cover every common direction, all fully offline.",
+      "Convert between JPG, PNG, WebP, BMP, PDF, ICO and Base64 — right in your browser. Twenty free converters cover every common direction, all processed on your device.",
     icon: "Repeat",
     color: "from-orange-500 to-amber-600",
   },

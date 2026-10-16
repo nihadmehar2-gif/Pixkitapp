@@ -34,7 +34,7 @@ export default function AboutPage() {
           The project started when we noticed how most &quot;free online image tools&quot; work: you hand over your photos, wait for a
           round trip to a datacenter, and hope the file gets deleted. Family photos, ID documents, business assets — all transmitted
           for a task a modern browser can do instantly. We built PixKitApp to prove that model is obsolete. Processing happens at
-          your device&apos;s full speed, works offline once loaded, and keeps confidential material (passports, contracts, medical
+          your device&apos;s full speed with no upload round-trip, and keeps confidential material (passports, contracts, medical
           scans) exactly where it belongs: with you.
         </p>
         <p>
@@ -51,7 +51,7 @@ export default function AboutPage() {
           { icon: ShieldCheck, title: "Private by architecture", body: "No uploads, no accounts, no tracking of the images you process. Privacy isn't a policy here — it's how the software works." },
           { icon: Zap, title: "Fast by design", body: "No waiting for uploads or server queues. A 30MB photo compresses in about a second on a typical laptop." },
           { icon: Globe, title: "Free & open access", body: "Every tool is free with no signup, no watermark and no daily limit. Built to be linked, shared and used." },
-          { icon: Lock, title: "Works offline", body: "Once a tool page loads, it keeps working without a network connection — ideal for flights and poor connectivity." },
+          { icon: Lock, title: "No upload infrastructure", body: "Image files are never transmitted anywhere — there is no upload step to secure, breach or wait for. (Pages still load from the web like any other site; the processing itself happens entirely on your device.)" },
         ].map(({ icon: Icon, title, body }) => (
           <div key={title} className="rounded-xl border bg-card p-5">
             <Icon className="h-6 w-6 text-primary" />

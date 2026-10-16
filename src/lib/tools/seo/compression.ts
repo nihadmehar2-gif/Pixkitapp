@@ -7,7 +7,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
     "Free Image Compressor – Shrink JPG, PNG, WebP",
     "Compress JPG, PNG and WebP images up to 90% smaller right in your browser. No upload, no signup, no watermark — free image compression with batch ZIP downloads.",
     "image compressor",
-    "The compressor re-encodes your images through the browser's Canvas engine at the quality level you choose, using modern codecs that discard only detail your eye barely notices. A quality of 70–80% typically cuts file size by 60–90% while keeping photos fully shareable.",
+    "The compressor re-encodes your images through the browser's Canvas engine at the quality level you choose, using modern codecs that discard only detail your eye barely notices. A quality of 70–80% typically cuts JPEG/WebP file size by 40–70% — and converting an opaque PNG to JPEG can save far more — while keeping photos fully shareable.",
     "Drop in up to 10 JPG, PNG or WebP files, slide the quality control (or leave the sensible default), optionally pick a different output format, then hit Process. You'll see the new size next to each result before you download them individually or as one ZIP.",
     "Accepts .jpg, .jpeg, .png and .webp up to 30MB each, 10 files per batch. PNG graphics with flat colors compress harder than photographs. Re-compressing an already compressed JPG can soften fine texture, so keep the original for future edits.",
     "Perfect before emailing photos, uploading to marketplace listings that cap file size, or speeding up a slow blog. Web developers use it to hit Core Web Vitals image budgets; students use it to squeeze scans under portal upload limits."
@@ -46,7 +46,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
     "Rather than guessing a quality level, this tool searches for one: it encodes your image, measures the true output size, and walks the quality down until the file lands at or under 50KB. You get the highest fidelity the target allows instead of a one-size-fits-all setting.",
     "Add your image, pick JPG (usually the best fit for tiny targets) or WebP, then process. The result card shows the final size — if it says 50KB or less, download it. For very detailed photos, WebP often looks better at this size than JPG.",
     "Accepts .jpg, .png and .webp inputs; output is always 50KB or smaller — the tool tells you instead of exceeding the limit if a target can't be met. Extremely large photos may need to be resized first for the best quality at this size — pair it with the Image Resizer if sharpness matters. Batch limit is 10 files.",
-    "Built for hard limits: government forms, exam applications, visa portals and forum avatars that reject anything bigger. Since the whole job runs offline in your tab, sensitive ID scans and certificates never leave your device."
+    "Built for hard limits: government forms, exam applications, visa portals and forum avatars that reject anything bigger. Since the whole job runs in your browser tab, sensitive ID scans and certificates never leave your device."
   ),
   "compress-image-to-100kb": seo(
     "Compress Image to 100KB Online – Free & Private",
@@ -115,7 +115,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "optimize-image-for-web": seo(
     "Optimize Images for the Web – WebP Preset",
-    "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly images in seconds — no upload, no account, free forever.",
+    "One-click web optimization: resize to 1920px max and compress to WebP quality 80. Lighthouse-friendly images in seconds — no upload, no account, 100% free.",
     "optimize image for web",
     "The tool applies proven web defaults automatically: longest edge capped at 1920 pixels, re-encoded as WebP at quality 80. That combination clears most image audits in Lighthouse and PageSpeed Insights because it attacks both dimensions and codec efficiency, the two things image audits actually measure.",
     "Drop your images and press process — the preset does the deciding. If you want to tune it, adjust the max-dimension and quality sliders before running. Results show final dimensions, byte size and savings; grab a ZIP when you're happy.",

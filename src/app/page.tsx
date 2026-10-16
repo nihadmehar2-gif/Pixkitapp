@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 const HOME_FAQS = [
   {
     q: "Are PixKitApp tools really free?",
-    a: "Yes — all 127 image tools are completely free with no signup, no watermarks and no usage limits.",
+    a: "Yes — all 127 image tools are completely free with no signup, no watermarks and nothing to install.",
   },
   {
     q: "Are my images uploaded to a server?",
@@ -97,7 +97,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-14 text-center sm:px-6 sm:py-20">
           <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border bg-card px-4 py-1.5 text-sm text-muted-foreground shadow-sm">
             <BadgeCheck className="h-4 w-4 text-primary" />
-            {TOOLS.length} tools · zero uploads · free forever
+            {TOOLS.length} tools · zero uploads · 100% free
           </div>
           <h1 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
             Every image tool you need.{" "}
@@ -171,7 +171,7 @@ export default function HomePage() {
               {[
                 {
                   title: "Your images never leave your device",
-                  body: "Unlike most online tools, PixKitApp has no upload step. All processing runs locally with the Canvas API and modern browser capabilities — even works offline after the page loads.",
+                  body: "Unlike most online tools, PixKitApp has no upload step. All processing runs locally with the Canvas API and modern browser capabilities — your files stay on your machine from start to finish.",
                 },
                 {
                   title: "Genuinely different tools, not clones",

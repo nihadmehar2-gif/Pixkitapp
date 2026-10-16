@@ -104,10 +104,11 @@ function passportTool(
     ],
     processor: "cropManual",
     params: { __pw: w, __ph: h },
-    about: `Produce a compliant ${label} photo: ${w}×${h} pixels (300 DPI print standard). The interactive editor shows the official head-position oval and eye-line guide — align the face, adjust the crop, and export at exactly the required dimensions. Everything stays on your device.`,
+    about: `Produce a ${label} photo at the official size: ${w}×${h} pixels (300 DPI print standard). The interactive editor shows the official head-position oval and eye-line guide — align the face, adjust the crop, and export at exactly the required dimensions. Everything stays on your device.`,
     faq: [
       { q: `What size is a ${label.toLowerCase()}?`, a: `${w}×${h} pixels, matching the official print standard at 300 DPI.` },
       { q: "Can I print it?", a: `Yes — output at 300 DPI prints at the official size. Use the Print Sheet tool to arrange copies on 4×6" paper.` },
+      { q: "Will this photo be accepted for my application?", a: "The tool guarantees the exact pixel dimensions and print size, but every authority sets its own rules for lighting, expression, head position and recency — and they change over time. Always verify the current requirements with the issuing authority (embassy, consulate or agency) before submitting." },
     ],
   };
 }
@@ -129,7 +130,7 @@ export const PASSPORT_TOOLS: ToolDef[] = [
         { value: "35x45mm", label: "35×45mm — UK, EU, India, most countries" },
         { value: "2x2in", label: "2×2 in — USA passport/visa" },
         { value: "33x48mm", label: "33×48mm — China visa" },
-        { value: "35x35mm", label: "35×35mm — India OCI/panic" },
+        { value: "35x35mm", label: "35×35mm — square ID photos" },
         { value: "3.5x4.5cm", label: "3.5×4.5cm — Schengen visa" },
       ]),
       optSelect("bg", "Background", "white", [
@@ -141,13 +142,13 @@ export const PASSPORT_TOOLS: ToolDef[] = [
       { key: "quality", label: "Quality", type: "slider", default: 95, min: 70, max: 100, step: 1, suffix: "%" },
     ],
     processor: "cropManual",
-    about: "The universal passport photo maker: pick your country's standard, align the face to the official head oval and eye-line guides, and export at exactly 300 DPI print dimensions. Official requirements demand plain white/light backgrounds and specific head proportions — the on-screen guides enforce them visually. Your photo never touches a server.",
+    about: "The universal passport photo maker: pick your country's standard, align the face to the official head oval and eye-line guides, and export at exactly 300 DPI print dimensions. Official requirements typically demand plain white/light backgrounds and specific head proportions — the on-screen guides mirror them visually. Your photo never touches a server.",
     faq: [
-      { q: "Is this accepted for real applications?", a: "It outputs the correct official dimensions at 300 DPI. Always verify your country's current rules — some require professional submission." },
+      { q: "Is this accepted for real applications?", a: "It outputs the correct official dimensions at 300 DPI, which is what most checks are about — but acceptance is always the issuing authority's call. Requirements vary by country and change over time, so verify the current rules with the authority you're applying to before submitting." },
       { q: "How do I get a 4×6 print sheet?", a: "Process your photo here, then open the Photo Print Sheet tool and drop the result in." },
     ],
   },
-  passportTool("us-passport-photo", "US Passport Photo", "US Passport Photo Maker — 2×2 inch", "Create compliant US passport photos: 2×2 inches (600×600px) at 300 DPI with official head guides.", ["us passport photo", "2x2 passport photo", "600x600 photo"], 600, 600, "US passport (2×2 in)"),
+  passportTool("us-passport-photo", "US Passport Photo", "US Passport Photo Maker — 2×2 inch", "Create US passport photos at the official 2×2 inch size (600×600px) at 300 DPI with official head guides.", ["us passport photo", "2x2 passport photo", "600x600 photo"], 600, 600, "US passport (2×2 in)"),
   passportTool("schengen-visa-photo", "Schengen Visa Photo", "Schengen Visa Photo Maker — 35×45mm", "Create Schengen visa photos at 35×45mm (413×531px @300DPI) with ICAO head-position guides.", ["schengen visa photo", "35x45mm photo", "europe visa photo"], 413, 531, "Schengen visa (35×45mm)"),
   passportTool("china-visa-photo", "China Visa Photo", "China Visa Photo Maker — 33×48mm", "Create China visa photos at 33×48mm (390×567px @300DPI) with official guide overlay.", ["china visa photo", "33x48mm photo"], 390, 567, "China visa (33×48mm)"),
   passportTool("id-photo-1-inch", "1-Inch ID Photo", "1-Inch ID Photo Maker — 295×413", "Make standard 1-inch (25×35mm) ID photos at 295×413px — the universal badge and student-card size.", ["1 inch id photo", "295x413 photo", "one inch photo"], 295, 413, "1-inch ID (25×35mm)"),
@@ -173,9 +174,9 @@ export const PASSPORT_TOOLS: ToolDef[] = [
       { key: "cutLines", label: "Show cut lines", type: "toggle", default: true },
     ],
     processor: "printSheet",
-    about: "Turn one compliant photo into a full print sheet: your image tiles edge-to-edge on a 4×6 inch canvas at 300 DPI — typically 8+ copies — with optional cutting guides. Save the JPEG, send it to any 1-hour photo kiosk or home printer, and cut along the lines.",
+    about: "Turn one correctly sized photo into a full print sheet: your image tiles edge-to-edge on a 4×6 inch canvas at 300 DPI — as many copies as fit your selected photo size (six for 35×45mm or US 2×2, nine for China visa, sixteen for 1-inch ID) — with optional cutting guides. Save the JPEG, send it to any 1-hour photo kiosk or home printer, and cut along the lines.",
     faq: [
-      { q: "How many photos fit on a sheet?", a: "A 35×45mm photo yields 4 columns × 5 rows = 20 copies on 4×6\"; a US 2×2 photo yields 4×4 = 16." },
+      { q: "How many photos fit on a sheet?", a: "It depends on the photo size — the sheet is 1200×1800px (4×6\" at 300 DPI): a 35×45mm photo (413×531px) tiles 2×3 = 6 copies; a US 2×2 photo (600×600px) also tiles 2×3 = 6; China visa 33×48mm tiles 3×3 = 9; 1-inch ID tiles 4×4 = 16. The result card shows the exact count for your settings." },
       { q: "What resolution is the sheet?", a: "1200×1800 pixels — exactly 4×6 inches at 300 DPI, the retail print standard." },
     ],
   },

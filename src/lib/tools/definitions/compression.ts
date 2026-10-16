@@ -18,10 +18,10 @@ export const COMPRESSION_TOOLS: ToolDef[] = [
     multiple: true,
     options: [...[optSlider("quality", "Compression quality", 75, 5, 100, 1, "%", "Lower = smaller file. 75% is ideal for most photos.")], FORMAT_OPTS("auto")],
     processor: "compress",
-    about: "PixKitApp's free image compressor reduces JPG, PNG and WebP file sizes directly in your browser using Canvas re-encoding. Your photos never leave your device, so compression is instant and completely private. Adjust the quality slider to balance file size against visual fidelity — at 75% quality, photos commonly shrink by 50–90%, and you can preview the result before downloading to confirm you're happy with it.",
+    about: "PixKitApp's free image compressor reduces JPG, PNG and WebP file sizes directly in your browser using Canvas re-encoding. Your photos never leave your device, so compression is instant and completely private. Adjust the quality slider to balance file size against visual fidelity — JPEG and WebP photos typically shrink by 40–70% at 75% quality, and opaque PNGs converted to JPEG can drop far more. Preview the result before downloading to confirm you're happy with it.",
     faq: [
       { q: "Is my image uploaded to a server?", a: "No. Compression runs 100% in your browser using the Canvas API. Images never leave your device." },
-      { q: "How much smaller will my image be?", a: "It depends on the image — photos commonly shrink by 50–90% at 75% quality, while already-compressed or flat graphics may shrink less. The result card shows your exact saving before you download." },
+      { q: "How much smaller will my image get?", a: "It depends on the image. JPEG and WebP photos re-encoded at 75% quality typically shrink by 40–70%; converting an opaque PNG to JPEG often saves even more. Already-compressed or flat graphics may shrink less. The result card shows your exact saving before you download." },
       { q: "Can I compress multiple images at once?", a: "Yes — drop up to 10 images and compress them in one batch, then download all as a ZIP." },
     ],
   },
@@ -63,13 +63,10 @@ export const COMPRESSION_TOOLS: ToolDef[] = [
     icon: "Image",
     accept: ["image/jpeg"],
     multiple: true,
-    options: [
-      optSlider("quality", "JPEG quality", 78, 5, 100, 1, "%"),
-      optToggle("keepMetadata", "Attempt to keep 4:2:0 chroma (smaller files)", true, "Default browser encoding already uses chroma subsampling for smaller JPEGs."),
-    ],
+    options: [optSlider("quality", "JPEG quality", 78, 5, 100, 1, "%")],
     processor: "compress",
     params: { format: "image/jpeg" },
-    about: "JPEG compression works by discarding visual detail your eye barely notices. This tool re-encodes your JPGs at the quality you choose with browser-native encoders — usually 40–80% smaller. Because it runs in your browser, a 20 MB vacation photo compresses in under a second with zero privacy risk.",
+    about: "JPEG compression works by discarding visual detail your eye barely notices. This tool re-encodes your JPGs at the quality you choose with browser-native encoders — typically 40–70% smaller. Because it runs in your browser, a 20 MB vacation photo compresses in about a second on a typical laptop, with zero privacy risk.",
   },
   {
     slug: "compress-webp-image",

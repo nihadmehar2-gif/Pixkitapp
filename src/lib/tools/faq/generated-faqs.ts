@@ -7,11 +7,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "compress-jpeg-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -19,21 +19,21 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "Can I fine-tune the result before downloading?",
-      "a": "Yes — settings include JPEG quality, Attempt to keep 4:2:0 chroma (smaller files). Each run regenerates the preview, so you can compare options before downloading."
+      "a": "Yes — settings include JPEG quality. Each run regenerates the preview, so you can compare options before downloading."
     }
   ],
   "compress-webp-image": [
     {
       "q": "Is my image uploaded to a server when I use Compress WebP?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -43,10 +43,10 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "compress-image-to-100kb": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
-      "q": "Which input formats does Compress to 100KB accept?",
+      "q": "Which input formats does Compress to 100KB or Less accept?",
       "a": "Common formats are covered: JPG, PNG or WEBP, each up to 30 MB. Paste from the clipboard, drag and drop, or use the select button."
     },
     {
@@ -60,12 +60,12 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   ],
   "compress-image-to-200kb": [
     {
-      "q": "Is my image uploaded to a server when I use Compress to 200KB?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "q": "Is my image uploaded to a server when I use Compress to 200KB or Less?",
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -78,16 +78,16 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   ],
   "compress-image-to-500kb": [
     {
-      "q": "How private is Compress to 500KB?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "q": "How private is Compress to 500KB or Less?",
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -97,11 +97,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "compress-image-to-specific-size": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -114,11 +114,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   ],
   "lossless-image-compressor": [
     {
-      "q": "Is my image uploaded to a server when I use Lossless Compressor?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "q": "Is my image uploaded to a server when I use Near-Lossless Compressor?",
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
-      "q": "Which input formats does Lossless Compressor accept?",
+      "q": "Which input formats does Near-Lossless Compressor accept?",
       "a": "Common formats are covered: JPG, PNG or WEBP, each up to 30 MB. Paste from the clipboard, drag and drop, or use the select button."
     },
     {
@@ -133,11 +133,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "bulk-image-compressor": [
     {
       "q": "How private is Bulk Image Compressor?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -151,11 +151,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "resize-image-by-percentage": [
     {
       "q": "Is my image uploaded to a server when I use Resize by Percentage?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -169,7 +169,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "resize-image-to-width": [
     {
       "q": "How private is Resize to Width?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Resize to Width accept?",
@@ -187,11 +187,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "resize-image-to-height": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -205,15 +205,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "resize-image-to-dimensions": [
     {
       "q": "Is my image uploaded to a server when I use Resize to Dimensions?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -223,11 +223,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "resize-image-to-kb": [
     {
       "q": "How private is Resize to KB?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -241,7 +241,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "resize-png-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Resize PNG accept?",
@@ -253,17 +253,17 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "Can I fine-tune the result before downloading?",
-      "a": "Yes — settings include Width, Lock aspect ratio, Use width only (auto height). Each run regenerates the preview, so you can compare options before downloading."
+      "a": "Yes — settings include Width, Lock aspect ratio. Each run regenerates the preview, so you can compare options before downloading."
     }
   ],
   "resize-jpg-image": [
     {
       "q": "Is my image uploaded to a server when I use Resize JPG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -271,39 +271,39 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "Can I fine-tune the result before downloading?",
-      "a": "The controls cover Width, Use width only (auto height), JPEG quality. Nothing is baked in until you press the action button, and every run gives you a fresh preview to check."
+      "a": "The controls cover Width, JPEG quality. Nothing is baked in until you press the action button, and every run gives you a fresh preview to check."
     }
   ],
   "resize-webp-image": [
     {
       "q": "How private is Resize WebP?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
-      "a": "You can adjust Width, Use width only (auto height), WebP quality. Results are previewed after processing, so tweak values and re-run until the output looks right."
+      "a": "You can adjust Width, WebP quality. Results are previewed after processing, so tweak values and re-run until the output looks right."
     }
   ],
   "enlarge-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -313,7 +313,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "thumbnail-maker": [
     {
       "q": "Is my image uploaded to a server when I use Thumbnail Maker?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Thumbnail Maker accept?",
@@ -331,15 +331,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-image-to-square": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -349,15 +349,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-image-to-circle": [
     {
       "q": "Is my image uploaded to a server when I use Crop to Circle?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -367,7 +367,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-image-16-9": [
     {
       "q": "How private is Crop 16:9?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Crop 16:9 accept?",
@@ -385,11 +385,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-image-9-16": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -403,15 +403,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-image-4-3": [
     {
       "q": "Is my image uploaded to a server when I use Crop 4:3?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -421,11 +421,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-image-3-2": [
     {
       "q": "How private is Crop 3:2?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -439,7 +439,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "crop-borders-auto": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Auto Trim Borders accept?",
@@ -457,25 +457,25 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "webp-to-png": [
     {
       "q": "How private is WebP to PNG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     }
   ],
   "jpg-to-png": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -485,7 +485,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "png-to-jpg": [
     {
       "q": "Is my image uploaded to a server when I use PNG to JPG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does PNG to JPG accept?",
@@ -503,11 +503,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "png-to-webp": [
     {
       "q": "How private is PNG to WebP?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "PNG files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "PNG files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -521,15 +521,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "jpg-to-webp": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -539,21 +539,21 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "gif-to-png": [
     {
       "q": "Is my image uploaded to a server when I use GIF to PNG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — GIF, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     }
   ],
   "gif-to-webp": [
     {
       "q": "How private is GIF to WebP?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does GIF to WebP accept?",
@@ -561,7 +561,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "Up to 10 images per batch, 30 MB per file, and unlimited runs — no signup, no counters, and no watermark stamped on results."
+      "a": "One image is processed per run, up to 30 MB — and you can run it as many times as you like. No signup, no counters, and no watermark on results."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -571,11 +571,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "bmp-to-jpg": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "BMP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "BMP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -589,35 +589,35 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "bmp-to-png": [
     {
       "q": "Is my image uploaded to a server when I use BMP to PNG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — BMP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "BMP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     }
   ],
   "jpg-to-bmp": [
     {
       "q": "How private is JPG to BMP?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     }
   ],
   "png-to-bmp": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does PNG to BMP accept?",
@@ -625,7 +625,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "Up to 10 images per batch, 30 MB per file, and unlimited runs — no signup, no counters, and no watermark stamped on results."
+      "a": "One image is processed per run, up to 30 MB — and you can run it as many times as you like. No signup, no counters, and no watermark on results."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -635,11 +635,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "avif-to-jpg": [
     {
       "q": "Is my image uploaded to a server when I use AVIF to JPG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "AVIF files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "AVIF files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -653,21 +653,21 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "avif-to-png": [
     {
       "q": "How private is AVIF to PNG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — AVIF inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "AVIF inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     }
   ],
   "image-to-ico": [
     {
       "q": "Is my image uploaded to a server when I use Image to ICO?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Image to ICO accept?",
@@ -675,7 +675,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "Up to 10 images per batch, 30 MB per file, and unlimited runs — no signup, no counters, and no watermark stamped on results."
+      "a": "One image is processed per run, up to 30 MB — and you can run it as many times as you like. No signup, no counters, and no watermark on results."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -685,15 +685,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-to-base64": [
     {
       "q": "How private is Image to Base64?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG, WEBP, GIF or SVG+XML files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG, WEBP, GIF or SVG+XML files up to 30 MB each are accepted. Drop a single file in (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "There are no artificial limits: use it as often as you like, free. Practical caps are 30 MB per image and 10 files per batch, and outputs stay watermark-free."
+      "a": "There are no artificial limits: use it as often as you like, free. The practical cap is 30 MB per image, and outputs stay watermark-free."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -703,15 +703,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "base64-to-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — TXT or TEXT/PLAIN inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "TXT or TEXT/PLAIN inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "This tool handles one image at a time (up to 30 MB). For batch work, use one of the multi-file tools instead — the per-image result is the same."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -721,15 +721,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "svg-to-png": [
     {
       "q": "Is my image uploaded to a server when I use SVG to PNG?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — SVG+XML or SVG, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -739,7 +739,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-format-converter": [
     {
       "q": "How private is Universal Converter?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Universal Converter accept?",
@@ -757,11 +757,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "rotate-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -775,25 +775,25 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "rotate-image-90": [
     {
       "q": "Is my image uploaded to a server when I use Rotate 90° Clockwise?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     }
   ],
   "rotate-image-180": [
     {
       "q": "How private is Rotate 180°?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -803,7 +803,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "rotate-image-270": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Rotate 270° (90° CCW) accept?",
@@ -817,11 +817,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "flip-image-horizontal": [
     {
       "q": "Is my image uploaded to a server when I use Flip Horizontal?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -831,29 +831,29 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "flip-image-vertical": [
     {
       "q": "How private is Flip Vertical?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     }
   ],
   "straighten-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -863,7 +863,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "grayscale-image": [
     {
       "q": "Is my image uploaded to a server when I use Grayscale Image?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Grayscale Image accept?",
@@ -881,11 +881,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "sepia-image": [
     {
       "q": "How private is Sepia Image?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -899,15 +899,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "invert-image-colors": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -917,11 +917,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "blur-image": [
     {
       "q": "Is my image uploaded to a server when I use Blur Image?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -935,7 +935,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "sharpen-image": [
     {
       "q": "How private is Sharpen Image?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Sharpen Image accept?",
@@ -953,11 +953,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "brightness-adjuster": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -971,15 +971,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "contrast-adjuster": [
     {
       "q": "Is my image uploaded to a server when I use Contrast Adjuster?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -989,11 +989,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "saturation-adjuster": [
     {
       "q": "How private is Saturation Adjuster?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1007,7 +1007,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "hue-rotate-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Hue Rotate accept?",
@@ -1025,11 +1025,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "vintage-filter": [
     {
       "q": "Is my image uploaded to a server when I use Vintage Filter?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1043,15 +1043,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "posterize-image": [
     {
       "q": "How private is Posterize Image?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1061,11 +1061,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "pixelate-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1079,7 +1079,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "duotone-image": [
     {
       "q": "Is my image uploaded to a server when I use Duotone Effect?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Duotone Effect accept?",
@@ -1097,11 +1097,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "film-grain-effect": [
     {
       "q": "How private is Film Grain?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1115,15 +1115,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "vignette-effect": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1133,11 +1133,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-optimizer": [
     {
       "q": "Is my image uploaded to a server when I use Image Optimizer?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1151,7 +1151,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "optimize-image-for-web": [
     {
       "q": "How private is Optimize for Web?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Optimize for Web accept?",
@@ -1169,11 +1169,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "optimize-png-for-web": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "PNG files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "PNG files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1187,15 +1187,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "optimize-jpg-for-web": [
     {
       "q": "Is my image uploaded to a server when I use Optimize JPG for Web?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1205,7 +1205,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "email-image-resizer": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Email Image Resizer accept?",
@@ -1223,11 +1223,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-size-reducer": [
     {
       "q": "Is my image uploaded to a server when I use Image Size Reducer?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1241,7 +1241,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "remove-gps-data": [
     {
       "q": "Is my image uploaded to a server when I use Remove GPS Data?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Remove GPS Data accept?",
@@ -1259,29 +1259,29 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-color-picker": [
     {
       "q": "How private is Color Picker?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop a single file in (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "There are no artificial limits: use it as often as you like, free. Practical caps are 30 MB per image and 10 files per batch, and outputs stay watermark-free."
+      "a": "There are no artificial limits: use it as often as you like, free. The practical cap is 30 MB per image, and outputs stay watermark-free."
     }
   ],
   "image-color-palette": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "This tool handles one image at a time (up to 30 MB). For batch work, use one of the multi-file tools instead — the per-image result is the same."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1291,11 +1291,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-dominant-color": [
     {
       "q": "Is my image uploaded to a server when I use Dominant Color?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1305,7 +1305,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-average-color": [
     {
       "q": "How private is Average Color?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Average Color accept?",
@@ -1319,11 +1319,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "replace-color-in-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1337,15 +1337,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "remove-color-from-image": [
     {
       "q": "Is my image uploaded to a server when I use Remove Color (Chroma Key)?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "This tool handles one image at a time (up to 30 MB). For batch work, use one of the multi-file tools instead — the per-image result is the same."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1355,11 +1355,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "image-color-temperature": [
     {
       "q": "How private is Color Temperature?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1373,7 +1373,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "threshold-image": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does B&W Threshold accept?",
@@ -1391,11 +1391,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "swap-color-channels": [
     {
       "q": "Is my image uploaded to a server when I use Channel Mixer?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1409,11 +1409,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "add-logo-watermark": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1427,7 +1427,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "tiled-watermark": [
     {
       "q": "Is my image uploaded to a server when I use Tiled Watermark?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Tiled Watermark accept?",
@@ -1445,11 +1445,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "date-watermark": [
     {
       "q": "How private is Date Watermark?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop in one file or a whole batch (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
@@ -1463,15 +1463,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "bulk-watermark": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1481,15 +1481,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "add-text-to-image": [
     {
       "q": "Is my image uploaded to a server when I use Add Text to Image?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. One photo is processed per run."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "Batch runs take up to 10 files at once (30 MB each). There's no account, no daily quota and no watermark — process as many batches as you need."
+      "a": "Files can be up to 30 MB each, one per run. There's no account, no daily quota and no watermark — process as many images as you need, one after another."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1499,7 +1499,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "add-caption-to-image": [
     {
       "q": "How private is Caption Bar?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Caption Bar accept?",
@@ -1517,15 +1517,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "meme-generator": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop a single file in (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "There are no artificial limits: use it as often as you like, free. Practical caps are 30 MB per image and 10 files per batch, and outputs stay watermark-free."
+      "a": "There are no artificial limits: use it as often as you like, free. The practical cap is 30 MB per image, and outputs stay watermark-free."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1535,15 +1535,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "quote-card-maker": [
     {
       "q": "Is my image uploaded to a server when I use Quote Card?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — JPG, PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "JPG, PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "This tool handles one image at a time (up to 30 MB). For batch work, use one of the multi-file tools instead — the per-image result is the same."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1553,11 +1553,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "add-title-to-image": [
     {
       "q": "How private is Title Banner?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — JPG, PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1571,15 +1571,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "make-image-transparent": [
     {
       "q": "Is my image uploaded to a server when I use Make Transparent?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop a single file in (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "There are no artificial limits: use it as often as you like, free. Practical caps are 30 MB per image and 10 files per batch, and outputs stay watermark-free."
+      "a": "There are no artificial limits: use it as often as you like, free. The practical cap is 30 MB per image, and outputs stay watermark-free."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1589,15 +1589,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "add-white-background": [
     {
       "q": "How private is Add White Background?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1607,11 +1607,11 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "add-background-color": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Can it open JPG, PNG and WebP files?",
-      "a": "A thumbnail preview appears after the file loads, before any processing starts, so you can confirm the right picture is queued."
+      "a": "The common formats are covered — PNG or WEBP, each up to 30 MB. Queue them one batch at a time."
     },
     {
       "q": "How many images can I process at once?",
@@ -1625,7 +1625,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "round-corners-image": [
     {
       "q": "Is my image uploaded to a server when I use Round Corners?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which input formats does Round Corners accept?",
@@ -1633,7 +1633,7 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "Up to 10 images per batch, 30 MB per file, and unlimited runs — no signup, no counters, and no watermark stamped on results."
+      "a": "One image is processed per run, up to 30 MB — and you can run it as many times as you like. No signup, no counters, and no watermark on results."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1643,15 +1643,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "transparent-png-maker": [
     {
       "q": "How private is Transparent PNG Maker?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "Which file types are supported?",
-      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop one in (or paste or drag it), check the preview, and export in the format shown at the download step."
+      "a": "JPG, PNG or WEBP files up to 30 MB each are accepted. Drop a single file in (paste and drag also work), check the preview, and export in the format shown at the download step."
     },
     {
       "q": "How many images can I process at once?",
-      "a": "There are no artificial limits: use it as often as you like, free. Practical caps are 30 MB per image and 10 files per batch, and outputs stay watermark-free."
+      "a": "There are no artificial limits: use it as often as you like, free. The practical cap is 30 MB per image, and outputs stay watermark-free."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
@@ -1661,15 +1661,15 @@ export const GENERATED_FAQS: Record<string, NonNullable<ToolDef["faq"]>> = {
   "png-drop-shadow": [
     {
       "q": "Where are my images processed?",
-      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine, and the page keeps working even if you go offline after loading it."
+      "a": "Everything runs locally in your browser via the Canvas API. Your picture never leaves your machine — there is no upload step at all, so processing is as private as working in an offline editor."
     },
     {
       "q": "What kind of image files work with this tool?",
-      "a": "Yes — PNG or WEBP inputs work here, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
+      "a": "PNG or WEBP inputs are supported, up to 30 MB per file. For exotic formats, convert them first with one of the converter tools, then come back."
     },
     {
       "q": "What are the size and batch limits?",
-      "a": "You can queue 10 files per run, each up to 30 MB. Results download individually or bundled as a single ZIP when multiple files are processed."
+      "a": "This tool handles one image at a time (up to 30 MB). For batch work, use one of the multi-file tools instead — the per-image result is the same."
     },
     {
       "q": "Can I fine-tune the result before downloading?",
