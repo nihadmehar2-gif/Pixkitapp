@@ -1,0 +1,336 @@
+[
+ {
+  "page": "/",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/image-compressor",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/resize-image",
+  "status": 404,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 2,
+  "canonical_count": 0,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/tools",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/about",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/contact",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/privacy",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/terms",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/categories/compress",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/category/compress",
+  "status": 404,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 2,
+  "canonical_count": 0,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/passport-photo-maker",
+  "status": 200,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 1,
+  "canonical_count": 1,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/nonexistent-page-404-check",
+  "status": 404,
+  "title_count": 1,
+  "desc_count": 1,
+  "viewport_count": 1,
+  "robots_count": 2,
+  "canonical_count": 0,
+  "lang": "en",
+  "external_http_resources": [],
+  "has_manifest": true,
+  "icon_links": [
+   "/apple-touch-icon.png",
+   "/favicon.ico",
+   "/icon-192.png",
+   "/icon-512.png",
+   "/logo.svg"
+  ],
+  "headers": {
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": "camera=(), microphone=(), geolocation=()",
+   "csp-frame-ancestors": "frame-ancestors *",
+   "x-frame-options": null
+  },
+  "broken_assets": []
+ },
+ {
+  "page": "/robots.txt",
+  "status": 200,
+  "bytes": 67
+ },
+ {
+  "page": "/sitemap.xml",
+  "status": 200,
+  "bytes": 17884
+ }
+]
