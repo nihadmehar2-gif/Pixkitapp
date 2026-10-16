@@ -1,0 +1,11 @@
+Sitemap returned 147 URLs from http://127.0.0.1:3100
+  audited 50/147…
+  audited 100/147…
+
+Titles:   148/148 in 50-60, min 50, max 60
+Descs:    146/148 in 150-160, min 150, max 170
+Flagged:  1/148
+Reports:  /home/z/my-project/scripts/../download/metadata-audit-20261016-062340.csv
+          /home/z/my-project/scripts/../download/metadata-audit-20261016-062340.md
+## Flagged pages
+- `/categories/convert` — desc-len(164) — title(56) "Conversion Tools — 20 Free Online Converters | PixKitApp" — desc(164)

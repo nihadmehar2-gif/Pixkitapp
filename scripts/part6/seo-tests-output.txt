@@ -1,0 +1,4 @@
+Detected indexing mode: production (http://127.0.0.1:3100, host=127.0.0.1)
+Host-based staging protection expected on this host: True
+PASSED: 320
+FAILED: 0

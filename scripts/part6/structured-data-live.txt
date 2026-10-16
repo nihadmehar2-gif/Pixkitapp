@@ -1,0 +1,5 @@
+== PART A: structured-data artifact audit ==
+== PART B: live URL integrity against http://127.0.0.1:3100 ==
+
+PASS 33 / FAIL 0
+Report: download/structured-data-url-audit-20261016-062342.md
