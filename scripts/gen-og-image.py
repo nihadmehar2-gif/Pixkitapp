@@ -157,13 +157,15 @@ for label in chips:
     draw.text((cx + pad_x, chip_y + (chip_h - 30) / 2 - 2), label, font=f_chip, fill=MUTED)
     cx = box[2] + gap
 
-# compression stat pill (flagship tool result, real numbers from testing)
+# compression stat pill (flagship tool result, real numbers from testing).
+# No percentage claim: a measured example stays honest without implying a
+# guaranteed reduction rate.
 pill_w, pill_h = 320, 88
 pill_x, pill_y = 846, 474
 draw.rounded_rectangle([pill_x, pill_y, pill_x + pill_w, pill_y + pill_h], radius=20,
                        fill=(18, 14, 28, 235), outline=(255, 255, 255, 60), width=2)
 draw.text((pill_x + 24, pill_y + 10), "1.3 MB → 57 KB", font=f_stat, fill=WHITE)
-draw.text((pill_x + 24, pill_y + 52), "−96% · 100% private", font=f_stat_small, fill=FAINT)
+draw.text((pill_x + 24, pill_y + 52), "100% private · no upload", font=f_stat_small, fill=FAINT)
 
 # ---- footer url ----------------------------------------------------------------
 draw.text((MARGIN_X, 552), "pixkitapp.com", font=f_url, fill=FAINT)

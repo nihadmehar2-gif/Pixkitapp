@@ -5,9 +5,9 @@ import { seo, ToolSeo } from "../types";
 export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   "image-compressor": seo(
     "Free Image Compressor – Shrink JPG, PNG, WebP",
-    "Compress JPG, PNG and WebP images up to 90% smaller right in your browser. No upload, no signup, no watermark — free image compression with batch ZIP downloads.",
+    "Compress JPG, PNG and WebP images right in your browser — can significantly reduce file size. No upload, no signup, no watermark — batch ZIP downloads.",
     "image compressor",
-    "The compressor re-encodes your images through the browser's Canvas engine at the quality level you choose, using modern codecs that discard only detail your eye barely notices. A quality of 70–80% typically cuts JPEG/WebP file size by 40–70% — and converting an opaque PNG to JPEG can save far more — while keeping photos fully shareable.",
+    "The compressor re-encodes your images through the browser's Canvas engine at the quality level you choose, using modern codecs that discard only detail your eye barely notices. A quality of 70–80% typically cuts JPEG/WebP file size substantially — and converting an opaque PNG to JPEG can save far more — while keeping photos fully shareable.",
     "Drop in up to 10 JPG, PNG or WebP files, slide the quality control (or leave the sensible default), optionally pick a different output format, then hit Process. You'll see the new size next to each result before you download them individually or as one ZIP.",
     "Accepts .jpg, .jpeg, .png and .webp up to 30MB each, 10 files per batch. PNG graphics with flat colors compress harder than photographs. Re-compressing an already compressed JPG can soften fine texture, so keep the original for future edits.",
     "Perfect before emailing photos, uploading to marketplace listings that cap file size, or speeding up a slow blog. Web developers use it to hit Core Web Vitals image budgets; students use it to squeeze scans under portal upload limits."

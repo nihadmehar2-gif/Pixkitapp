@@ -78,6 +78,12 @@ export interface ToolDef {
   params?: ToolOptionValues;
   /** SEO FAQ for JSON-LD */
   faq?: { q: string; a: string }[];
+  /**
+   * Visible accuracy note rendered as a callout on the tool page (outside the
+   * FAQ/JSON-LD). Used by passport/visa/ID tools: requirements vary by country
+   * and change over time, so pages must direct users to the issuing authority.
+   */
+  requirementNote?: string;
   /** Long SEO copy shown under the tool (2-3 sentences). */
   about?: string;
   /** Per-tool SEO content: unique title, meta description, primary keyword and usage guide. */

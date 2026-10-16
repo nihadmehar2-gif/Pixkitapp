@@ -1,5 +1,10 @@
 import type { ToolCategory } from "./types";
 
+// Re-exported for the category page: the passport category shows the same
+// accuracy disclaimer as its tool pages (single source of truth in
+// definitions/social-passport.ts).
+export { DOCUMENT_PHOTO_NOTE } from "./definitions/social-passport";
+
 export const CATEGORIES: ToolCategory[] = [
   {
     id: "compression",
@@ -148,10 +153,10 @@ export const CATEGORIES: ToolCategory[] = [
     id: "passport",
     name: "Passport & ID Photos",
     slug: "passport-photos",
-    description: "Print-ready passport, visa and ID photos with official size guides.",
+    description: "Print-ready passport, visa and ID photos with common size presets.",
     metaTitle: "Passport & ID Photos — 7 Free Photo Makers",
     metaDescription:
-      "Print-ready passport, visa and ID photos with official size guides. Seven free makers cover US, Schengen and Chinese specs at exact 300 DPI dimensions.",
+      "Print-ready passport, visa and ID photos with common size presets. Seven free makers cover US, Schengen and Chinese specs at exact 300 DPI dimensions.",
     icon: "IdCard",
     color: "from-amber-500 to-yellow-600",
   },

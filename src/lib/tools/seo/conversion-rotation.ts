@@ -34,7 +34,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
     "PNG to JPG Converter – Background Control",
     "Convert PNG to JPG online with a background color picker for transparency. Slash file sizes on photos — free, instant, batch of 10, no upload or signup.",
     "png to jpg converter",
-    "Your PNG is decoded, transparent regions are filled with the background color you choose, and the image is re-encoded as JPG at your quality setting. Photographic content routinely drops 70%+ in size because JPEG's compression suits continuous tones far better than PNG's lossless rows.",
+    "Your PNG is decoded, transparent regions are filled with the background color you choose, and the image is re-encoded as JPG at your quality setting. Photographic content routinely drops dramatically in size because JPEG's compression suits continuous tones far better than PNG's lossless rows.",
     "Drop up to 10 .png files, set JPG quality (92 keeps things crisp) and pick the fill color for transparency — white for documents, black for video overlays. Convert, preview, download individually or zipped.",
     "Accepts .png up to 30MB per file, 10 per batch; output is .jpg. Transparency cannot survive — JPG has no alpha channel — so the fill color choice matters on graphics. Logos with soft edges may show slight haloing against their new background.",
     "The classic pre-upload slim-down for photo platforms that reject PNG, email attachments and CMS libraries with size quotas. Also commonly used to flatten design exports into universal, everywhere-compatible JPGs."
@@ -43,16 +43,16 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
     "PNG to WebP Converter – Same Quality, Less Size",
     "Convert PNG to WebP online free. PNG-class quality and transparency at a fraction of the file size — the modern format for faster websites and lighter apps.",
     "png to webp converter",
-    "The converter runs the browser's native WebP encoder over your decoded PNG pixels, preserving the alpha channel and, at 90%+ quality, staying visually indistinguishable from the lossless original. Graphics with transparency typically shrink 25–35%; opaque photos shrink even more.",
+    "The converter runs the browser's native WebP encoder over your decoded PNG pixels, preserving the alpha channel and, at 90%+ quality, staying visually indistinguishable from the lossless original. Graphics with transparency typically shrink noticeably; opaque photos shrink even more.",
     "Drop up to 10 .png files, adjust the quality slider if you like (90 is a safe default), and convert. Preview each result over the transparency checkerboard, then download files or a ZIP.",
     "Accepts .png up to 30MB each, 10 per run; output is .webp with alpha preserved. Every current browser renders WebP; very old enterprise software may not — that's what the PNG→JPG route is for.",
     "The go-to move for page-speed work: converting logo files, UI assets, icons and screenshots from PNG to WebP routinely wins a Lighthouse performance point. Also used to slim app bundles and design-system asset folders."
   ),
   "jpg-to-webp": seo(
-    "JPG to WebP Converter – 25–50% Smaller Files",
-    "Convert JPG to WebP online free for 25–50% smaller files at the same visual quality. Boost site speed with the modern codec — private and completely instant.",
+    "JPG to WebP Converter – Smaller Files, Same Look",
+    "Convert JPG to WebP online free for significantly smaller files at the same visual quality. Build faster sites with the modern codec — private and instant.",
     "jpg to webp converter",
-    "The browser's WebP encoder re-encodes your decoded JPG pixels at the quality you pick. WebP's modern compression usually lands 25–50% below JPEG at matching visual quality, and because the tool works locally, converting a 10-photo batch takes seconds rather than an upload round-trip.",
+    "The browser's WebP encoder re-encodes your decoded JPG pixels at the quality you pick. WebP's modern compression usually lands well below JPEG's file size at matching visual quality, and because the tool works locally, converting a 10-photo batch takes seconds rather than an upload round-trip.",
     "Drop up to 10 .jpg files, set the WebP quality — 85 is a strong default for photos — and convert. Results show the size delta per file; download individually or as one ZIP.",
     "Accepts .jpg/.jpeg up to 30MB per file, 10 per batch; output is .webp. A single re-encode at high quality is visually safe, but stacking conversions across formats repeatedly compounds softness — convert from the original where possible.",
     "The single biggest image performance win for most websites: converting blog photos, store product shots and hero images from JPG to WebP directly improves load time and Lighthouse scores without changing how pages look."
@@ -76,10 +76,10 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
     "Modernizing legacy GIF assets for web pages (a still WebP is far lighter than a looping GIF), refreshing icon libraries, and converting old forum avatars. Anywhere GIF content must live in a modern pipeline, this is the first stop."
   ),
   "bmp-to-jpg": seo(
-    "BMP to JPG Converter – Shrink Bitmaps 95%",
+    "BMP to JPG Converter – Shrink Huge Bitmaps",
     "Convert Windows BMP bitmaps to compact JPG online. Turn huge uncompressed files into shareable photos — free, private, batch-friendly, up to 10 files.",
     "bmp to jpg converter",
-    "BMP files store raw pixels with essentially no compression — a 1920×1080 screenshot weighs over 6MB. This tool decodes the bitmap and re-encodes it as JPG at your quality level, typically producing a ~300KB file that every device and app can open.",
+    "BMP files store raw pixels with essentially no compression — a 1920×1080 screenshot weighs over 6MB. This tool decodes the bitmap and re-encodes it as JPG at your quality level, typically producing a file that is a small fraction of the original and that every device and app can open.",
     "Drop up to 10 .bmp files, set the JPG quality (90 is the sweet spot for screenshots), and convert. Preview each result, then download individually or as a ZIP.",
     "Accepts .bmp up to 30MB per file (which, for BMP, is not very many megapixels), 10 per batch; output is .jpg. BMPs from specialized industrial software occasionally use unusual headers — if one fails to load, it's the source, not you.",
     "Classic scenario: an old app or scanner exported BMP and nothing modern wants it. Converting to JPG makes the file emailable, uploadable and storable at a fraction of the space — batch mode handles whole folders of legacy exports."
@@ -88,7 +88,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
     "BMP to PNG Converter – Lossless Modernization",
     "Convert BMP bitmaps to lossless PNG online free. Same pixels, modern format, far smaller file — private, instant, batch up to 10, zero settings needed.",
     "bmp to png converter",
-    "The tool re-wraps your bitmap's exact pixels into PNG's lossless, compressed container. Nothing changes visually — PNG's DEFLATE compression simply stores the same data far more efficiently than BMP's raw rows, commonly cutting file size by 60–90% with zero quality risk.",
+    "The tool re-wraps your bitmap's exact pixels into PNG's lossless, compressed container. Nothing changes visually — PNG's DEFLATE compression simply stores the same data far more efficiently than BMP's raw rows, commonly cutting file size dramatically with zero quality risk.",
     "Drop up to 10 .bmp files and convert — no settings to configure. Results preview instantly; download individually or as one ZIP for the batch.",
     "Accepts .bmp up to 30MB each, 10 per run; output is .png. For screenshots and flat graphics PNG is ideal; for photographs destined to stay small, the BMP→JPG route compresses further at slight (invisible) cost.",
     "Modernizing legacy screenshots, scanner exports and old app output where pixel fidelity matters — documentation archives, patent drawings, medical and lab tooling exports. PNG also unlocks transparency that BMP rarely carried."

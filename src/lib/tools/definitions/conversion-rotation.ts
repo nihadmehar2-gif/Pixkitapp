@@ -71,7 +71,7 @@ export const CONVERSION_TOOLS: ToolDef[] = [
     ],
     processor: "convert",
     params: { format: "image/jpeg" },
-    about: "Converting PNG to JPG routinely cuts file size by 70%+ for photographic content. Choose the background color that replaces transparency — white for documents, black for video overlays — and your batch converts entirely on-device.",
+    about: "Converting PNG to JPG routinely cuts file size substantially for photographic content. Choose the background color that replaces transparency — white for documents, black for video overlays — and your batch converts entirely on-device.",
   },
   {
     slug: "png-to-webp",
@@ -87,13 +87,13 @@ export const CONVERSION_TOOLS: ToolDef[] = [
     options: [optSlider("quality", "WebP quality", 90, 50, 100, 1, "%", "90%+ WebP is visually lossless for most content.")],
     processor: "convert",
     params: { format: "image/webp" },
-    about: "WebP offers PNG-class quality at a fraction of the size — typically 25–35% smaller for graphics with transparency, far more for photos. This converter runs the browser's native WebP encoder on your PNGs, preserving alpha channels, ready for faster page loads.",
+    about: "WebP offers PNG-class quality at a fraction of the size — typically much smaller for graphics with transparency, far more for photos. This converter runs the browser's native WebP encoder on your PNGs, preserving alpha channels, ready for faster page loads.",
   },
   {
     slug: "jpg-to-webp",
     name: "JPG to WebP",
     h1: "Convert JPG to WebP",
-    description: "Convert JPG to WebP for 25–50% smaller files at the same visual quality. Boost site speed — free browser converter.",
+    description: "Convert JPG to WebP for significantly smaller files at the same visual quality. Boost site speed — free browser converter.",
     keywords: ["jpg to webp", "convert jpeg to webp", "webp image converter"],
     category: "conversion",
     icon: "Repeat",
@@ -145,7 +145,7 @@ export const CONVERSION_TOOLS: ToolDef[] = [
     options: [optSlider("quality", "JPG quality", 90, 50, 100, 1, "%")],
     processor: "convert",
     params: { format: "image/jpeg" },
-    about: "BMP files are raw uncompressed bitmaps — a 1920×1080 screenshot weighs over 6MB. Converting to JPG at 90% typically produces a ~300KB file that every device can open. Decode and encode both happen in your browser.",
+    about: "BMP files are raw uncompressed bitmaps — a 1920×1080 screenshot weighs over 6MB. Converting to JPG at 90% quality typically shrinks it to a small fraction of that size, in a format every device can open. Decode and encode both happen in your browser.",
   },
   {
     slug: "bmp-to-png",
@@ -160,7 +160,7 @@ export const CONVERSION_TOOLS: ToolDef[] = [
     options: [],
     processor: "convert",
     params: { format: "image/png" },
-    about: "PNG wraps your bitmap's exact pixels in compressed, universally supported containers — lossless like BMP, but 30–70% smaller and safe for the web. Perfect for preserving pixel-exact screenshots.",
+    about: "PNG wraps your bitmap's exact pixels in compressed, universally supported containers — lossless like BMP, but considerably smaller and safe for the web. Perfect for preserving pixel-exact screenshots.",
   },
   {
     slug: "jpg-to-bmp",

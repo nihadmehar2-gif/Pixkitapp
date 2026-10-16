@@ -16,7 +16,7 @@ export const RESIZING_SEO: Record<string, ToolSeo> = {
     "Resize Image by Percentage – 10% to 400%",
     "Scale images to any percentage of original size, from 10% to 400%. Quick proportional resizing with quality control — free, instant, and entirely in-browser.",
     "resize image by percentage",
-    "Instead of pixel math, you pick a percentage and the tool does the arithmetic: 50% quarters the total pixel count and usually cuts file size by 75% or more. Internally it downsamples in steps for clean results, and quality/format controls handle the encoding side.",
+    "Instead of pixel math, you pick a percentage and the tool does the arithmetic: 50% quarters the total pixel count and usually shrinks the file to a small fraction of its original size. Internally it downsamples in steps for clean results, and quality/format controls handle the encoding side.",
     "Add up to 10 images, drag the percentage slider — under 100 shrinks, over 100 enlarges — choose an output format and quality, then process. Every result shows its new pixel dimensions so you always know exactly what changed.",
     "Accepts .jpg, .png and .webp up to 30MB per file, 10 per run. Percentages above 100 stretch pixels rather than inventing detail; keep enlargements modest or use the Enlarge Image tool for better upscaling.",
     "The fast path when exact pixels don't matter: making a photo 'about half size' for a slide, trimming camera files for chat, or shrinking scans before OCR. Batch mode handles whole folders' worth of consistent scaling."

@@ -21,7 +21,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "image-compressor",
     "name": "Image Compressor",
-    "description": "Compress JPG, PNG and WebP images online for free. Reduce file size up to 90% — private, no upload, instant results in your browser.",
+    "description": "Compress JPG, PNG and WebP images online for free — can significantly reduce file size. Private, no upload, instant results in your browser.",
     "category": "compression",
     "icon": "Minimize2",
     "keywords": [
@@ -457,7 +457,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "jpg-to-webp",
     "name": "JPG to WebP",
-    "description": "Convert JPG to WebP for 25–50% smaller files at the same visual quality. Boost site speed — free browser converter.",
+    "description": "Convert JPG to WebP for significantly smaller files at the same visual quality. Boost site speed — free browser converter.",
     "category": "conversion",
     "icon": "Repeat",
     "keywords": [
@@ -1566,7 +1566,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "passport-photo-maker",
     "name": "Passport Photo Maker",
-    "description": "Make passport photos online free with official size guides. US, UK, EU, India & more — 35×45mm or 2×2in at 300 DPI.",
+    "description": "Make passport photos online free with common size presets. US, UK, EU, India & more — 35×45mm or 2×2in at 300 DPI.",
     "category": "passport",
     "icon": "IdCard",
     "keywords": [
@@ -1580,7 +1580,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "us-passport-photo",
     "name": "US Passport Photo",
-    "description": "Create US passport photos at the official 2×2 inch size (600×600px) at 300 DPI with official head guides.",
+    "description": "Create US passport photos at the official 2×2 inch size (600×600px) at 300 DPI with head-position guides.",
     "category": "passport",
     "icon": "IdCard",
     "keywords": [
@@ -1595,7 +1595,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "schengen-visa-photo",
     "name": "Schengen Visa Photo",
-    "description": "Create Schengen visa photos at 35×45mm (413×531px @300DPI) with ICAO head-position guides.",
+    "description": "Create Schengen visa photos at 35×45mm (413×531px @300DPI) with ICAO-style head-position guides.",
     "category": "passport",
     "icon": "IdCard",
     "keywords": [
@@ -1610,7 +1610,7 @@ export const SEARCH_ITEMS: SearchItem[] = [
   {
     "slug": "china-visa-photo",
     "name": "China Visa Photo",
-    "description": "Create China visa photos at 33×48mm (390×567px @300DPI) with official guide overlay.",
+    "description": "Create China visa photos at 33×48mm (390×567px @300DPI) with head-position guide overlay.",
     "category": "passport",
     "icon": "IdCard",
     "keywords": [

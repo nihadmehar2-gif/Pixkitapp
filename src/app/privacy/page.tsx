@@ -56,7 +56,7 @@ const SECTIONS = [
   {
     title: "6. Advertising (planned, not yet active)",
     body: [
-      "PixKitApp is designed to be supported by advertising. Pages contain reserved, clearly labeled ad containers; while advertising is not enabled, these containers are empty placeholders and no third-party ad scripts are loaded, no ad cookies are set, and no ad-related data is collected.",
+      "PixKitApp is designed to be supported by advertising. While advertising is not enabled, pages show no visible ad space at all — ad slots stay fully collapsed instead of displaying empty placeholders — and no third-party ad scripts are loaded, no ad cookies are set, and no ad-related data is collected.",
       "When we enable advertising, we plan to use Google AdSense. For transparency, here is what that will mean, based on Google's published documentation: Google and its partners may use cookies or device identifiers to serve and measure ads, and, depending on your region and your consent choices, to personalize the ads you see. Google's use of advertising cookies enables it and its partners to serve ads based on your visits to this and other sites. You can opt out of personalized advertising in Google Ads Settings (adssettings.google.com), and regional rules such as the EU/UK GDPR and CCPA may give you additional choices that we will surface as required.",
       "We will not place ads over image controls or download buttons, disguise ads as tools, or design placements to encourage accidental clicks. This policy will be updated with the effective date when advertising goes live, and this section will always name the providers actually in use.",
     ],

@@ -3,12 +3,12 @@
 /**
  * Responsive, AdSense-ready ad container.
  *
- * - Reserves vertical space up front (fixed min-heights per slot) so enabling
- *   ads later does not shift content — good for CLS.
- * - When ads are NOT configured (default): renders a subtle, clearly-labeled
- *   placeholder and loads nothing third-party.
+ * - When ads are NOT configured (default): renders NOTHING — no empty
+ *   labeled box is shown to visitors.
  * - When configured via env (see src/lib/ads.ts): renders a responsive
- *   <ins class="adsbygoogle"> unit and loads the AdSense script once.
+ *   <ins class="adsbygoogle"> unit inside a container with a fixed min-height
+ *   reserved up front, so the unit filling in later causes no layout shift
+ *   (CLS stays at zero). Loads the AdSense script once.
  *
  * Ads never overlap controls: this component is a block-level element placed
  * in normal flow between content sections.
@@ -59,27 +59,9 @@ export function AdSlot({ id, className }: { id: AdSlotId; className?: string }) 
   }, [live]);
 
   if (!live) {
-    // Reserved space placeholder — no third-party requests, clearly labeled.
-    return (
-      <div
-        role="complementary"
-        aria-label={LANDMARK_LABEL[id]}
-        className={cn("mx-auto w-full max-w-7xl px-4 sm:px-6", className)}
-      >
-        <div
-          className={cn(
-            "flex items-center justify-center rounded-xl border border-dashed border-border/70 bg-card/40",
-            MIN_H[id]
-          )}
-        >
-          {/* Full-strength muted-foreground: 5.5:1 on white (light) and 7:1 on
-              dark card — passes WCAG AA. The old /60 opacity measured 2.4:1. */}
-          <span className="select-none text-xs uppercase tracking-wider text-muted-foreground">
-            Advertisement
-          </span>
-        </div>
-      </div>
-    );
+    // No ad configured → collapse entirely. Visitors never see an empty
+    // "Advertisement" box, and nothing third-party is loaded.
+    return null;
   }
 
   return (

@@ -115,9 +115,9 @@ export const SOCIAL_SEO: Record<string, ToolSeo> = {
   // Passport
   "passport-photo-maker": seo(
     "Passport Photo Maker – All Standards Online",
-    "Make passport photos online free with official size guides. US, UK, EU, India presets — 35×45mm or 2×2in at 300 DPI. Private, in-browser, ready to print.",
+    "Make passport photos online free with common size presets. US, UK, EU, India presets — 35×45mm or 2×2in at 300 DPI. Private, in-browser, ready to print.",
     "passport photo maker",
-    "Your photo loads into an interactive editor with an official head-position overlay — chin, crown and eye-line guides — for the size standard you select: 35×45mm (most countries), 2×2in (US), 33×48mm (China) and more. Output renders at 300 DPI so the printed millimeters are exact, and an optional background replacement cleans non-white backdrops.",
+    "Your photo loads into an interactive editor with a head-position overlay — chin, crown and eye-line guides modeled on the common standards — for the size standard you select: 35×45mm (most countries), 2×2in (US), 33×48mm (China) and more. Output renders at 300 DPI so the printed millimeters are exact, and an optional background replacement cleans non-white backdrops.",
     "Drop one photo taken against a plain wall, pick your country's size preset, drag the crop until the guides sit right on the face, choose a background treatment, then download the print-ready image.",
     "Accepts .jpg, .png and .webp up to 30MB; single-photo editing; output at 300 DPI in your chosen format. The tool guides geometry — it cannot verify compliance, so follow the official rules of the document you're applying for.",
     "Passport renewals, visa applications, ID cards, driving licences and student passes — anywhere a specific millimeter photo size with head-position rules applies, without visiting a photo booth."

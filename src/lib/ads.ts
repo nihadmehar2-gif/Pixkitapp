@@ -8,9 +8,10 @@
  *   NEXT_PUBLIC_ADSENSE_SLOT_INCONTENT=1234567890
  *   NEXT_PUBLIC_ADSENSE_SLOT_PREFOOTER=1234567890
  *
- * While disabled, ad containers render as clearly-labeled reserved space
- * (no third-party scripts are loaded), so layout stays stable before and
- * after ads are switched on.
+ * While disabled, ad slots render nothing at all — visitors never see an
+ * empty "Advertisement" box and no third-party scripts are loaded. Once
+ * enabled, each slot reserves its fixed height up front, so layout stays
+ * stable as units fill in (CLS stays at zero).
  */
 
 function env(name: string): string {

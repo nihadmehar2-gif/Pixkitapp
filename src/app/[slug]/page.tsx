@@ -5,7 +5,7 @@ import { ToolPageClient } from "@/components/tool/tool-page-client";
 import { ToolIcon } from "@/components/site/tool-icon";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ChevronRight, ShieldCheck, Zap, Lock, Wifi } from "lucide-react";
+import { ChevronRight, ShieldCheck, Zap, Lock, Wifi, Info } from "lucide-react";
 import { ToolCard } from "@/components/site/cards";
 import { AdSlot } from "@/components/site/ad-slot";
 import { OG_IMAGES } from "@/lib/seo";
@@ -171,6 +171,16 @@ export default async function ToolPage({ params }: Props) {
           </span>
         ))}
       </div>
+
+      {tool.requirementNote && (
+        <aside
+          aria-label="Requirement accuracy note"
+          className="mb-6 flex max-w-3xl items-start gap-2.5 rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-200"
+        >
+          <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+          <p>{tool.requirementNote}</p>
+        </aside>
+      )}
 
       <ToolPageClient tool={tool} />
 

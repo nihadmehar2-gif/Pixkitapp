@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CATEGORIES, categoryById } from "@/lib/tools/categories";
+import { CATEGORIES, categoryById, DOCUMENT_PHOTO_NOTE } from "@/lib/tools/categories";
 import { toolsByCategory, TOOLS, SITE_URL } from "@/lib/tools";
 import { socialMeta } from "@/lib/seo";
 import { ToolCard } from "@/components/site/cards";
 import { ToolIcon } from "@/components/site/tool-icon";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Info } from "lucide-react";
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -100,6 +100,16 @@ export default async function CategoryPage({ params }: Props) {
           <p className="mt-1 text-sm font-medium text-primary">{tools.length} free tools</p>
         </div>
       </header>
+
+      {cat.id === "passport" && DOCUMENT_PHOTO_NOTE && (
+        <aside
+          aria-label="Requirement accuracy note"
+          className="mb-8 flex max-w-3xl items-start gap-2.5 rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-200"
+        >
+          <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+          <p>{DOCUMENT_PHOTO_NOTE}</p>
+        </aside>
+      )}
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {tools.map((tool) => (
