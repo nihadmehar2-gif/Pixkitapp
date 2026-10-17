@@ -61,3 +61,4 @@ worklog.md
 db/
 examples/
 Caddyfile
+scripts/floatgen/
