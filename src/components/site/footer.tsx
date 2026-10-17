@@ -6,7 +6,9 @@ import { TOOLS } from "@/lib/tools";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-auto border-t bg-card">
+    <footer className="mt-auto">
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent" aria-hidden="true" />
+      <div className="bg-card/60 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div>
@@ -51,10 +53,11 @@ export function SiteFooter() {
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 text-sm text-muted-foreground sm:flex-row">
           <p>© {year} PixKitApp · pixkitapp.com — All rights reserved.</p>
           <p className="flex items-center gap-1.5">
-            <span className="inline-block h-2 w-2 rounded-full bg-green-500" aria-hidden="true" />
+            <span className="inline-block h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_2px_oklch(0.72_0.19_160/0.7)] motion-reduce:shadow-none" aria-hidden="true" />
             Images are processed in your browser — never uploaded
           </p>
         </div>
+      </div>
       </div>
     </footer>
   );

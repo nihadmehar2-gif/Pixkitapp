@@ -105,6 +105,8 @@ export function SiteHeader() {
           </Sheet>
         </div>
       </div>
+      {/* Glowing hairline under the header */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent" aria-hidden="true" />
       <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </header>
   );

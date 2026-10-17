@@ -43,6 +43,12 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* ------------------------------------------------------------------
+   AURORA GLASS THEME
+   Dark-first premium palette: deep violet space, vivid accents.
+   Light theme kept fully functional with the same accent family.
+------------------------------------------------------------------- */
+
 :root {
   --radius: 0.625rem;
   --background: oklch(0.985 0.002 300);
@@ -76,40 +82,48 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Aurora tuning: subtle pastel wash on light theme */
+  --aurora-opacity: 0.25;
+  --glass-card: oklch(1 0 0 / 72%);
+  --glass-border: oklch(0.17 0.01 300 / 10%);
 }
 
 .dark {
-  --background: oklch(0.16 0.012 300);
-  --foreground: oklch(0.97 0.003 300);
-  --card: oklch(0.205 0.014 300);
-  --card-foreground: oklch(0.97 0.003 300);
-  --popover: oklch(0.205 0.014 300);
-  --popover-foreground: oklch(0.97 0.003 300);
-  --primary: oklch(0.68 0.19 293);
-  --primary-foreground: oklch(0.15 0.02 293);
-  --secondary: oklch(0.27 0.016 300);
-  --secondary-foreground: oklch(0.97 0.003 300);
-  --muted: oklch(0.27 0.012 300);
-  --muted-foreground: oklch(0.71 0.012 300);
-  --accent: oklch(0.3 0.04 293);
-  --accent-foreground: oklch(0.95 0.02 300);
+  --background: oklch(0.145 0.024 295);
+  --foreground: oklch(0.96 0.006 300);
+  --card: oklch(0.205 0.03 295);
+  --card-foreground: oklch(0.96 0.006 300);
+  --popover: oklch(0.21 0.03 295);
+  --popover-foreground: oklch(0.96 0.006 300);
+  --primary: oklch(0.72 0.2 300);
+  --primary-foreground: oklch(0.145 0.03 300);
+  --secondary: oklch(0.27 0.035 295);
+  --secondary-foreground: oklch(0.96 0.006 300);
+  --muted: oklch(0.26 0.03 295);
+  --muted-foreground: oklch(0.75 0.02 300);
+  --accent: oklch(0.31 0.06 300);
+  --accent-foreground: oklch(0.96 0.01 300);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.68 0.19 293);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.72 0.2 300);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
+  --sidebar: oklch(0.205 0.03 295);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-primary: oklch(0.72 0.2 300);
+  --sidebar-primary-foreground: oklch(0.145 0.03 300);
+  --sidebar-accent: oklch(0.27 0.035 295);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  /* Aurora tuning: vivid light show on dark theme */
+  --aurora-opacity: 0.5;
+  --glass-card: oklch(0.24 0.032 295 / 62%);
+  --glass-border: oklch(1 0 0 / 12%);
 }
 
 @layer base {
@@ -121,6 +135,168 @@
   }
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* ------------------------------------------------------------------
+   AURORA BACKGROUND — animated lighting layer behind the whole site.
+   Pure CSS: three blurred color blobs drifting slowly over a faint
+   tech grid. GPU-only properties (transform/opacity) so it never
+   blocks the main thread. Disabled for prefers-reduced-motion.
+------------------------------------------------------------------- */
+
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: var(--aurora-opacity);
+}
+
+/* Faint blueprint grid */
+.aurora::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, oklch(0.7 0.05 300 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.7 0.05 300 / 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 65% at 50% 0%, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 90% 65% at 50% 0%, black 30%, transparent 75%);
+}
+
+.aurora-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  will-change: transform;
+}
+
+.aurora-blob-1 {
+  top: -180px;
+  left: -120px;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(circle at center, oklch(0.62 0.25 300), transparent 65%);
+  animation: aurora-drift-1 22s ease-in-out infinite alternate;
+}
+
+.aurora-blob-2 {
+  top: 10%;
+  right: -160px;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle at center, oklch(0.66 0.24 340), transparent 65%);
+  animation: aurora-drift-2 26s ease-in-out infinite alternate;
+}
+
+.aurora-blob-3 {
+  bottom: -220px;
+  left: 30%;
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle at center, oklch(0.72 0.16 210), transparent 65%);
+  animation: aurora-drift-3 30s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-drift-1 {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(90px, 60px, 0) scale(1.15); }
+}
+@keyframes aurora-drift-2 {
+  from { transform: translate3d(0, 0, 0) scale(1.1); }
+  to   { transform: translate3d(-110px, 90px, 0) scale(0.95); }
+}
+@keyframes aurora-drift-3 {
+  from { transform: translate3d(0, 0, 0) scale(0.95); }
+  to   { transform: translate3d(70px, -80px, 0) scale(1.12); }
+}
+
+/* ------------------------------------------------------------------
+   LIGHTING TEXT — headline gradient that slowly sweeps like light
+   passing over metal. Decorative only; real text color stays readable.
+------------------------------------------------------------------- */
+
+.text-shine {
+  background-image: linear-gradient(
+    110deg,
+    oklch(0.75 0.19 300) 25%,
+    oklch(0.88 0.13 330) 40%,
+    oklch(0.9 0.1 210) 55%,
+    oklch(0.75 0.19 300) 70%
+  );
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine-sweep 7s linear infinite;
+}
+
+@keyframes shine-sweep {
+  to { background-position: 220% center; }
+}
+
+/* Soft glow halo behind headings/badges */
+.glow-halo {
+  box-shadow:
+    0 0 24px 2px oklch(0.72 0.2 300 / 0.35),
+    0 0 64px 8px oklch(0.72 0.2 300 / 0.15);
+}
+
+/* ------------------------------------------------------------------
+   GLASS CARDS — frosted panels that sit on the aurora background.
+------------------------------------------------------------------- */
+
+.glass-card {
+  background: var(--glass-card);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Light beam that sweeps across cards on hover (decorative). */
+.beam-card {
+  position: relative;
+  overflow: hidden;
+}
+.beam-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 32%,
+    oklch(1 0 0 / 0.09) 50%,
+    transparent 68%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.9s ease;
+  pointer-events: none;
+}
+.beam-card:hover::before,
+.beam-card:focus-visible::before {
+  transform: translateX(120%);
+}
+
+/* ------------------------------------------------------------------
+   REDUCED MOTION — stop every decorative animation for users who
+   ask the OS for calmer interfaces. Layout and readability unchanged.
+------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-blob,
+  .text-shine,
+  .beam-card::before {
+    animation: none !important;
+    transition: none !important;
+  }
+  .beam-card::before {
+    display: none;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }
 

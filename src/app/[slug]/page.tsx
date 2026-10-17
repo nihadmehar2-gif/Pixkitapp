@@ -6,7 +6,7 @@ import { ToolIcon } from "@/components/site/tool-icon";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ChevronRight, ShieldCheck, Zap, Lock, Wifi, Info } from "lucide-react";
-import { ToolCard } from "@/components/site/cards";
+import { ToolCard, categoryStyle } from "@/components/site/cards";
 import { AdSlot } from "@/components/site/ad-slot";
 import { OG_IMAGES } from "@/lib/seo";
 
@@ -150,7 +150,10 @@ export default async function ToolPage({ params }: Props) {
       </nav>
 
       <header className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-start">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+        <div
+          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br text-white shadow-lg ${categoryStyle(tool.category).gradient}`}
+          aria-hidden="true"
+        >
           <ToolIcon name={tool.icon} className="h-7 w-7" />
         </div>
         <div className="min-w-0">

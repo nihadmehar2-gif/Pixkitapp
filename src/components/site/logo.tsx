@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 export function PixKitLogo({ className }: { className?: string }) {
   return (
     <span className={cn("inline-flex items-center gap-2", className)}>
-      <svg viewBox="0 0 32 32" className="h-7 w-7 shrink-0" aria-hidden="true">
+      <svg viewBox="0 0 32 32" className="h-7 w-7 shrink-0 drop-shadow-[0_0_6px_oklch(0.72_0.2_300/0.55)]" aria-hidden="true">
         <defs>
           <linearGradient id="pixkit-grad" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#a855f7" />

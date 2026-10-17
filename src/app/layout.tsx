@@ -74,13 +74,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-primary-foreground focus:shadow-lg"
           >
             Skip to content
           </a>
+          {/* Animated aurora lighting layer — purely decorative, behind all
+              content, ignores pointer events, honours reduced motion. */}
+          <div className="aurora" aria-hidden="true">
+            <div className="aurora-blob aurora-blob-1" />
+            <div className="aurora-blob aurora-blob-2" />
+            <div className="aurora-blob aurora-blob-3" />
+          </div>
           <div className="flex min-h-screen flex-col">
             <SiteHeader />
             {/* Ad container below the header — reserved space, in normal flow. */}
