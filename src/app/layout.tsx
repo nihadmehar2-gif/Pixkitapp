@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/site/theme-provider";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { AdSlot } from "@/components/site/ad-slot";
+import { FloatLayer } from "@/components/site/float-layer";
 import { SITE_URL } from "@/lib/tools";
 import { OG_IMAGES, ROBOTS_DIRECTIVES } from "@/lib/seo";
 
@@ -88,6 +89,11 @@ export default function RootLayout({
             <div className="aurora-blob aurora-blob-2" />
             <div className="aurora-blob aurora-blob-3" />
           </div>
+          {/* Floating photo background layer — real images drifting slowly,
+              purely decorative, behind all content, ignores pointer events,
+              honours reduced motion. Sits above the aurora wash, below the
+              page. */}
+          <FloatLayer />
           <div className="flex min-h-screen flex-col">
             <SiteHeader />
             {/* Ad container below the header — reserved space, in normal flow. */}
