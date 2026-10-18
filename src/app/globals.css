@@ -431,6 +431,27 @@
 }
 
 /* ------------------------------------------------------------------
+   PAGE TRANSITION — content fades in with a gentle rise on every
+   route change. Replayed by PageFade (src/components/site/page-fade.tsx)
+   remounting a keyed wrapper on navigation. Layout chrome persists.
+------------------------------------------------------------------- */
+
+.page-fade {
+  animation: page-fade 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-fade {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ------------------------------------------------------------------
    REDUCED MOTION — stop every decorative animation for users who
    ask the OS for calmer interfaces. Layout and readability unchanged.
 ------------------------------------------------------------------- */
@@ -439,7 +460,8 @@
   .aurora-blob,
   .text-shine,
   .beam-card::before,
-  .float-item {
+  .float-item,
+  .page-fade {
     animation: none !important;
     transition: none !important;
   }

@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/site/footer";
 import { AdSlot } from "@/components/site/ad-slot";
 import { FloatLayer } from "@/components/site/float-layer";
 import { ClickFx } from "@/components/site/click-fx";
+import { PageFade } from "@/components/site/page-fade";
 import { SITE_URL } from "@/lib/tools";
 import { OG_IMAGES, ROBOTS_DIRECTIVES } from "@/lib/seo";
 
@@ -102,7 +103,11 @@ export default function RootLayout({
             <SiteHeader />
             {/* Ad container below the header — reserved space, in normal flow. */}
             <AdSlot id="top" className="mt-3" />
-            <main id="main-content" className="flex-1">{children}</main>
+            <main id="main-content" className="flex-1">
+              {/* Route transition: content fades/rises in on every
+                  navigation (see PageFade — key remount replays CSS). */}
+              <PageFade>{children}</PageFade>
+            </main>
             {/* Ad container before the footer — reserved space, in normal flow. */}
             <AdSlot id="pre-footer" className="mb-6 mt-10" />
             <SiteFooter />
