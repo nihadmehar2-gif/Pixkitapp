@@ -6,8 +6,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -41,6 +42,27 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ------------------------------------------------------------------
+   TYPOGRAPHY — expressive display font for every heading. Bricolage
+   Grotesque (loaded in layout.tsx via --font-bricolage) gives titles
+   a distinct editorial voice; the optical-size axis refines the
+   letterforms automatically as heading sizes grow. Body text stays
+   in Plus Jakarta Sans (--font-jakarta) for comfortable reading.
+------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bricolage), var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Tighter tracking where display sizes can afford it. */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+h4, h5, h6 {
+  letter-spacing: -0.01em;
 }
 
 /* ------------------------------------------------------------------

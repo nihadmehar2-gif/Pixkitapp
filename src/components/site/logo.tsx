@@ -14,7 +14,7 @@ export function PixKitLogo({ className }: { className?: string }) {
         <path d="M9 22V10h6.2c2.9 0 4.8 1.8 4.8 4.4s-1.9 4.4-4.8 4.4H12.4V22H9zm3.4-5.9h2.4c1.2 0 2-.7 2-1.7s-.8-1.7-2-1.7h-2.4v3.4z" fill="#fff" />
         <rect x="21.5" y="18.5" width="4" height="4" rx="1" fill="#fff" opacity="0.95" />
       </svg>
-      <span className="text-lg font-bold tracking-tight">
+      <span className="font-display text-lg font-bold tracking-tight">
         Pix<span className="text-primary">Kit</span>App
       </span>
     </span>
