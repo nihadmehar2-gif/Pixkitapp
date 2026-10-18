@@ -367,6 +367,70 @@
 }
 
 /* ------------------------------------------------------------------
+   CLICK FX — every pointer press spawns a short glowing burst:
+   expanding ring + radial flash + eight flying sparks. Spawned by
+   src/components/site/click-fx.tsx; purely decorative and removed
+   automatically after ~0.9 s.
+------------------------------------------------------------------- */
+
+.click-fx {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.click-fx-ring {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 9999px;
+  border: 2px solid oklch(0.78 0.16 305 / 0.9);
+  box-shadow:
+    0 0 14px 2px oklch(0.72 0.2 300 / 0.55),
+    inset 0 0 8px oklch(0.72 0.2 300 / 0.35);
+  animation: clickfx-ring 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.click-fx-glow {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, oklch(0.8 0.18 305 / 0.35), transparent 65%);
+  animation: clickfx-glow 0.5s ease-out forwards;
+}
+
+.click-fx-spark {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
+  border-radius: 9999px;
+  background: var(--spark, oklch(0.85 0.15 310));
+  box-shadow: 0 0 8px 1px var(--spark, oklch(0.85 0.15 310 / 0.8));
+  animation: clickfx-spark var(--fly-t, 0.6s) cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes clickfx-ring {
+  from { opacity: 1; transform: scale(0.4); }
+  to   { opacity: 0; transform: scale(4.2); }
+}
+@keyframes clickfx-glow {
+  from { opacity: 0.9; transform: scale(0.5); }
+  to   { opacity: 0;   transform: scale(1.6); }
+}
+@keyframes clickfx-spark {
+  from { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  to   { opacity: 0; transform: translate3d(var(--tx, 0px), var(--ty, 0px), 0) scale(0.4); }
+}
+
+/* ------------------------------------------------------------------
    REDUCED MOTION — stop every decorative animation for users who
    ask the OS for calmer interfaces. Layout and readability unchanged.
 ------------------------------------------------------------------- */
@@ -380,6 +444,9 @@
     transition: none !important;
   }
   .beam-card::before {
+    display: none;
+  }
+  .click-fx {
     display: none;
   }
   html {

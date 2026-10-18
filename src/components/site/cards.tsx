@@ -41,7 +41,7 @@ export function ToolCard({ tool, className, heading = "h3" }: { tool: ToolLite; 
     <Link
       href={`/${tool.slug}`}
       className={cn(
-        "beam-card glass-card group flex h-full flex-col gap-2.5 rounded-2xl p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg",
+        "beam-card glass-card group flex h-full flex-col gap-2.5 rounded-2xl p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-[0.97] active:shadow-md",
         style.glow,
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
         className
@@ -73,7 +73,7 @@ export function CategoryCard({ category, count }: { category: ToolCategory; coun
   return (
     <Link
       href={`/categories/${category.slug}`}
-      className="beam-card glass-card group relative flex h-full flex-col overflow-hidden rounded-2xl p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="beam-card glass-card group relative flex h-full flex-col overflow-hidden rounded-2xl p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-[0.97] active:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       <div className={cn("absolute inset-x-0 top-0 h-1 bg-gradient-to-r", category.color)} aria-hidden="true" />
       <div

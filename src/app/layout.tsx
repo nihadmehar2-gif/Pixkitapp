@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { AdSlot } from "@/components/site/ad-slot";
 import { FloatLayer } from "@/components/site/float-layer";
+import { ClickFx } from "@/components/site/click-fx";
 import { SITE_URL } from "@/lib/tools";
 import { OG_IMAGES, ROBOTS_DIRECTIVES } from "@/lib/seo";
 
@@ -94,6 +95,9 @@ export default function RootLayout({
               honours reduced motion. Sits above the aurora wash, below the
               page. */}
           <FloatLayer />
+          {/* Click burst effect — decorative, passive listener, honours
+              reduced motion. Renders nothing itself. */}
+          <ClickFx />
           <div className="flex min-h-screen flex-col">
             <SiteHeader />
             {/* Ad container below the header — reserved space, in normal flow. */}
