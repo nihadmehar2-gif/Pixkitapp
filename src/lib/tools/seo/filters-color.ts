@@ -5,7 +5,7 @@ import { seo, ToolSeo } from "../types";
 export const FILTERS_SEO: Record<string, ToolSeo> = {
   "grayscale-image": seo(
     "Grayscale Image Converter – Black & White",
-    "Turn photos black & white online with luminance-accurate grayscale. Adjustable mix from tinted color to full monochrome — free, private, instant, no upload.",
+    "Convert images to grayscale online with luminance-accurate black & white. Adjustable mix from tinted color to full monochrome — free, private, instant.",
     "convert image to grayscale",
     "The converter weights each pixel's red, green and blue by how the human eye actually perceives brightness — green counts most, blue least — rather than a flat average, which is what makes the result look like real monochrome photography instead of a washed-out desaturation.",
     "Drop up to 10 images, set the grayscale intensity if you want a partial effect (100% is full black & white), and process. Preview each result, then download individually or as a ZIP.",
@@ -14,7 +14,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "sepia-image": seo(
     "Sepia Photo Filter Online – Vintage Tone",
-    "Give photos a warm vintage sepia tone in one click. Adjustable intensity from subtle warmth to full antique brown — free, private, in-browser, batch of 10.",
+    "Apply a warm vintage sepia filter in one click. Adjustable intensity from subtle warmth to full antique brown — free, private, in-browser, batch of 10.",
     "sepia filter online",
     "The filter transforms each pixel through the classic sepia matrix — trading saturation for warm browns weighted toward red and yellow channels. The intensity slider blends between your original colors and full sepia, so you can dial in everything from a faint golden warmth to a deep antique look.",
     "Add up to 10 images, set the sepia strength (60–80% is the nostalgic sweet spot), and process. Preview the tone on each result, then download files or the whole batch as a ZIP.",
@@ -32,7 +32,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "blur-image": seo(
     "Blur Image Online – Gaussian Blur Control",
-    "Blur photos with adjustable Gaussian blur from 1px soft focus to heavy censoring. Free, instant, no signup — everything stays on your device, never uploaded.",
+    "Blur images online with adjustable Gaussian blur, from 1px soft focus to heavy censoring. Free, instant, no signup — everything stays on your device.",
     "blur image online",
     "The tool applies a true Gaussian convolution through the canvas filter pipeline, spreading each pixel's influence over a neighborhood scaled by your radius setting. Low values create portrait-style soft focus; high values dissolve detail entirely for censoring or background use.",
     "Add up to 10 images, drag the blur slider while judging the effect level you need, and process. Each result previews instantly; download files individually or as one ZIP.",
@@ -41,7 +41,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "sharpen-image": seo(
     "Sharpen Image Online – Unsharp Mask Filter",
-    "Make photos crisper with an unsharp-mask convolution kernel. Adjustable strength brings back micro-detail — free, private, in-browser, batch of 10 files.",
+    "Sharpen images online with an unsharp-mask convolution kernel. Adjustable strength brings back micro-detail — free, private, in-browser, batch of 10 files.",
     "sharpen image online",
     "The tool convolves your image with an unsharp-mask kernel: it detects edges by comparing each pixel against its neighbors and boosts local contrast along them. The result reads as sharper micro-detail — text gains definition, foliage separates, and slightly soft resizes recover snap.",
     "Add up to 10 images, set the sharpening amount (modest values look natural; high ones add halos), and process. Zoom into a preview to check for halos before downloading.",
@@ -50,7 +50,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "brightness-adjuster": seo(
     "Adjust Image Brightness Online – Precise Slider",
-    "Brighten dark photos or dim overexposed ones with a precise slider and instant preview. Fix exposure in seconds — free, private, no upload, batch of 10.",
+    "Adjust image brightness with a precise slider and instant preview — brighten dark photos or dim overexposed ones. Free, private, no upload, batch of 10.",
     "adjust image brightness",
     "Brightness shifts every pixel's RGB values up or down uniformly through the canvas filter pipeline — a global exposure nudge rather than contrast's steepening of differences. The live preview updates as you drag, so finding the point where shadows lift without washing out is quick and visual.",
     "Drop up to 10 images, move the brightness slider (positive brightens, negative darkens), and process. Compare each result against the original in the results panel, then download.",
@@ -77,7 +77,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "hue-rotate-image": seo(
     "Hue Rotate Image Online – Shift All Colors",
-    "Shift all colors around the wheel — turn blue skies purple, greens teal, or find creative color grades in seconds. Free, private, in-browser, batch of 10.",
+    "Hue-rotate images to shift every color around the wheel — turn blue skies purple, greens teal, or find creative color grades in seconds. Free, private.",
     "hue rotate image",
     "The filter rotates every pixel's hue angle by the same amount around the color wheel while preserving saturation and lightness — which is why the image keeps its tonal structure while colors relocate. A full 360° returns you to the start; everything between is a legitimate grade.",
     "Add up to 10 images, drag the hue slider through the wheel while previewing, and process when a look lands. Download results individually or zipped together.",
@@ -86,7 +86,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "vintage-filter": seo(
     "Vintage Photo Filter – Retro Film Look",
-    "One-click retro look: faded sepia warmth, softened contrast, film grain and a gentle vignette — each layer tunable. Free, private, in-browser with live preview.",
+    "A one-click vintage photo filter: faded sepia warmth, softened contrast, film grain and a gentle vignette — each layer tunable. Free, private, live preview.",
     "vintage photo filter",
     "The filter stacks four classic analog cues: a warm sepia-leaning tint, compressed contrast for that faded-print feel, procedural film grain, and an edge vignette. Each layer has its own control, so the look ranges from a light Instagram warmth to a full 1970s snapshot.",
     "Drop up to 10 images, set the overall strength, toggle grain and vignette to taste, and process. Preview the composite effect, adjust, and download individually or as a ZIP.",
@@ -104,7 +104,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "pixelate-image": seo(
     "Pixelate Image Online – Mosaic Censor Effect",
-    "Censor photos with retro pixel blocks from subtle 4px mosaic to chunky 64px squares. Free, instant, private — nothing ever leaves your device, by design.",
+    "Pixelate images with retro pixel blocks, from subtle 4px mosaic to chunky 64px squares. Censor photos free, instant, private — nothing leaves your device.",
     "pixelate image",
     "The tool averages each block of pixels into a single color, producing the classic mosaic: block size controls how coarse the effect reads. Because averaging happens on your device, sensitive content is censored without any upload — the whole point when the photo itself is the secret.",
     "Drop up to 10 images, set the block size (8–16px obscures faces in typical photos; larger for smaller images), and process. Verify nothing is recognizable in the preview, then download.",
@@ -113,7 +113,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "duotone-image": seo(
     "Duotone Image Effect – Two-Color Branding",
-    "Map photos to two brand colors for striking graphics. Pick shadow and highlight tones for an instant gradient-map look — free, in-browser and fully private.",
+    "Apply a duotone effect that maps photos to two brand colors for striking graphics. Pick shadow and highlight tones — free, in-browser and fully private.",
     "duotone effect",
     "The tool converts your image to luminance, then maps that brightness ramp between two colors you choose: dark tones take the shadow color, bright tones take the highlight color, and midtones blend along the way. It's the gradient-map technique behind modern brand graphics and Spotify-style covers.",
     "Drop up to 10 images, pick a shadow color and a highlight color (default dark navy and white work with everything), and process. Preview the mapping, tweak colors, and download.",
@@ -178,7 +178,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "replace-color-in-image": seo(
     "Replace Color in Image – Tolerance Control",
-    "Swap one color for another with adjustable tolerance. Perfect for mockups, logo variants and product colorways — free, private, in-browser, batch of 10.",
+    "Replace a color in your image with another using adjustable tolerance. Perfect for mockups, logo variants and product colorways — free, private, batch.",
     "replace color in image",
     "Every pixel within your tolerance of the 'from' color is rewritten to the 'to' color — the slider decides how similar a pixel must be to qualify. Low tolerance catches only the exact shade; higher values sweep in anti-aliased edges and natural shading variations.",
     "Drop up to 10 images, pick the source color (or sample it with the color picker first), choose the replacement, set tolerance, and process. Preview and download individually or as a ZIP.",
@@ -187,7 +187,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "remove-color-from-image": seo(
     "Remove Color from Image – Chroma Key Online",
-    "Key out any color to transparency with feathered edges. Green-screen style background removal for any color — free, private, in-browser, with live preview.",
+    "Chroma key any color to transparency online, with feathered edges. Green-screen style background removal for any color — free, private, live preview.",
     "chroma key online",
     "The tool measures each pixel's distance from your key color; pixels within tolerance become transparent, and the feather slider softens the boundary so edges don't look cut with scissors. It's a color-distance key — the same idea as a green screen, applicable to any color.",
     "Drop one image, set the key color (sample the exact shade for best results), adjust tolerance until the target area clears in the preview, add feathering to taste, then download the transparent PNG.",
@@ -196,7 +196,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   ),
   "image-color-temperature": seo(
     "Adjust Image Color Temperature – Warm or Cool",
-    "Make photos warmer (golden) or cooler (blue) with a Kelvin-style slider. Fix white balance creatively — free, private, instant results, batch of 10 supported.",
+    "Adjust image color temperature with a Kelvin-style slider — make photos warmer (golden) or cooler (blue). Fix white balance creatively — free, private.",
     "adjust image color temperature",
     "The filter shifts the balance between red and blue channels across the image: positive values push toward golden warmth, negative toward icy blue, while green stays anchored so skin and foliage keep their character. It's the white-balance control from camera software, running in your tab.",
     "Drop up to 10 images, drag the temperature slider while previewing (small moves fix casts; large moves create moods), and process. Download results individually or as a batch ZIP.",
@@ -225,7 +225,7 @@ export const FILTERS_SEO: Record<string, ToolSeo> = {
   // Metadata
   "image-metadata-viewer": seo(
     "Image Metadata & EXIF Viewer Online – Private",
-    "Inspect the EXIF, GPS and PNG metadata of any image — camera model, settings, dates and location. Fully private: the file never leaves your browser tab.",
+    "A private EXIF viewer online: inspect EXIF, GPS and PNG metadata of any image — camera model, settings, dates and location. The file never leaves your tab.",
     "exif viewer online",
     "The viewer parses your file's byte structure locally: EXIF IFD blocks for JPEG (camera, exposure, ISO, aperture, focal length, timestamps, orientation and GPS coordinates when present), PNG chunk inspection for tEXt/iTXt data, and baseline info for WebP and GIF. Nothing uploads — the parser runs in your tab.",
     "Drop one image and the report renders immediately — no buttons, no waiting. Browse the sections, expand GPS details if present, and simply close the tab when done; the image was never sent anywhere.",

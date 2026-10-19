@@ -31,11 +31,11 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "PixKitApp — 127 Free Online Image Tools (No Upload)",
+    default: "Free Online Image Tools – Compress, Resize & Convert",
     template: "%s | PixKitApp",
   },
   description:
-    "127 free browser-based image tools: compress, resize, crop, convert, watermark, filters, passport photos and more. Images are processed on your device and never uploaded.",
+    "Use 127 free online image tools to compress, resize, crop and convert photos right in your browser. Nothing is uploaded — files never leave your device.",
   // No site-wide `keywords` tag: Google ignores meta keywords, and a generic
   // inherited list on every page is metadata noise. Tool pages still emit
   // their own deduplicated, tool-specific keyword lists.

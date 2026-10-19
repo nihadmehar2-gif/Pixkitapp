@@ -160,7 +160,7 @@ export const SOCIAL_SEO: Record<string, ToolSeo> = {
   ),
   "linkedin-profile-photo": seo(
     "LinkedIn Profile Photo Maker – 400×400 Crop",
-    "Crop professional LinkedIn headshots to 400×400 square with the ideal 60% face framing guide. Free, private, in-browser with background replacement included.",
+    "Crop professional headshots to the exact LinkedIn photo size — 400×400 square with an ideal 60% face framing guide. Free, private, background replacement.",
     "linkedin photo size",
     "The editor frames your headshot in a 400×400 square with a guide marking where the face should occupy roughly 60% of the frame — the proportion recruiters' eyes expect. Background replacement to white or light gray gives the clean, professional backdrop most headshots lack.",
     "Drop one photo, drag the crop until the face sits on the guide, optionally clean the background, and download the 400×400 master for upload.",

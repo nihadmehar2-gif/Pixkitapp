@@ -25,7 +25,7 @@ export const FILTER_TOOLS: ToolDef[] = [
   {
     slug: "sepia-image",
     name: "Sepia Image",
-    h1: "Apply Sepia Tone to Photos",
+    h1: "Apply a Sepia Filter to Photos Online",
     description: "Give photos a warm vintage sepia tone in one click. Adjustable intensity from subtle warmth to full antique brown.",
     keywords: ["sepia image", "sepia filter", "vintage photo effect", "old photo effect"],
     category: "filters",

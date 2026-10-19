@@ -14,7 +14,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-logo-watermark": seo(
     "Add Logo Watermark to Images – Brand Photos",
-    "Overlay your logo on photos with position, scale and opacity control. Transparent PNG logos supported — free, private, batch-friendly, up to 10 photos.",
+    "Add a logo watermark to photos with position, scale and opacity control. Transparent PNG logos supported — free, private, batch-friendly, up to 10 photos.",
     "add logo watermark",
     "Your logo (ideally a transparent PNG) is composited over each photo at a scale relative to image width, with independent opacity, margin and one of nine position anchors. Because compositing happens per image, the same settings produce consistent branding across a whole batch.",
     "Drop your photos, add the logo file in the watermark section, set scale and opacity (20–35% keeps photos readable), pick a corner with a sensible margin, then process and download.",
@@ -52,7 +52,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   // Text
   "add-text-to-image": seo(
     "Add Text to Image Online – Full Typography",
-    "Write on images with full typography control — font size, color, weight, position and an optional background pill. Free, private, no signup required, instant.",
+    "Add text to images with full typography control — font size, color, weight, position and an optional background pill. Free, private, no signup, instant.",
     "add text to image",
     "The tool renders your text on a canvas layer over the image with control over size, color, bold weight, one of nine positions and multi-line input — plus an optional rounded background pill with its own color and opacity, which keeps text readable over busy photos.",
     "Drop one image, type your text (multi-line supported), style it — size, weight, color — choose a position, and enable the background pill if the photo is busy. Process, preview, download.",
@@ -88,7 +88,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-title-to-image": seo(
     "Add Title Banner to Images – Thumbnail Maker",
-    "Create blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle. Batch-friendly, free and completely private.",
+    "A title banner maker for blog thumbnails and video covers: bold title on a color bar with accent stripe and optional subtitle. Free and completely private.",
     "title banner maker",
     "The tool composites a semi-opaque color bar across the bottom (or top) of your image, renders your title in bold white with an accent stripe alongside, and adds an optional subtitle line. Bar color, opacity, text colors and the accent hue are all adjustable to match brand kits.",
     "Drop up to 10 images, type title and subtitle, pick bar placement, set bar color and opacity plus accent color, then process. Preview each cover and download the batch.",
@@ -108,7 +108,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "make-image-transparent": seo(
     "Make Image Background Transparent – Any Color",
-    "Remove any solid background color — white, black or custom — with tolerance and feathering. Clean PNG cutouts in seconds, free, private and in-browser.",
+    "Make image backgrounds transparent — remove any solid color, white, black or custom, with tolerance and feathering. Clean PNG cutouts, free, private.",
     "make image transparent",
     "The tool keys out your chosen background color by pixel distance: you pick the exact shade, tolerance decides how similar a pixel must be to disappear, and feathering softens the cut edge so subjects don't look stencil-cut. Any color keys — white, black, green, whatever your backdrop was.",
     "Drop one image, sample or pick the background color, raise tolerance until the backdrop clears in the preview, add feather for smooth edges, then download the transparent PNG.",
@@ -126,7 +126,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "add-background-color": seo(
     "Add Background Color to Transparent PNG",
-    "Place transparent images on any solid color — brand tints, pastels, darks. Pick your hex and export instantly. Free, private, batch of 10, preview included.",
+    "Add a background color to PNG files: place transparent images on any solid color — brand tints, pastels, darks. Pick your hex and export instantly.",
     "add background color to png",
     "Your transparent image composites over a solid canvas of any color you choose — brand palette, pastel, deep dark — with output as PNG (keeps nothing transparent) or JPEG (smaller). It's the color-anything sibling of the white-background tool.",
     "Drop up to 10 transparent files, pick your background color with the picker, choose output format, and process. Preview each result against its new backdrop, then download individually or zipped.",
@@ -144,7 +144,7 @@ export const WATERMARK_SEO: Record<string, ToolSeo> = {
   ),
   "transparent-png-maker": seo(
     "Transparent PNG Maker – Alpha Cleaner Tool",
-    "Convert any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Preview on checkerboard — free, private and fully in-browser.",
+    "A transparent PNG maker that converts any image to PNG with cleaned-up alpha: harden semi-transparency or preserve soft edges. Free, private, in-browser.",
     "transparent png maker",
     "The tool converts your image to PNG and gives you control over its alpha channel: the threshold slider sets where semi-transparent pixels snap to fully opaque or fully transparent, and binarize mode hardens every in-between value — ideal for cleaning up keys that left mushy edges.",
     "Drop one image, adjust the alpha threshold while watching the checkerboard preview, enable binarize for hard edges or leave it off to preserve soft anti-aliasing, then download.",

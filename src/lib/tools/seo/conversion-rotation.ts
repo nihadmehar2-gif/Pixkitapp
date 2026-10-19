@@ -176,7 +176,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "image-format-converter": seo(
     "Universal Image Converter – JPG, PNG, WebP",
-    "Convert any image to JPG, PNG or WebP in one place. Smart defaults, transparency handling and batch support — free, private, no upload, mixed batches welcome.",
+    "A universal image converter for JPG, PNG and WebP — smart defaults, transparency handling and batch support. Free, private, no upload, mixed batches OK.",
     "universal image converter",
     "One tool for every direction: it decodes JPG, PNG, WebP, GIF, BMP, AVIF and SVG inputs, then re-encodes to whichever of JPG, PNG or WebP you choose — with a quality slider, a background color for flattening transparency, and batch support for mixed-format drops.",
     "Drop up to 10 images in any mix of formats, pick the target format and quality, set a background color for transparency, and convert. Every result previews before you download individually or as a ZIP.",
@@ -196,7 +196,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "rotate-image-90": seo(
     "Rotate Image 90 Degrees Clockwise – Instant",
-    "Quarter-turn images clockwise instantly. Exact 90° rotation, re-encoded at high quality — batch up to 10, free, private, in-browser, pixel-exact geometry.",
+    "Rotate images 90 degrees clockwise instantly. Exact quarter-turn, re-encoded at high quality — batch up to 10, free, private, pixel-exact geometry.",
     "rotate image 90 degrees",
     "A 90° turn is a pure permutation of pixels — no interpolation and no resampling; the tool swaps rows for columns exactly, so width and height simply trade places. The rotated frame is then re-encoded at high quality (85), which keeps photos looking sharp while shrinking often-large camera files. Choose PNG output via the converter tools afterwards if you need a mathematically lossless copy.",
     "Drop up to 10 images and process — there's nothing to configure because a quarter turn has exactly one correct answer. Download results individually or as a ZIP.",
@@ -241,7 +241,7 @@ export const CONVERSION_SEO: Record<string, ToolSeo> = {
   ),
   "straighten-image": seo(
     "Straighten Crooked Photos – ±15° Correction",
-    "Fix tilted horizons with fine angle correction from -15° to +15° and smart zoom-fill that hides the corners. Gallery-quality leveling, right in your browser.",
+    "Straighten images with fine angle correction from -15° to +15° and smart zoom-fill that hides the corners. Fix tilted horizons right in your browser.",
     "straighten image",
     "You nudge the angle while watching a live preview; the tool rotates and, when zoom-fill is on, scales the image just enough that no empty corners show — the classic straighten-without-cropping-look. Small angles cost almost no quality because the resample is gentle.",
     "Drop one image, drag the angle slider in tenths of a degree until the horizon sits level in the preview, keep zoom-fill enabled for a full-bleed result, then process and download.",

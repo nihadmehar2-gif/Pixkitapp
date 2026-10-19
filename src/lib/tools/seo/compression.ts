@@ -68,7 +68,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "compress-image-to-500kb": seo(
     "Compress Image to 500KB Online – Free & Private",
-    "Shrink photos to 500KB or below with near-original quality. Perfect balance of size and sharpness for email, uploads and the web — runs in your browser.",
+    "Compress images to 500KB or below with near-original quality. Perfect balance of size and sharpness for email, uploads and the web — runs in your browser.",
     "compress image to 500kb",
     "The compressor performs an encode-measure-adjust loop until the file fits 500KB at the highest quality possible. At this roomy target, most 12–24 megapixel photos survive with virtually no visible difference — you're mainly paying for the megabytes, not the pixels.",
     "Drop up to 10 images, choose JPG or WebP, and process. Results show exact sizes so you can confirm each one came in under the limit. Files that are already small pass through with minimal change, and everything downloads individually or zipped.",
@@ -86,7 +86,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "lossless-image-compressor": seo(
     "Near-Lossless Image Compressor – High Quality",
-    "Shrink photos at very high quality settings most people can't tell from the original — an honest near-lossless re-encode, not mathematically lossless.",
+    "A near-lossless image compressor for photos: high-quality re-encoding most people can't tell from the original — honest, not mathematically lossless.",
     "lossless image compressor",
     "This tool tries quality 95, 90, 85 and 80 in order and keeps the first setting that produces a smaller file than your original. At these levels, artifacts are very hard to spot in most photos — though pixel-peepers comparing crops side by side may notice the difference in fine textures.",
     "Add up to 10 images, pick WebP (best compression) or JPG, and process. Compare each result's preview against the original in the results panel — savings are reported per file. If a particular image must be mathematically lossless, keep the original instead.",
@@ -95,7 +95,7 @@ export const COMPRESSION_SEO: Record<string, ToolSeo> = {
   ),
   "bulk-image-compressor": seo(
     "Bulk Image Compressor – Batch of 10 at Once",
-    "Compress up to 10 images in one click and see total savings across the batch. JPG, PNG and WebP supported — download one ZIP; mixed-format batches are fine.",
+    "Bulk image compressor for up to 10 photos in one click, with total batch savings. JPG, PNG and WebP supported — download one ZIP; mixed batches are fine.",
     "bulk image compressor",
     "The batch pipeline feeds each file through the same Canvas re-encode used by the single-image compressor — your chosen quality and format applied consistently across all of them. Progress is reported as each image finishes, and a grand total shows exactly how many megabytes the batch saved.",
     "Drop a whole folder's worth (up to 10 files), set quality once, optionally switch output format, and process. Every result lists its before/after size; review the previews, then hit the ZIP button to collect the entire batch in one download.",

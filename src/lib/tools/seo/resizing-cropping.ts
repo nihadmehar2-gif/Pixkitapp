@@ -32,7 +32,7 @@ export const RESIZING_SEO: Record<string, ToolSeo> = {
   ),
   "resize-image-to-height": seo(
     "Resize Image to Fixed Height – Auto Width",
-    "Set an exact height and the width adjusts automatically to keep proportions. Great for story frames, banners and profile covers — free, private, instant.",
+    "Resize images to an exact height and the width adjusts automatically to keep proportions. Great for story frames, banners and profile covers — free, private.",
     "resize image to height",
     "This is the height-first sibling of the width resizer: you fix the vertical dimension, and the tool computes the matching width from the original aspect ratio. Multi-step resampling keeps the downscale clean, and optional format/quality settings control the output encoding.",
     "Add up to 10 images, enter your target height in pixels, choose JPG, PNG or WebP with a quality level, then process. Results display final dimensions per file; save them individually or as one ZIP download.",

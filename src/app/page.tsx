@@ -9,15 +9,17 @@ import { HomeSearch } from "@/components/site/home-search";
 import { AdSlot } from "@/components/site/ad-slot";
 import { ShieldCheck, Zap, Smartphone, BadgeCheck } from "lucide-react";
 
+// Primary keyword: "free online image tools" — used verbatim in the title,
+// meta description and H1 below. Kept natural, honest and ~150 characters.
 const HOME_DESCRIPTION =
-  "Compress, resize, crop, convert and edit images online with 127 free browser-based tools. Photos stay on your device — no uploads, no signups, no watermarks.";
+  "Use 127 free online image tools to compress, resize, crop and convert photos right in your browser. Nothing is uploaded — files never leave your device.";
 
 export const metadata: Metadata = {
-  title: "PixKitApp — 127 Free Online Image Tools (No Upload Required)",
+  title: "Free Online Image Tools – Compress, Resize & Convert | PixKitApp",
   description: HOME_DESCRIPTION,
   alternates: { canonical: SITE_URL },
   ...socialMeta({
-    title: "PixKitApp — 127 Free Online Image Tools (No Upload Required)",
+    title: "Free Online Image Tools – Compress, Resize & Convert | PixKitApp",
     description: HOME_DESCRIPTION,
     path: "/",
   }),
@@ -57,7 +59,7 @@ const jsonLd = {
       "@type": "WebSite",
       name: "PixKitApp",
       url: SITE_URL,
-      description: "127 free browser-based image tools with zero uploads.",
+      description: "127 free online image tools that run in your browser with zero uploads.",
       potentialAction: {
         "@type": "SearchAction",
         target: `${SITE_URL}/tools?q={search_term_string}`,
@@ -106,12 +108,12 @@ export default function HomePage() {
             {TOOLS.length} tools · zero uploads · 100% free
           </div>
           <h1 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight sm:text-6xl">
-            Every image tool you need.{" "}
+            Free online image tools for every task.{" "}
             <span className="text-shine">Right in your browser.</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            Compress, resize, crop, convert, watermark and more — {TOOLS.length} free tools that process images on your device.
-            Nothing is ever uploaded, so your photos stay private.
+            Compress, resize, crop, convert, watermark and more — {TOOLS.length} free online image tools that process
+            everything on your device. Nothing is ever uploaded, so your photos stay private.
           </p>
           <HomeSearch />
 
